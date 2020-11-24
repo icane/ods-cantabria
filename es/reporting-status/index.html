@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
+  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -90,10 +90,11 @@ var translations = {
         <!-- Title and meta description
         ================================================== -->
 
-        
-    <title>Indicators For The Sustainable Development Goals</title>
-
-
+        <title>
+          
+            Indicators For The Sustainable Development Goals
+          
+        </title>
 
         <meta name="description" content="">
         <meta property="og:description" content="">
@@ -105,13 +106,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/open-sdg-site-starter/assets/js/lib/classList.js"></script>
+        <script src="/ods-cantabria/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/open-sdg-site-starter/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/open-sdg-site-starter/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/ods-cantabria/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/ods-cantabria/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -121,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201124114316">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201124130113">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -135,15 +136,15 @@ var translations = {
 <body class="language-es layout-reportingstatus">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus comentarios.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
 
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
-  <div class="disclaimer-alert">
+  <div class="disclaimer-alert" role="alert">
     <strong class="phase-tag">Alfa</strong>
     
-    Este es un sitio web de desarrollo. Agradecemos sus comentarios.
+    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
   </div>
 </div>
 
@@ -152,142 +153,76 @@ var translations = {
 <header role="banner">
   <div class="container">
 
-    <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/open-sdg-site-starter/es/" id="home">
-        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
-      </a>
+    <a class="navbar-brand" href="/ods-cantabria/es/" id="home">
+      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+    </a>
 
-      <div class="mobile-widgets">
-        <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-          <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/open-sdg-site-starter/reporting-status/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
+  <div class='hidden visible-xs float-right'>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+      <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
+  <i class="fa fa-globe"></i>
+  <span class="language-toggle-text">Español</span>
+  <i class="language-toggle fa fa-chevron-down"></i>
+  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
+</a>
 
-        </div></div>
-    </div>
+<ul class="language-options language-toggle"><li><a href="/ods-cantabria/reporting-status/">English</a></li></ul>
+
+    </div></div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
       <ul class="top-level">
         <li id="menuToggle"
             aria-label="Menu toggle. Click to expand or collapse the menu."
-            aria-haspopup="true">
-          <button data-target="menu-mobile" aria-expanded="false">Menú</button>
-          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/goals">Metas</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/reporting-status">Estado de informes</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/about">Acerca de</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/guidance">Dirección</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/faq">FAQ</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/news"></a>
-    </li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/open-sdg-site-starter/reporting-status/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
-
+            aria-haspopup="true"
+            aria-expanded="false">
+          <span data-target="menu" tabindex="0"
+          role="navigation">Menú</span>
         </li>
-        <li id="searchToggle"
-            aria-label="Search toggle. Click to expand or collapse the search bar."
-            aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Buscar</button>
-          <div id="search-mobile" class="menu-target">
-  <form action="/open-sdg-site-starter/es/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
-    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
-    <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-        </li>
+        <li><span data-target="search">Buscar</span></li>
       </ul>
 
       <div id="search" class="menu-target">
-  <form action="/open-sdg-site-starter/es/search">
-    <input type="text" name="q" id="indicator_search" title="Buscar" />
-    <label class="sr-only" for="indicator_search">Buscar</label>
-    <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  <form action="/ods-cantabria/es/search">
+    <input name="q" id="indicator_search" title="Buscar" />
+    <label for="indicator_search">
+      <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Buscar:</span>
+    </label>
   </form>
 </div>
 
-
+      
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/goals">Metas</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/reporting-status">Estado de informes</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/about">Acerca de</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/guidance">Dirección</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/faq">FAQ</a>
-    </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/es/news"></a>
-    </li><li class="language-toggle-menu-header">
-    
+            <a href="/ods-cantabria/es/goals">Metas</a>
+          </li><li class="nav-link ">
+            <a href="/ods-cantabria/es/reporting-status">Estado de informes</a>
+          </li><li class="nav-link ">
+            <a href="/ods-cantabria/es/about">Acerca de</a>
+          </li><li class="nav-link ">
+            <a href="/ods-cantabria/es/guidance">Dirección</a>
+          </li><li class="nav-link ">
+            <a href="/ods-cantabria/es/faq">FAQ</a>
+          </li><li class="nav-link ">
+            <a href="/ods-cantabria/es/news">Actualizaciones</a>
+          </li><li>
+          <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
+  <i class="fa fa-globe"></i>
+  <span class="language-toggle-text">Español</span>
+  <i class="language-toggle fa fa-chevron-down"></i>
+  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
+</a>
 
+<ul class="language-options language-toggle"><li><a href="/ods-cantabria/reporting-status/">English</a></li></ul>
 
+        </li></ul>
 
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/open-sdg-site-starter/reporting-status/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
-
+      
 
     </nav>
   </div>
 
 </header>
-<div id="top" tabindex=-1></div>
 
 
 
@@ -339,15 +274,15 @@ var translations = {
   <h2>Estados por objetivos</h2>
   
 
-  <div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/1">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/1.png" alt="Fin de la Pobreza - Meta 1" width="100" height="100" id="goal-1"/>
+  <div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/1">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/1.png" alt="Fin de la Pobreza - Meta 1" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/1">Fin de la Pobreza</a>
+            <a href="/ods-cantabria/es/1">Fin de la Pobreza</a>
             <span class="total">14 indicadores</span>
           </h3>
           <div class="summary">
@@ -379,15 +314,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/2">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/2.png" alt="Hambre Cero - Meta 2" width="100" height="100" id="goal-2"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/2">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/2.png" alt="Hambre Cero - Meta 2" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/2">Hambre Cero</a>
+            <a href="/ods-cantabria/es/2">Hambre Cero</a>
             <span class="total">13 indicadores</span>
           </h3>
           <div class="summary">
@@ -419,15 +354,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/3">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/3.png" alt="Salud y Bienestar - Meta 3" width="100" height="100" id="goal-3"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/3">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/3.png" alt="Salud y Bienestar - Meta 3" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/3">Salud y Bienestar</a>
+            <a href="/ods-cantabria/es/3">Salud y Bienestar</a>
             <span class="total">27 indicadores</span>
           </h3>
           <div class="summary">
@@ -459,15 +394,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/4">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/4.png" alt="Educación de Calidad - Meta 4" width="100" height="100" id="goal-4"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/4">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/4.png" alt="Educación de Calidad - Meta 4" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/4">Educación de Calidad</a>
+            <a href="/ods-cantabria/es/4">Educación de Calidad</a>
             <span class="total">11 indicadores</span>
           </h3>
           <div class="summary">
@@ -499,15 +434,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/5">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/5.png" alt="Igualdad de Género - Meta 5" width="100" height="100" id="goal-5"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/5">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/5.png" alt="Igualdad de Género - Meta 5" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/5">Igualdad de Género</a>
+            <a href="/ods-cantabria/es/5">Igualdad de Género</a>
             <span class="total">14 indicadores</span>
           </h3>
           <div class="summary">
@@ -539,15 +474,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/6">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/6.png" alt="Agua Limpia y Saneamiento - Meta 6" width="100" height="100" id="goal-6"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/6">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/6.png" alt="Agua Limpia y Saneamiento - Meta 6" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/6">Agua Limpia y Saneamiento</a>
+            <a href="/ods-cantabria/es/6">Agua Limpia y Saneamiento</a>
             <span class="total">11 indicadores</span>
           </h3>
           <div class="summary">
@@ -579,15 +514,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/7">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" alt="Energía Asequible y No Contaminante - Meta 7" width="100" height="100" id="goal-7"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/7">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" alt="Energía Asequible y No Contaminante - Meta 7" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/7">Energía Asequible y No Contaminante</a>
+            <a href="/ods-cantabria/es/7">Energía Asequible y No Contaminante</a>
             <span class="total">6 indicadores</span>
           </h3>
           <div class="summary">
@@ -619,15 +554,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/8">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/8.png" alt="Trabajo Decente y Crecimiento Económico - Meta 8" width="100" height="100" id="goal-8"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/8">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/8.png" alt="Trabajo Decente y Crecimiento Económico - Meta 8" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/8">Trabajo Decente y Crecimiento Económico</a>
+            <a href="/ods-cantabria/es/8">Trabajo Decente y Crecimiento Económico</a>
             <span class="total">17 indicadores</span>
           </h3>
           <div class="summary">
@@ -659,15 +594,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/9">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" alt="Industria, Innovación e Infraestructura - Meta 9" width="100" height="100" id="goal-9"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/9">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" alt="Industria, Innovación e Infraestructura - Meta 9" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/9">Industria, Innovación e Infraestructura</a>
+            <a href="/ods-cantabria/es/9">Industria, Innovación e Infraestructura</a>
             <span class="total">12 indicadores</span>
           </h3>
           <div class="summary">
@@ -699,15 +634,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/10">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/10.png" alt="Reducción de las Desigualdades - Meta 10" width="100" height="100" id="goal-10"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/10">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/10.png" alt="Reducción de las Desigualdades - Meta 10" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/10">Reducción de las Desigualdades</a>
+            <a href="/ods-cantabria/es/10">Reducción de las Desigualdades</a>
             <span class="total">11 indicadores</span>
           </h3>
           <div class="summary">
@@ -739,15 +674,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/11">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/11.png" alt="Cuidades y Comunidades Sostenibles - Meta 11" width="100" height="100" id="goal-11"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/11">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/11.png" alt="Cuidades y Comunidades Sostenibles - Meta 11" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/11">Cuidades y Comunidades Sostenibles</a>
+            <a href="/ods-cantabria/es/11">Cuidades y Comunidades Sostenibles</a>
             <span class="total">15 indicadores</span>
           </h3>
           <div class="summary">
@@ -779,15 +714,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/12">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/12.png" alt="Producción y Consumo Responsables - Meta 12" width="100" height="100" id="goal-12"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/12">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/12.png" alt="Producción y Consumo Responsables - Meta 12" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/12">Producción y Consumo Responsables</a>
+            <a href="/ods-cantabria/es/12">Producción y Consumo Responsables</a>
             <span class="total">13 indicadores</span>
           </h3>
           <div class="summary">
@@ -819,15 +754,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/13">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/13.png" alt="Acción por el Clima - Meta 13" width="100" height="100" id="goal-13"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/13">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/13.png" alt="Acción por el Clima - Meta 13" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/13">Acción por el Clima</a>
+            <a href="/ods-cantabria/es/13">Acción por el Clima</a>
             <span class="total">8 indicadores</span>
           </h3>
           <div class="summary">
@@ -859,15 +794,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/14">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/14.png" alt="Vida Submarina - Meta 14" width="100" height="100" id="goal-14"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/14">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/14.png" alt="Vida Submarina - Meta 14" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/14">Vida Submarina</a>
+            <a href="/ods-cantabria/es/14">Vida Submarina</a>
             <span class="total">10 indicadores</span>
           </h3>
           <div class="summary">
@@ -899,15 +834,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/15">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/15.png" alt="Vida de Ecosistemas Terrestres - Meta 15" width="100" height="100" id="goal-15"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/15">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/15.png" alt="Vida de Ecosistemas Terrestres - Meta 15" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/15">Vida de Ecosistemas Terrestres</a>
+            <a href="/ods-cantabria/es/15">Vida de Ecosistemas Terrestres</a>
             <span class="total">14 indicadores</span>
           </h3>
           <div class="summary">
@@ -939,15 +874,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/16">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/16.png" alt="Paz, Justicia e Instituciones Sólidas - Meta 16" width="100" height="100" id="goal-16"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/16">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/16.png" alt="Paz, Justicia e Instituciones Sólidas - Meta 16" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/16">Paz, Justicia e Instituciones Sólidas</a>
+            <a href="/ods-cantabria/es/16">Paz, Justicia e Instituciones Sólidas</a>
             <span class="total">23 indicadores</span>
           </h3>
           <div class="summary">
@@ -979,15 +914,15 @@ var translations = {
           </div>
         </div>
       <br style="clear:both;">
-    </div><div class="goal reporting-status-item">
-        <div class="frame goal-tiles">
-          <a href="/open-sdg-site-starter/es/17">
-            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/17.png" alt="Alianzas para Lograr los Objetivos - Meta 17" width="100" height="100" id="goal-17"/>
+    </div><div class="goal">
+        <div class="frame">
+          <a href="/ods-cantabria/es/17">
+            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/17.png" alt="Alianzas para Lograr los Objetivos - Meta 17" width="100" height="100" />
           </a>
         </div>
         <div class="details">
           <h3 class="status-goal">
-            <a href="/open-sdg-site-starter/es/17">Alianzas para Lograr los Objetivos</a>
+            <a href="/ods-cantabria/es/17">Alianzas para Lograr los Objetivos</a>
             <span class="total">25 indicadores</span>
           </h3>
           <div class="summary">
@@ -1032,27 +967,32 @@ var translations = {
           <ul>
             <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
-              <li>
+              
+                <li>
                 
                   <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
-              <li>
+              
+                <li>
                 
                   <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
                 
                 </li>
-              <li>
+              
+                <li>
                 
                   <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
                 
                 </li>
-              <li>
-                <a href="/open-sdg-site-starter/es/about/cookies-and-privacy/">Galletas</a>
+              
+                <li>
+                <a href="/ods-cantabria/es/about/cookies-and-privacy/">Galletas</a>
                 
                 </li>
               
-            </ul>
+            
+          </ul>
         </div>
       </div>
     </div>
@@ -1074,7 +1014,6 @@ var translations = {
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
@@ -1084,9 +1023,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201124114316'></script>
-
-<script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201124130113'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -1119,13 +1056,15 @@ $(function() {
               chartTitle: domData.charttitle,
               chartTitles: domData.charttitles,
               measurementUnit: domData.measurementunit,
+              copyright: domData.copyright,
+              dataSource: domData.datasource,
+              geographicalArea: domData.geographicalarea,
               showData: domData.showdata,
+              footnote: domData.footnote,
               graphType: domData.graphtype,
               startValues: domData.startvalues,
               graphLimits: domData.graphlimits,
               stackedDisaggregation: domData.stackeddisaggregation,
-              graphAnnotations: domData.graphannotations,
-              indicatorDownloads: domData.indicatordownloads,
             }),
             view  = new indicatorView(model, {
               rootElement: '#indicatorData',
