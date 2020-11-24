@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/en',
+  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'en',
+  language: 'es',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Goal 9 - Industry, innovation and infrastructure - Indicators For The Sustainable Development Goals</title>
+    <title>Meta 9 - Industria, Innovación e Infraestructura - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201124005752">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201124104807">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,18 +132,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-goal-by-target-vertical">
+<body class="language-es layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus comentarios.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Este es un sitio web de desarrollo. Agradecemos sus comentarios.
   </div>
 </div>
 
@@ -154,26 +154,11 @@ var translations = {
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
-        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
       </a>
 
       <div class="mobile-widgets">
-        <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-          <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/open-sdg-site-starter/es/9/">
-              Español
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-        </div></div>
+        <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
     </div>
 
     <nav class="navbar navbar-default" id="main-nav">
@@ -182,54 +167,31 @@ var translations = {
         <li id="menuToggle"
             aria-label="Menu toggle. Click to expand or collapse the menu."
             aria-haspopup="true">
-          <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+          <button data-target="menu-mobile" aria-expanded="false">Menú</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Goals</a>
+    <a href="/open-sdg-site-starter/goals">Metas</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
+    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">About</a>
+    <a href="/open-sdg-site-starter/about">Acerca de</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Guidance</a>
+    <a href="/open-sdg-site-starter/guidance">Dirección</a>
     </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news">Updates</a>
-    </li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/open-sdg-site-starter/es/9/">
-              Español
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
+    <a href="/open-sdg-site-starter/news"></a>
+    </li></ul>
 
         </li>
         <li id="searchToggle"
             aria-label="Search toggle. Click to expand or collapse the search bar."
             aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Search</button>
+          <button data-target="search-mobile" aria-expanded="false">Buscar</button>
           <div id="search-mobile" class="menu-target">
   <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" />
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
+    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
+    <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -238,49 +200,26 @@ var translations = {
 
       <div id="search" class="menu-target">
   <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search" title="Search" />
-    <label class="sr-only" for="indicator_search">Search</label>
-    <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search" title="Buscar" />
+    <label class="sr-only" for="indicator_search">Buscar</label>
+    <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Goals</a>
+    <a href="/open-sdg-site-starter/goals">Metas</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
+    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">About</a>
+    <a href="/open-sdg-site-starter/about">Acerca de</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Guidance</a>
+    <a href="/open-sdg-site-starter/guidance">Dirección</a>
     </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news">Updates</a>
-    </li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/open-sdg-site-starter/es/9/">
-              Español
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
+    <a href="/open-sdg-site-starter/news"></a>
+    </li></ul>
 
 
     </nav>
@@ -293,8 +232,8 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/open-sdg-site-starter/">Home</a></li>
-  <li class="active">Goal 9</li>
+  <li><a href="/open-sdg-site-starter/">Inicio</a></li>
+  <li class="active">Meta 9</li>
   
 </ol>
 
@@ -304,11 +243,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/9.png" alt="Industry, innovation and infrastructure - Goal 9" id="goal-9"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" alt="Industria, Innovación e Infraestructura - Meta 9" id="goal-9"/>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 9: </span>Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation
+          <span class="hidden-sm hidden-md hidden-lg">Meta 9: </span>Construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible y fomentar la innovación
         </h1>
       </div>
     </div>
@@ -327,9 +266,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 9.1</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 9.1</span>
         </h3>
-        <span class="target-name">Develop quality, reliable, sustainable and resilient infrastructure, including regional and transborder infrastructure, to support economic development and human well-being, with a focus on affordable and equitable access for all</span>
+        <span class="target-name">Desarrollar infraestructuras fiables, sostenibles, resilientes y de calidad, incluidas infraestructuras regionales y transfronterizas, para apoyar el desarrollo económico y el bienestar humano, haciendo especial hincapié en el acceso asequible y equitativo para todos</span>
         
 
           
@@ -343,12 +282,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.1.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-1-1">Proportion of the rural population who live within 2 km of an all-season road</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-1-1">Proporción de la población rural que vive a menos de 2 km de una carretera transitable todo el año</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -365,12 +304,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.1.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.1.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-1-2">Passenger and freight volumes, by mode of transport</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-1-2">Volumen de transporte de pasajeros y carga, desglosado por medio de transporte</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -380,9 +319,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 9.2</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 9.2</span>
         </h3>
-        <span class="target-name">Promote inclusive and sustainable industrialization and, by 2030, significantly raise industry’s share of employment and gross domestic product, in line with national circumstances, and double its share in least developed countries</span>
+        <span class="target-name">Promover una industrialización inclusiva y sostenible y, de aquí a 2030, aumentar significativamente la contribución de la industria al empleo y al producto interno bruto, de acuerdo con las circunstancias nacionales, y duplicar esa contribución en los países menos adelantados</span>
         
 
           
@@ -396,12 +335,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.2.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-2-1">Manufacturing value added as a proportion of GDP and per capita</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-2-1">Valor añadido del sector manufacturo en proporción al PIB y per cápita</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -418,12 +357,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.2.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.2.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-2-2">Manufacturing employment as a proportion of total employment</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-2-2">Empleo del sector manufacturero en proporción al empleo total</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -433,9 +372,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 9.3</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 9.3</span>
         </h3>
-        <span class="target-name">Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets</span>
+        <span class="target-name">Aumentar el acceso de las pequeñas industrias y otras empresas, particularmente en los países en desarrollo, a los servicios financieros, incluidos créditos asequibles, y su integración en las cadenas de valor y los mercados</span>
         
 
           
@@ -449,12 +388,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.3.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-3-1">Proportion of small-scale industries in total industry value added</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-3-1">Proporción del valor añadido total del sector industrial correspondiente a las pequeñas industrias</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -471,12 +410,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.3.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.3.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-3-2">Proportion of small-scale industries with a loan or line of credit</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-3-2">Proporción de las pequeñas industrias que han obtenido un préstamo o una línea de crédito</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -486,9 +425,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 9.4</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 9.4</span>
         </h3>
-        <span class="target-name">By 2030, upgrade infrastructure and retrofit industries to make them sustainable, with increased resource-use efficiency and greater adoption of clean and environmentally sound technologies and industrial processes, with all countries taking action in accordance with their respective capabilities</span>
+        <span class="target-name">De aquí a 2030, modernizar la infraestructura y reconvertir las industrias para que sean sostenibles, utilizando los recursos con mayor eficacia y promoviendo la adopción de tecnologías y procesos industriales limpios y ambientalmente racionales, y logrando que todos los países tomen medidas de acuerdo con sus capacidades respectivas</span>
         
 
           
@@ -502,12 +441,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.4.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-4-1">CO2 emission per unit of value added</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-4-1">Emisiones de CO2 por unidad de valor añadido</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -517,9 +456,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 9.5</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 9.5</span>
         </h3>
-        <span class="target-name">Enhance scientific research, upgrade the technological capabilities of industrial sectors in all countries, in particular developing countries, including, by 2030, encouraging innovation and substantially increasing the number of research and development workers per 1 million people and public and private research and development spending</span>
+        <span class="target-name">Aumentar la investigación científica y mejorar la capacidad tecnológica de los sectores industriales de todos los países, en particular los países en desarrollo, entre otras cosas fomentando la innovación y aumentando considerablemente, de aquí a 2030, el número de personas que trabajan en investigación y desarrollo por millón de habitantes y los gastos de los sectores público y privado en investigación y desarrollo</span>
         
 
           
@@ -533,12 +472,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.5.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-5-1">Research and development expenditure as a proportion of GDP</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-5-1">Gastos en investigación y desarrollo en proporción al PIB</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -555,43 +494,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.5.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.5.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-5-2">Researchers (in full-time equivalent) per million inhabitants</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-5-2">Número de investigadores (en equivalente a tiempo completo) por cada millón de habitantes</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
-            </span>
-            
-          </div>
-        
-      </div>
-    
-      
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 9.a</span>
-        </h3>
-        <span class="target-name">Facilitate sustainable and resilient infrastructure development in developing countries through enhanced financial, technological and technical support to African countries, least developed countries, landlocked developing countries and small island developing States</span>
-        
-
-          
-          
-          
-          
-          
-          
-          
-          
-
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.a.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-a-1">Total official international support (official development assistance plus other official flows) to infrastructure</a></span>
-            <span class="sr-only">Indicator status</span>
-            <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -601,9 +509,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 9.b</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 9.a</span>
         </h3>
-        <span class="target-name">Support domestic technology development, research and innovation in developing countries, including by ensuring a conducive policy environment for, inter alia, industrial diversification and value addition to commodities</span>
+        <span class="target-name">Facilitar el desarrollo de infraestructuras sostenibles y resilientes en los países en desarrollo mediante un mayor apoyo financiero, tecnológico y técnico a los países africanos, los países menos adelantados, los países en desarrollo sin litoral y los pequeños Estados insulares en desarrollo</span>
         
 
           
@@ -617,12 +525,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.b.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.a.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-b-1">Proportion of medium and high-tech industry value added in total value added</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-a-1">Total de apoyo internacional oficial (asistencia oficial para el desarrollo más otras corrientes oficiales de recursos) destinado a la infraestructura</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -632,9 +540,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 9.c</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 9.b</span>
         </h3>
-        <span class="target-name">Significantly increase access to information and communications technology and strive to provide universal and affordable access to the Internet in least developed countries by 2020</span>
+        <span class="target-name">Apoyar el desarrollo de tecnologías, la investigación y la innovación nacionales en los países en desarrollo, incluso garantizando un entorno normativo propicio a la diversificación industrial y la adición de valor a los productos básicos, entre otras cosas</span>
         
 
           
@@ -648,12 +556,43 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 9.c.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.b.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/9-c-1">Proportion of population covered by a mobile network, by technology</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-b-1">Proporción del valor añadido por la industria de tecnología mediana y alta en el valor añadido total</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
+            </span>
+            
+          </div>
+        
+      </div>
+    
+      
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Objetivo</span> 9.c</span>
+        </h3>
+        <span class="target-name">Aumentar significativamente el acceso a la tecnología de la información y las comunicaciones y esforzarse por proporcionar acceso universal y asequible a Internet en los países menos adelantados de aquí a 2020</span>
+        
+
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.c.1</span>
+            </h4>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/9-c-1">Proporción de la población con cobertura de red móvil, desglosada por tecnología</a></span>
+            <span class="sr-only">Indicator status</span>
+            <span class="status notstarted">
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -669,11 +608,11 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
               <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
               <li>
@@ -687,7 +626,7 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Cookies</a>
+                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Galletas</a>
                 
                 </li>
               
@@ -718,12 +657,12 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201124005752'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201124104807'></script>
 
 <script>
 $(function() {

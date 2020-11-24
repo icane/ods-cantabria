@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/en',
+  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'en',
+  language: 'es',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Goal 7 - Affordable and clean energy - Indicators For The Sustainable Development Goals</title>
+    <title>Meta 7 - Energía Asequible y No Contaminante - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201124005752">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201124104807">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,18 +132,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-goal-by-target-vertical">
+<body class="language-es layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus comentarios.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Este es un sitio web de desarrollo. Agradecemos sus comentarios.
   </div>
 </div>
 
@@ -154,26 +154,11 @@ var translations = {
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
-        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
       </a>
 
       <div class="mobile-widgets">
-        <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-          <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/open-sdg-site-starter/es/7/">
-              Español
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-        </div></div>
+        <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
     </div>
 
     <nav class="navbar navbar-default" id="main-nav">
@@ -182,54 +167,31 @@ var translations = {
         <li id="menuToggle"
             aria-label="Menu toggle. Click to expand or collapse the menu."
             aria-haspopup="true">
-          <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+          <button data-target="menu-mobile" aria-expanded="false">Menú</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Goals</a>
+    <a href="/open-sdg-site-starter/goals">Metas</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
+    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">About</a>
+    <a href="/open-sdg-site-starter/about">Acerca de</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Guidance</a>
+    <a href="/open-sdg-site-starter/guidance">Dirección</a>
     </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news">Updates</a>
-    </li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/open-sdg-site-starter/es/7/">
-              Español
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
+    <a href="/open-sdg-site-starter/news"></a>
+    </li></ul>
 
         </li>
         <li id="searchToggle"
             aria-label="Search toggle. Click to expand or collapse the search bar."
             aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Search</button>
+          <button data-target="search-mobile" aria-expanded="false">Buscar</button>
           <div id="search-mobile" class="menu-target">
   <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" />
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
+    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
+    <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -238,49 +200,26 @@ var translations = {
 
       <div id="search" class="menu-target">
   <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search" title="Search" />
-    <label class="sr-only" for="indicator_search">Search</label>
-    <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search" title="Buscar" />
+    <label class="sr-only" for="indicator_search">Buscar</label>
+    <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Goals</a>
+    <a href="/open-sdg-site-starter/goals">Metas</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
+    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">About</a>
+    <a href="/open-sdg-site-starter/about">Acerca de</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Guidance</a>
+    <a href="/open-sdg-site-starter/guidance">Dirección</a>
     </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news">Updates</a>
-    </li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/open-sdg-site-starter/es/7/">
-              Español
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
+    <a href="/open-sdg-site-starter/news"></a>
+    </li></ul>
 
 
     </nav>
@@ -293,8 +232,8 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/open-sdg-site-starter/">Home</a></li>
-  <li class="active">Goal 7</li>
+  <li><a href="/open-sdg-site-starter/">Inicio</a></li>
+  <li class="active">Meta 7</li>
   
 </ol>
 
@@ -304,11 +243,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/7.png" alt="Affordable and clean energy - Goal 7" id="goal-7"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" alt="Energía Asequible y No Contaminante - Meta 7" id="goal-7"/>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 7: </span>Ensure access to affordable, reliable, sustainable and modern energy for all
+          <span class="hidden-sm hidden-md hidden-lg">Meta 7: </span>Garantizar el acceso a una energía asequible, fiable, sostenible y moderna para todos
         </h1>
       </div>
     </div>
@@ -327,9 +266,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 7.1</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 7.1</span>
         </h3>
-        <span class="target-name">By 2030, ensure universal access to affordable, reliable and modern energy services</span>
+        <span class="target-name">De aquí a 2030, garantizar el acceso universal a servicios energéticos asequibles, fiables y modernos</span>
         
 
           
@@ -343,12 +282,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 7.1.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/7-1-1">Proportion of population with access to electricity</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/7-1-1">Proporción de la población que tiene acceso a la electricidad</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -365,43 +304,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 7.1.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.1.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/7-1-2">Proportion of population with primary reliance on clean fuels and technology</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/7-1-2">Proporción de la población cuya fuente primaria de energía son los combustibles y tecnologías limpios</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
-            </span>
-            
-          </div>
-        
-      </div>
-    
-      
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 7.2</span>
-        </h3>
-        <span class="target-name">By 2030, increase substantially the share of renewable energy in the global energy mix</span>
-        
-
-          
-          
-          
-          
-          
-          
-          
-          
-
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 7.2.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/7-2-1">Renewable energy share in the total final energy consumption</a></span>
-            <span class="sr-only">Indicator status</span>
-            <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -411,9 +319,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 7.3</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 7.2</span>
         </h3>
-        <span class="target-name">By 2030, double the global rate of improvement in energy efficiency</span>
+        <span class="target-name">De aquí a 2030, aumentar considerablemente la proporción de energía renovable en el conjunto de fuentes energéticas</span>
         
 
           
@@ -427,12 +335,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 7.3.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/7-3-1">Energy intensity measured in terms of primary energy and GDP</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/7-2-1">Proporción de energía renovable en el consumo final total de energía</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -442,9 +350,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 7.a</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 7.3</span>
         </h3>
-        <span class="target-name">By 2030, enhance international cooperation to facilitate access to clean energy research and technology, including renewable energy, energy efficiency and advanced and cleaner fossil-fuel technology, and promote investment in energy infrastructure and clean energy technology</span>
+        <span class="target-name">De aquí a 2030, duplicar la tasa mundial de mejora de la eficiencia energética</span>
         
 
           
@@ -458,12 +366,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 7.a.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/7-a-1">International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/7-3-1">Intensidad energética medida en función de la energía primaria y el PIB</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -473,9 +381,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 7.b</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 7.a</span>
         </h3>
-        <span class="target-name">By 2030, expand infrastructure and upgrade technology for supplying modern and sustainable energy services for all in developing countries, in particular least developed countries, small island developing States and landlocked developing countries, in accordance with their respective programmes of support</span>
+        <span class="target-name">De aquí a 2030, aumentar la cooperación internacional para facilitar el acceso a la investigación y la tecnología relativas a la energía limpia, incluidas las fuentes renovables, la eficiencia energética y las tecnologías avanzadas y menos contaminantes de combustibles fósiles, y promover la inversión en infraestructura energética y tecnologías limpias</span>
         
 
           
@@ -489,12 +397,43 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 7.b.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.a.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/7-b-1">Investments in energy efficiency as a proportion of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/7-a-1">Corrientes financieras internacionales hacia los países en desarrollo para apoyar la investigación y el desarrollo de energías limpias y la producción de energía renovable, incluidos los sistemas híbridos</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
+            </span>
+            
+          </div>
+        
+      </div>
+    
+      
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Objetivo</span> 7.b</span>
+        </h3>
+        <span class="target-name">De aquí a 2030, ampliar la infraestructura y mejorar la tecnología para prestar servicios energéticos modernos y sostenibles para todos en los países en desarrollo, en particular los países menos adelantados, los pequeños Estados insulares en desarrollo y los países en desarrollo sin litoral, en consonancia con sus respectivos programas de apoyo</span>
+        
+
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.b.1</span>
+            </h4>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/7-b-1">Inversiones en eficiencia energética en proporción al PIB y a la cuantía de la inversión extranjera directa en transferencias financieras destinadas a infraestructura y tecnología para servicios de desarrollo sostenible</a></span>
+            <span class="sr-only">Indicator status</span>
+            <span class="status notstarted">
+              Explorando fuentes de datos
             </span>
             
           </div>
@@ -510,11 +449,11 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
               <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
               <li>
@@ -528,7 +467,7 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Cookies</a>
+                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Galletas</a>
                 
                 </li>
               
@@ -559,12 +498,12 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Buscar';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201124005752'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201124104807'></script>
 
 <script>
 $(function() {
