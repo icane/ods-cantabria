@@ -178,3 +178,5 @@ exclude:
 #    max_zoom: 10
 #    subfolder: my-geojson-subfolder
 #    label: My map layer label (can be a translation key)
+
+theme: jekyll-theme-minimal
