@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
+  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'es',
+  language: 'en',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Meta 8 - Trabajo Decente y Crecimiento Económico - Indicators For The Sustainable Development Goals</title>
+    <title>Goal 8 - Decent jobs and economic growth - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201124104830">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201124114316">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,18 +132,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-es layout-goal-by-target-vertical">
+<body class="language-en layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus comentarios.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alfa</strong>
+    <strong class="phase-tag">Alpha</strong>
     
-    Este es un sitio web de desarrollo. Agradecemos sus comentarios.
+    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
   </div>
 </div>
 
@@ -154,11 +154,26 @@ var translations = {
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
-        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
       </a>
 
       <div class="mobile-widgets">
-        <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
+        <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+          <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/es/8/">
+              Español
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+        </div></div>
     </div>
 
     <nav class="navbar navbar-default" id="main-nav">
@@ -167,31 +182,54 @@ var translations = {
         <li id="menuToggle"
             aria-label="Menu toggle. Click to expand or collapse the menu."
             aria-haspopup="true">
-          <button data-target="menu-mobile" aria-expanded="false">Menú</button>
+          <button data-target="menu-mobile" aria-expanded="false">Menu</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/open-sdg-site-starter/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
+    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
+    <a href="/open-sdg-site-starter/about">About</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
+    <a href="/open-sdg-site-starter/guidance">Guidance</a>
     </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news"></a>
-    </li></ul>
+    <a href="/open-sdg-site-starter/news">Updates</a>
+    </li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/es/8/">
+              Español
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+</li></ul>
 
         </li>
         <li id="searchToggle"
             aria-label="Search toggle. Click to expand or collapse the search bar."
             aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Buscar</button>
+          <button data-target="search-mobile" aria-expanded="false">Search</button>
           <div id="search-mobile" class="menu-target">
   <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
-    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
-    <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search-mobile" title="Search" />
+    <label class="sr-only" for="indicator_search-mobile">Search</label>
+    <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -200,26 +238,49 @@ var translations = {
 
       <div id="search" class="menu-target">
   <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search" title="Buscar" />
-    <label class="sr-only" for="indicator_search">Buscar</label>
-    <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search" title="Search" />
+    <label class="sr-only" for="indicator_search">Search</label>
+    <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/open-sdg-site-starter/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
+    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
+    <a href="/open-sdg-site-starter/about">About</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
+    <a href="/open-sdg-site-starter/guidance">Guidance</a>
     </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news"></a>
-    </li></ul>
+    <a href="/open-sdg-site-starter/news">Updates</a>
+    </li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/es/8/">
+              Español
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+</li></ul>
 
 
     </nav>
@@ -232,8 +293,8 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/open-sdg-site-starter/">Inicio</a></li>
-  <li class="active">Meta 8</li>
+  <li><a href="/open-sdg-site-starter/">Home</a></li>
+  <li class="active">Goal 8</li>
   
 </ol>
 
@@ -243,11 +304,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/8.png" alt="Trabajo Decente y Crecimiento Económico - Meta 8" id="goal-8"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/8.png" alt="Decent jobs and economic growth - Goal 8" id="goal-8"/>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Meta 8: </span>Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos
+          <span class="hidden-sm hidden-md hidden-lg">Goal 8: </span>Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all
         </h1>
       </div>
     </div>
@@ -266,9 +327,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.1</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.1</span>
         </h3>
-        <span class="target-name">Mantener el crecimiento económico per cápita de conformidad con las circunstancias nacionales y, en particular, un crecimiento del producto interno bruto de al menos el 7% anual en los países menos adelantados</span>
+        <span class="target-name">Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries</span>
         
 
           
@@ -282,12 +343,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.1.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-1-1">Tasa de crecimiento anual del PIB real per cápita</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-1-1">Annual growth rate of real GDP per capita</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -297,9 +358,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.2</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.2</span>
         </h3>
-        <span class="target-name">Lograr niveles más elevados de productividad económica mediante la diversificación, la modernización tecnológica y la innovación, entre otras cosas centrándose en los sectores con gran valor añadido y un uso intensivo de la mano de obra</span>
+        <span class="target-name">Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors</span>
         
 
           
@@ -313,12 +374,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.2.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-2-1">Tasa de crecimiento anual del PIB real por persona empleada</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-2-1">Annual growth rate of real GDP per employed person</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -328,9 +389,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.3</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.3</span>
         </h3>
-        <span class="target-name">Promover políticas orientadas al desarrollo que apoyen las actividades productivas, la creación de puestos de trabajo decentes, el emprendimiento, la creatividad y la innovación, y fomentar la formalización y el crecimiento de las microempresas y las pequeñas y medianas empresas, incluso mediante el acceso a servicios financieros</span>
+        <span class="target-name">Promote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services</span>
         
 
           
@@ -344,12 +405,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.3.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-3-1">Proporción de empleo informal en el sector no agrícola, desglosada por sexo</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-3-1">Proportion of informal employment in non‐agriculture employment, by sex</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -359,9 +420,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.4</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.4</span>
         </h3>
-        <span class="target-name">Mejorar progresivamente, de aquí a 2030, la producción y el consumo eficientes de los recursos mundiales y procurar desvincular el crecimiento económico de la degradación del medio ambiente, conforme al Marco Decenal de Programas sobre Modalidades de Consumo y Producción Sostenibles, empezando por los países desarrollados</span>
+        <span class="target-name">Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10‐Year Framework of Programmes on Sustainable Consumption and Production, with developed countries taking the lead</span>
         
 
           
@@ -375,12 +436,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.4.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-4-1">Huella material en términos absolutos, huella material per cápita y huella material por PIB</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-4-1">Material footprint, material footprint per capita, and material footprint per GDP</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -397,12 +458,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.4.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.4.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-4-2">Consumo material interno en términos absolutos, consumo material interno per cápita y consumo material interno por PIB</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-4-2">Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -412,9 +473,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.5</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.5</span>
         </h3>
-        <span class="target-name">De aquí a 2030, lograr el empleo pleno y productivo y el trabajo decente para todas las mujeres y los hombres, incluidos los jóvenes y las personas con discapacidad, así como la igualdad de remuneración por trabajo de igual valor</span>
+        <span class="target-name">By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value</span>
         
 
           
@@ -428,12 +489,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.5.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-5-1">Ingreso medio por hora de empleadas y empleados, desglosado por ocupación, edad y personas con discapacidad</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-5-1">Average hourly earnings of female and male employees, by occupation, age and persons with disabilities</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -450,12 +511,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.5.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.5.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-5-2">Tasa de desempleo, desglosada por sexo, edad y personas con discapacidad</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-5-2">Unemployment rate, by sex, age and persons with disabilities</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -465,9 +526,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.6</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.6</span>
         </h3>
-        <span class="target-name">De aquí a 2020, reducir considerablemente la proporción de jóvenes que no están empleados y no cursan estudios ni reciben capacitación</span>
+        <span class="target-name">By 2020, substantially reduce the proportion of youth not in employment, education or training</span>
         
 
           
@@ -481,12 +542,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.6.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.6.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-6-1">Proporción de jóvenes (entre 15 y 24 años) que no cursan estudios, no están empleados ni reciben capacitación</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-6-1">Proportion of youth (aged 15–24 years) not in education, employment or training</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -496,9 +557,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.7</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.7</span>
         </h3>
-        <span class="target-name">Adoptar medidas inmediatas y eficaces para erradicar el trabajo forzoso, poner fin a las formas contemporáneas de esclavitud y la trata de personas y asegurar la prohibición y eliminación de las peores formas de trabajo infantil, incluidos el reclutamiento y la utilización de niños soldados, y, de aquí a 2025, poner fin al trabajo infantil en todas sus formas</span>
+        <span class="target-name">Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms</span>
         
 
           
@@ -512,12 +573,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.7.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.7.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-7-1">Proporción y número de niños de entre 5 y 17 años que realizan trabajo infantil, desglosados por sexo y edad</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-7-1">Proportion and number of children aged 5–17 years engaged in child labour, by sex and age</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -527,9 +588,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.8</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.8</span>
         </h3>
-        <span class="target-name">Proteger los derechos laborales y promover un entorno de trabajo seguro y sin riesgos para todos los trabajadores, incluidos los trabajadores migrantes, en particular las mujeres migrantes y las personas con empleos precarios</span>
+        <span class="target-name">Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment</span>
         
 
           
@@ -543,12 +604,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.8.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.8.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-8-1">Tasas de frecuencia de las lesiones ocupacionales mortales y no mortales, desglosadas por sexo y estatus migratorio</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-8-1">Frequency rates of fatal and non-fatal occupational injuries, by sex and migrant status</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -565,12 +626,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.8.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.8.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-8-2">Nivel de cumplimiento nacional de los derechos laborales (libertad de asociación y negociación colectiva) con arreglo a las fuentes textuales de la Organización Internacional del Trabajo (OIT) y la legislación interna, desglosado por sexo y estatus migratorio</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-8-2">Level of national compliance with labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -580,9 +641,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.9</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.9</span>
         </h3>
-        <span class="target-name">De aquí a 2030, elaborar y poner en práctica políticas encaminadas a promover un turismo sostenible que cree puestos de trabajo y promueva la cultura y los productos locales</span>
+        <span class="target-name">By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products</span>
         
 
           
@@ -596,12 +657,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.9.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.9.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-9-1">PIB generado directamente por el turismo en proporción al PIB total y a la tasa de crecimiento</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-9-1">Tourism direct GDP as a proportion of total GDP and in growth rate</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -618,12 +679,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.9.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.9.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-9-2">Proporción de empleos en el sector del turismo sostenible respecto del total de empleos del turismo</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-9-2">Proportion of jobs in sustainable tourism industries out of total tourism jobs</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -633,9 +694,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.a</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.a</span>
         </h3>
-        <span class="target-name">Aumentar el apoyo a la iniciativa de ayuda para el comercio en los países en desarrollo, en particular los países menos adelantados, incluso mediante el Marco Integrado Mejorado para la Asistencia Técnica a los Países Menos Adelantados en Materia de Comercio</span>
+        <span class="target-name">Increase Aid for Trade support for developing countries, in particular least developed countries, including through the Enhanced Integrated Framework for Trade-related Technical Assistance to Least Developed Countries</span>
         
 
           
@@ -649,12 +710,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.a.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.a.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-a-1">Compromisos y desembolsos en relación con la iniciativa Ayuda para el Comercio</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-a-1">Aid for Trade commitments and disbursements</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -664,9 +725,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.b</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.b</span>
         </h3>
-        <span class="target-name">De aquí a 2020, desarrollar y poner en marcha una estrategia mundial para el empleo de los jóvenes y aplicar el Pacto Mundial para el Empleo de la Organización Internacional del Trabajo</span>
+        <span class="target-name">By 2020, develop and operationalize a global strategy for youth employment and implement the Global Jobs Pact of the International Labour Organization</span>
         
 
           
@@ -680,12 +741,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.b.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.b.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-b-1">Existencia de una estrategia nacional organizada y en marcha para el empleo de los jóvenes, como estrategia independiente o como parte de una estrategia nacional de empleo</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-b-1">Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -695,9 +756,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 8.10</span>
+          <span class="target-number"><span class="sr-only">Target</span> 8.10</span>
         </h3>
-        <span class="target-name">Fortalecer la capacidad de las instituciones financieras nacionales para fomentar y ampliar el acceso a los servicios bancarios, financieros y de seguros para todos</span>
+        <span class="target-name">Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all</span>
         
 
           
@@ -711,12 +772,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.10.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.10.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-10-1">a) Número de sucursales de bancos comerciales por cada 100.000 adultos y b) número de cajeros automáticos por cada 100.000 adultos</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-10-1">(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -733,12 +794,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.10.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.10.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/8-10-2">Proporción de adultos (a partir de 15 años de edad) que tienen una cuenta en un banco u otra institución financiera o un proveedor de servicios de dinero móvil</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/8-10-2">Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -754,11 +815,11 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
             
               <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
                 
                 </li>
               <li>
@@ -772,7 +833,7 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Galletas</a>
+                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
@@ -803,12 +864,12 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'ocultar';</script>
+    translations['general']['hide'] = 'hide';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Buscar';</script>
+    translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201124104830'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201124114316'></script>
 
 <script>
 $(function() {

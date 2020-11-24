@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
+  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'es',
+  language: 'en',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Indicador 9.a.1 - Total de apoyo internacional oficial (asistencia oficial para el desarrollo más otras corrientes oficiales de recursos) destinado a la infraestructura - Indicators For The Sustainable Development Goals</title>
+    <title>Indicator 9.a.1 - Total official international support (official development assistance plus other official flows) to infrastructure - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201124104830">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201124114316">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,18 +132,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-es layout-indicator">
+<body class="language-en layout-indicator">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus comentarios.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alfa</strong>
+    <strong class="phase-tag">Alpha</strong>
     
-    Este es un sitio web de desarrollo. Agradecemos sus comentarios.
+    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
   </div>
 </div>
 
@@ -154,11 +154,26 @@ var translations = {
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
-        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
       </a>
 
       <div class="mobile-widgets">
-        <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
+        <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+          <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/es/9-a-1/">
+              Español
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+        </div></div>
     </div>
 
     <nav class="navbar navbar-default" id="main-nav">
@@ -167,31 +182,54 @@ var translations = {
         <li id="menuToggle"
             aria-label="Menu toggle. Click to expand or collapse the menu."
             aria-haspopup="true">
-          <button data-target="menu-mobile" aria-expanded="false">Menú</button>
+          <button data-target="menu-mobile" aria-expanded="false">Menu</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/open-sdg-site-starter/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
+    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
+    <a href="/open-sdg-site-starter/about">About</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
+    <a href="/open-sdg-site-starter/guidance">Guidance</a>
     </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news"></a>
-    </li></ul>
+    <a href="/open-sdg-site-starter/news">Updates</a>
+    </li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/es/9-a-1/">
+              Español
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+</li></ul>
 
         </li>
         <li id="searchToggle"
             aria-label="Search toggle. Click to expand or collapse the search bar."
             aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Buscar</button>
+          <button data-target="search-mobile" aria-expanded="false">Search</button>
           <div id="search-mobile" class="menu-target">
   <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
-    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
-    <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search-mobile" title="Search" />
+    <label class="sr-only" for="indicator_search-mobile">Search</label>
+    <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -200,26 +238,49 @@ var translations = {
 
       <div id="search" class="menu-target">
   <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search" title="Buscar" />
-    <label class="sr-only" for="indicator_search">Buscar</label>
-    <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search" title="Search" />
+    <label class="sr-only" for="indicator_search">Search</label>
+    <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/open-sdg-site-starter/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
+    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
+    <a href="/open-sdg-site-starter/about">About</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
+    <a href="/open-sdg-site-starter/guidance">Guidance</a>
     </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news"></a>
-    </li></ul>
+    <a href="/open-sdg-site-starter/news">Updates</a>
+    </li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/es/9-a-1/">
+              Español
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+</li></ul>
 
 
     </nav>
@@ -247,10 +308,10 @@ var translations = {
       </div>
       <div class="variable-options">
         <fieldset>
-          <legend class="sr-only">Subcategorías - <%=translations.t(fieldItem.field)%></legend>
+          <legend class="sr-only">Sub-categories - <%=translations.t(fieldItem.field)%></legend>
           <div>
-            <button data-type="select">Seleccionar todo</button>
-            <button data-type="clear">Limpiar todo</button>
+            <button data-type="select">Select all</button>
+            <button data-type="clear">Clear all</button>
           </div>
           <% _.each(fieldItem.values, function(item) { %>
             <label>
@@ -261,10 +322,10 @@ var translations = {
       </div>
 
       <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Disponible cuando se selecciona '<%= translations.t(_.findWhere(edges, { To: fieldItem.field }).From) %>'
+        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Available when '<%= translations.t(_.findWhere(edges, { To: fieldItem.field }).From) %>' is selected
         </div>
         <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
-          No hay opciones disponibles debido a los filtros anteriores
+          No options available because of filters above
         </div>
       <% }%>
 
@@ -274,9 +335,9 @@ var translations = {
 
 <script type="text/template" id="units_template">
   <% if(units.length) { %>
-    <h4>Tipo de unidades</h4>
+    <h4>Units type</h4>
     <fieldset>
-      <legend class="sr-only">Tipo de unidades</legend>
+      <legend class="sr-only">Units type</legend>
       <% _.each(units, function(unitsItem, index) { %>
         <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
         <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
@@ -287,9 +348,9 @@ var translations = {
 
 <script type="text/template" id="series_template">
   <% if(serieses.length) { %>
-    <h4>Serie</h4>
+    <h4>Series</h4>
     <fieldset>
-      <legend class="sr-only">Serie</legend>
+      <legend class="sr-only">Series</legend>
       <% _.each(serieses, function(seriesItem, index) { %>
         <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
         <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
@@ -298,7 +359,7 @@ var translations = {
   <% } %>
 </script>
 
-<script>translations['indicator'] = {"chart":"Gráfico","clear_all":"Limpiar todo","clear_selections":"Borrar selecciones","data_not_available":"Esta información no está disponible. Elija datos alternativos para mostrar.","dataset_size_warning":"Hay demasiados conjuntos de datos para mostrar en el gráfico. No todo se mostrará hasta que elimine algunas selecciones.","download_chart":"Descargar CSV de gráfico","download_chart_image":"Descargar imagen del gráfico","download_chart_image_title":"Descargar gráfico como imagen","download_csv":"Descargar CSV","download_csv_title":"Descargar como CSV","download_geojson":"Descargar GeoJSON","download_geojson_title":"Descargar como GeoJSON","download_headline":"Descargar CSV global","download_headline_title":"Descargar datos globales como CSV","download_source":"Descargar CSV fuente","download_source_title":"Descargar los datos fuente como CSV","download_table":"Descargar la tabla CSV","edit":"Editar","edit_data":"Editar datos","edit_metadata":"Editar metadatos","footnote":"Nota","geographical_area":"Área geográfica","global_metadata":"Metadatos globales","global_metadata_blurb":"Esta tabla proporciona información sobre los metadatos para los indicadores de los ODS tal como los define la Comisión de Estadística de la ONU. <a href=\"https://unstats.un.org/sdgs/metadata/\">La</a> División de Estadística de las Naciones Unidas proporciona <a href=\"https://unstats.un.org/sdgs/metadata/\">los metadatos globales completos</a> .","legend_help":"Haga clic en la leyenda para eliminar líneas individuales del gráfico.","loading":"Cargando","loading_map":"Cargando mapa","map":"Mapa","national_metadata":"Metadatos nacionales","national_metadata_blurb":"Esta tabla proporciona metadatos para el indicador real disponible a partir de las estadísticas de %country_name más cercanas al correspondiente indicador global de SDG. Tenga en cuenta que incluso cuando el indicador global de ODS esté totalmente disponible a partir de las estadísticas de %country_adjective, se debe consultar esta tabla para obtener información sobre la metodología nacional y otra información de metadatos específicos de %country_adjective.","no_data_hint":"No hay opciones disponibles debido a los filtros anteriores","select_all":"Seleccionar todo","series":"Serie","series_help":"Elija categorías de las listas desplegables a continuación para ver diferentes desgloses de los datos. Algunos no estarán disponibles hasta que se elija un nivel superior.","source":"Fuente","sources":"Fuentes","sub_categories":"Subcategorías","table":"Tabla","unit_of_measurement":"Unidad de medida","units_type":"Tipo de unidades","variable_hint":"Disponible cuando se selecciona '%field'","view_indicator_list":"Ver la lista de indicadores de este objetivo"};</script>
+<script>translations['indicator'] = {"chart":"Chart","clear_all":"Clear all","clear_selections":"Clear selections","data_not_available":"This data is not available. Please choose alternative data to display.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download Chart CSV","download_chart_image":"Download Chart Image","download_chart_image_title":"Download chart as image","download_csv":"Download CSV","download_csv_title":"Download as CSV","download_geojson":"Download GeoJSON","download_geojson_title":"Download as GeoJSON","download_headline":"Download Headline CSV","download_headline_title":"Download headline data as CSV","download_source":"Download Source CSV","download_source_title":"Download source data as CSV","download_table":"Download Table CSV","edit":"Edit","edit_data":"Edit Data","edit_metadata":"Edit Metadata","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from %country_name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country_adjective statistics, this table should be consulted for information on national methodology and other %country_adjective-specific metadata information.","no_data_hint":"No options available because of filters above","select_all":"Select all","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","sub_categories":"Sub-categories","table":"Table","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
 
 <script>translations['data'] = null;</script>
 
@@ -306,9 +367,9 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/open-sdg-site-starter/">Inicio</a></li>
-  <li><a href="/open-sdg-site-starter/9" title="Construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible y fomentar la innovación">Meta 9</a></li>
-  <li class="active">Indicador 9.a.1</li>
+  <li><a href="/open-sdg-site-starter/">Home</a></li>
+  <li><a href="/open-sdg-site-starter/9" title="Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation">Goal 9</a></li>
+  <li class="active">Indicator 9.a.1</li>
   
 </ol>
 
@@ -317,15 +378,15 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-        <a href="/open-sdg-site-starter/9" title="Ver la lista de indicadores de este objetivo">
-          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" alt="Industria, Innovación e Infraestructura - Meta 9" id="goal-9"/>
+        <a href="/open-sdg-site-starter/9" title="View this goal's indicator list">
+          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/9.png" alt="Industry, innovation and infrastructure - Goal 9" id="goal-9"/>
         </a>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
         <div>
           <h1>
-            Indicador 9.a.1
-            <span class="lead-copy">Total de apoyo internacional oficial (asistencia oficial para el desarrollo más otras corrientes oficiales de recursos) destinado a la infraestructura</span>
+            Indicator 9.a.1
+            <span class="lead-copy">Total official international support (official development assistance plus other official flows) to infrastructure</span>
           </h1>
         </div>
       </div>
@@ -349,7 +410,7 @@ var translations = {
   data-indicatorid='indicator_9-a-1'
   data-id="9-a-1"
   data-country="Australia"
-  data-charttitle="Total de apoyo internacional oficial (asistencia oficial para el desarrollo más otras corrientes oficiales de recursos) destinado a la infraestructura"
+  data-charttitle="Total official international support (official development assistance plus other official flows) to infrastructure"
   data-charttitles="null"
   data-measurementunit=""
   data-showdata="false"
@@ -372,27 +433,27 @@ var translations = {
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to National Metadata tab"
->Metadatos nacionales</a>
+>National Metadata</a>
 </li>
 <li role="presentation" class="nav-item">
   <a class="nav-link" data-toggle="tab" id="tab-global" href="#global" aria-controls="global" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Global Metadata tab"
->Metadatos globales</a>
+>Global Metadata</a>
 </li>
 <li role="presentation" class="nav-item">
   <a class="nav-link" data-toggle="tab" id="tab-sources" href="#sources" aria-controls="sources" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Sources tab"
->Fuentes</a>
+>Sources</a>
 </li>
 
 
   
   <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Editar</a>
+    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Edit</a>
   </li>
   
 </ul>
@@ -406,7 +467,7 @@ data-event-label="Change to Sources tab"
       <p>
         
         
-        Esta tabla proporciona metadatos para el indicador real disponible a partir de las estadísticas de Australia más cercanas al correspondiente indicador global de SDG. Tenga en cuenta que incluso cuando el indicador global de ODS esté totalmente disponible a partir de las estadísticas de Australian, se debe consultar esta tabla para obtener información sobre la metodología nacional y otra información de metadatos específicos de Australian.
+        This table provides metadata for the actual indicator available from Australia statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from Australian statistics, this table should be consulted for information on national methodology and other Australian-specific metadata information.
       </p>
       <table class="table">
   
@@ -426,7 +487,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Indicador disponible </th>
+        <th scope="row">Indicator available </th>
         <td>
           
             
@@ -440,7 +501,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Descripción del indicador </th>
+        <th scope="row">Indicator description </th>
         <td>
           
             
@@ -454,7 +515,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Cobertura geográfica </th>
+        <th scope="row">Geographical coverage </th>
         <td>
           
             
@@ -468,7 +529,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Unidad de medida </th>
+        <th scope="row">Unit of measurement </th>
         <td>
           
             
@@ -482,7 +543,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Definiciones </th>
+        <th scope="row">Definitions </th>
         <td>
           
             
@@ -496,7 +557,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Cálculos </th>
+        <th scope="row">Calculations </th>
         <td>
           
             
@@ -510,7 +571,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Otra información </th>
+        <th scope="row">Other information </th>
         <td>
           
             
@@ -524,7 +585,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Seguro de calidad </th>
+        <th scope="row">Quality assurance </th>
         <td>
           
             
@@ -538,7 +599,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Comparabilidad con datos / estándares internacionales </th>
+        <th scope="row">Comparability with international data/standards </th>
         <td>
           
             
@@ -552,7 +613,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Comentarios y limitaciones </th>
+        <th scope="row">Comments and limitations </th>
         <td>
           
             
@@ -580,7 +641,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Datos actualizados por última vez </th>
+        <th scope="row">Data last updated </th>
         <td>
           
             
@@ -590,7 +651,7 @@ data-event-label="Change to Sources tab"
 
             
               <a href="https://github.com/open-sdg/open-sdg-data-starter/commit/c668a137c13a542f480233edcff3476972c2b897" target="_blank">
-                2018-10-20: see changes on GitHub <span class="visuallyhidden">Se abre en una nueva ventana</span>
+                2018-10-20: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -607,7 +668,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Metadatos actualizados por última vez </th>
+        <th scope="row">Metadata last updated </th>
         <td>
           
             
@@ -617,7 +678,7 @@ data-event-label="Change to Sources tab"
 
             
               <a href="https://github.com/open-sdg/open-sdg-data-starter/commit/f1b0e284d6c0d125f9bead6cadad4abde52bb43e" target="_blank">
-                2020-04-16: see changes on GitHub <span class="visuallyhidden">Se abre en una nueva ventana</span>
+                2020-04-16: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -722,7 +783,7 @@ data-event-label="Change to Sources tab"
   <!-- Global Metadata -->
   <div>
     <article>
-      <p>Esta tabla proporciona información sobre los metadatos para los indicadores de los ODS tal como los define la Comisión de Estadística de la ONU. <a href="https://unstats.un.org/sdgs/metadata/">La</a> División de Estadística de las Naciones Unidas proporciona <a href="https://unstats.un.org/sdgs/metadata/">los metadatos globales completos</a> .</p>
+      <p>This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href="https://unstats.un.org/sdgs/metadata/">Complete global metadata</a> is provided by the UN Statistics Division.</p>
       <table class="table">
   
   
@@ -732,10 +793,10 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Nombre del indicador </th>
+        <th scope="row">Indicator name </th>
         <td>
           
-            <p>Total de apoyo internacional oficial (asistencia oficial para el desarrollo más otras corrientes oficiales de recursos) destinado a la infraestructura</p>
+            <p>Total official international support (official development assistance plus other official flows) to infrastructure</p>
 
           
         </td>
@@ -746,7 +807,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Número del indicador </th>
+        <th scope="row">Indicator number </th>
         <td>
           
             <p>9.a.1</p>
@@ -760,10 +821,10 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Nombre de destino </th>
+        <th scope="row">Target name </th>
         <td>
           
-            <p>Facilitar el desarrollo de infraestructuras sostenibles y resilientes en los países en desarrollo mediante un mayor apoyo financiero, tecnológico y técnico a los países africanos, los países menos adelantados, los países en desarrollo sin litoral y los pequeños Estados insulares en desarrollo</p>
+            <p>Facilitate sustainable and resilient infrastructure development in developing countries through enhanced financial, technological and technical support to African countries, least developed countries, landlocked developing countries and small island developing States</p>
 
           
         </td>
@@ -774,7 +835,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Número objetivo </th>
+        <th scope="row">Target number </th>
         <td>
           
             <p>9.a</p>
@@ -788,7 +849,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Descripción del indicador global </th>
+        <th scope="row">Global indicator description </th>
         <td>
           
             <p>Total resource flows for infrastructure, comprising Official Development Assistance (ODA), other official flows (OOF) and private flows</p>
@@ -802,7 +863,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Nivel designado por la ONU </th>
+        <th scope="row">UN designated tier </th>
         <td>
           
             <p>1</p>
@@ -816,7 +877,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Agencia de custodia de la ONU </th>
+        <th scope="row">UN custodian agency </th>
         <td>
           
             <p>Organisation for Economic Co-operation and Development (OECD)</p>
@@ -830,7 +891,7 @@ data-event-label="Change to Sources tab"
       
       
       <tr>
-        <th scope="row">Enlace a los metadatos de la ONU </th>
+        <th scope="row">Link to UN metadata </th>
         <td>
           
             
@@ -840,7 +901,7 @@ data-event-label="Change to Sources tab"
 
             
               <a href="https://unstats.un.org/sdgs/metadata/files/Metadata-09-0A-01.pdf " target="_blank">
-                United Nations Sustainable Development Goals Metadata (PDF 208 KB) <span class="visuallyhidden">Se abre en una nueva ventana</span>
+                United Nations Sustainable Development Goals Metadata (PDF 208 KB) <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -970,11 +1031,11 @@ data-event-label="Change to Sources tab"
   <div role="tabpanel" class="tab-pane" id="edit">
     <div class="edit-container">
   
-  <a class="btn btn-primary" href="http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_9-a-1.csv">Editar datos</a>
+  <a class="btn btn-primary" href="http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_9-a-1.csv">Edit Data</a>
   
 
   
-  <a class="btn btn-primary" href="http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/meta/9-a-1.md">Editar metadatos</a>
+  <a class="btn btn-primary" href="http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/meta/9-a-1.md">Edit Metadata</a>
   
 </div>
 
@@ -994,11 +1055,11 @@ data-event-label="Change to Sources tab"
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
             
               <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
                 
                 </li>
               <li>
@@ -1012,7 +1073,7 @@ data-event-label="Change to Sources tab"
                 
                 </li>
               <li>
-                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Galletas</a>
+                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
@@ -1043,12 +1104,12 @@ data-event-label="Change to Sources tab"
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'ocultar';</script>
+    translations['general']['hide'] = 'hide';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Buscar';</script>
+    translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201124104830'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201124114316'></script>
 
 <script>
 $(function() {

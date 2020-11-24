@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
+  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'es',
+  language: 'en',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Meta 4 - Educación de Calidad - Indicators For The Sustainable Development Goals</title>
+    <title>Goal 4 - Quality education - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201124104830">
+        <link rel="stylesheet" href="/open-sdg-site-starter/assets/css/style.css?v=20201124114316">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,18 +132,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-es layout-goal-by-target-vertical">
+<body class="language-en layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus comentarios.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alfa</strong>
+    <strong class="phase-tag">Alpha</strong>
     
-    Este es un sitio web de desarrollo. Agradecemos sus comentarios.
+    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
   </div>
 </div>
 
@@ -154,11 +154,26 @@ var translations = {
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/open-sdg-site-starter/" id="home">
-        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+        <img src="/open-sdg-site-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
       </a>
 
       <div class="mobile-widgets">
-        <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
+        <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+          <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/es/4/">
+              Español
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+        </div></div>
     </div>
 
     <nav class="navbar navbar-default" id="main-nav">
@@ -167,31 +182,54 @@ var translations = {
         <li id="menuToggle"
             aria-label="Menu toggle. Click to expand or collapse the menu."
             aria-haspopup="true">
-          <button data-target="menu-mobile" aria-expanded="false">Menú</button>
+          <button data-target="menu-mobile" aria-expanded="false">Menu</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/open-sdg-site-starter/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
+    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
+    <a href="/open-sdg-site-starter/about">About</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
+    <a href="/open-sdg-site-starter/guidance">Guidance</a>
     </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news"></a>
-    </li></ul>
+    <a href="/open-sdg-site-starter/news">Updates</a>
+    </li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/es/4/">
+              Español
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+</li></ul>
 
         </li>
         <li id="searchToggle"
             aria-label="Search toggle. Click to expand or collapse the search bar."
             aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Buscar</button>
+          <button data-target="search-mobile" aria-expanded="false">Search</button>
           <div id="search-mobile" class="menu-target">
   <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
-    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
-    <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search-mobile" title="Search" />
+    <label class="sr-only" for="indicator_search-mobile">Search</label>
+    <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -200,26 +238,49 @@ var translations = {
 
       <div id="search" class="menu-target">
   <form action="/open-sdg-site-starter/search">
-    <input type="text" name="q" id="indicator_search" title="Buscar" />
-    <label class="sr-only" for="indicator_search">Buscar</label>
-    <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input type="text" name="q" id="indicator_search" title="Search" />
+    <label class="sr-only" for="indicator_search">Search</label>
+    <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/open-sdg-site-starter/goals">Metas</a>
+    <a href="/open-sdg-site-starter/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/reporting-status">Estado de informes</a>
+    <a href="/open-sdg-site-starter/reporting-status">Reporting Status</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/about">Acerca de</a>
+    <a href="/open-sdg-site-starter/about">About</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/guidance">Dirección</a>
+    <a href="/open-sdg-site-starter/guidance">Guidance</a>
     </li><li class="nav-link ">
     <a href="/open-sdg-site-starter/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/open-sdg-site-starter/news"></a>
-    </li></ul>
+    <a href="/open-sdg-site-starter/news">Updates</a>
+    </li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/open-sdg-site-starter/es/4/">
+              Español
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+</li></ul>
 
 
     </nav>
@@ -232,8 +293,8 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/open-sdg-site-starter/">Inicio</a></li>
-  <li class="active">Meta 4</li>
+  <li><a href="/open-sdg-site-starter/">Home</a></li>
+  <li class="active">Goal 4</li>
   
 </ol>
 
@@ -243,11 +304,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/4.png" alt="Educación de Calidad - Meta 4" id="goal-4"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/4.png" alt="Quality education - Goal 4" id="goal-4"/>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Meta 4: </span>Garantizar una educación inclusiva y equitativa de calidad y promover oportunidades de aprendizaje permanente para todos
+          <span class="hidden-sm hidden-md hidden-lg">Goal 4: </span>Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all
         </h1>
       </div>
     </div>
@@ -266,9 +327,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 4.1</span>
+          <span class="target-number"><span class="sr-only">Target</span> 4.1</span>
         </h3>
-        <span class="target-name">De aquí a 2030, asegurar que todas las niñas y todos los niños terminen la enseñanza primaria y secundaria, que ha de ser gratuita, equitativa y de calidad y producir resultados de aprendizaje pertinentes y efectivos</span>
+        <span class="target-name">By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes</span>
         
 
           
@@ -282,12 +343,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 4.1.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 4.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/4-1-1">Proporción de niños, niñas y adolescentes que, a) en los cursos segundo y tercero, b) al final de la enseñanza primaria y c) al final de la enseñanza secundaria inferior, han alcanzado al menos un nivel mínimo de competencia en i) lectura y ii) matemáticas, desglosada por sexo</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/4-1-1">Proportion of children and young people (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -297,9 +358,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 4.2</span>
+          <span class="target-number"><span class="sr-only">Target</span> 4.2</span>
         </h3>
-        <span class="target-name">De aquí a 2030, asegurar que todas las niñas y todos los niños tengan acceso a servicios de atención y desarrollo en la primera infancia y educación preescolar de calidad, a fin de que estén preparados para la enseñanza primaria</span>
+        <span class="target-name">By 2030, ensure that all girls and boys have access to quality early childhood development, care and pre‐primary education so that they are ready for primary education</span>
         
 
           
@@ -313,12 +374,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 4.2.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 4.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/4-2-1">Proporción de niños menores de 5 años cuyo desarrollo es adecuado en cuanto a la salud, el aprendizaje y el bienestar psicosocial, desglosada por sexo</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/4-2-1">Proportion of children under 5 years of age who are developmentally on track in health, learning and psychosocial well-being, by sex</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -335,43 +396,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 4.2.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 4.2.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/4-2-2">Tasa de participación en el aprendizaje organizado (un año antes de la edad oficial de ingreso en la enseñanza primaria), desglosada por sexo</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/4-2-2">Participation rate in organized learning (one year before the official primary entry age), by sex</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
-            </span>
-            
-          </div>
-        
-      </div>
-    
-      
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 4.3</span>
-        </h3>
-        <span class="target-name">De aquí a 2030, asegurar el acceso igualitario de todos los hombres y las mujeres a una formación técnica, profesional y superior de calidad, incluida la enseñanza universitaria</span>
-        
-
-          
-          
-          
-          
-          
-          
-          
-          
-
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 4.3.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/4-3-1">Tasa de participación de los jóvenes y adultos en la enseñanza y formación académica y no académica en los últimos 12 meses, desglosada por sexo</a></span>
-            <span class="sr-only">Indicator status</span>
-            <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -381,9 +411,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 4.4</span>
+          <span class="target-number"><span class="sr-only">Target</span> 4.3</span>
         </h3>
-        <span class="target-name">De aquí a 2030, aumentar considerablemente el número de jóvenes y adultos que tienen las competencias necesarias, en particular técnicas y profesionales, para acceder al empleo, el trabajo decente y el emprendimiento</span>
+        <span class="target-name">By 2030, ensure equal access for all women and men to affordable and quality technical, vocational and tertiary education, including university</span>
         
 
           
@@ -397,12 +427,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 4.4.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 4.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/4-4-1">Proporción de jóvenes y adultos con competencias en tecnología de la información y las comunicaciones (TIC), desglosada por tipo de competencia técnica</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/4-3-1">Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -412,9 +442,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 4.5</span>
+          <span class="target-number"><span class="sr-only">Target</span> 4.4</span>
         </h3>
-        <span class="target-name">De aquí a 2030, eliminar las disparidades de género en la educación y asegurar el acceso igualitario a todos los niveles de la enseñanza y la formación profesional para las personas vulnerables, incluidas las personas con discapacidad, los pueblos indígenas y los niños en situaciones de vulnerabilidad</span>
+        <span class="target-name">By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship</span>
         
 
           
@@ -428,12 +458,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 4.5.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 4.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/4-5-1">Índices de paridad (entre mujeres y hombres, zonas rurales y urbanas, quintiles de riqueza superior e inferior y grupos como los discapacitados, los pueblos indígenas y los afectados por los conflictos, a medida que se disponga de datos) para todos los indicadores educativos de esta lista que puedan desglosarse</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/4-4-1">Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -443,9 +473,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 4.6</span>
+          <span class="target-number"><span class="sr-only">Target</span> 4.5</span>
         </h3>
-        <span class="target-name">De aquí a 2030, asegurar que todos los jóvenes y una proporción considerable de los adultos, tanto hombres como mujeres, estén alfabetizados y tengan nociones elementales de aritmética</span>
+        <span class="target-name">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</span>
         
 
           
@@ -459,12 +489,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 4.6.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 4.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/4-6-1">Proporción de la población en un grupo de edad determinado que ha alcanzado al menos un nivel fijo de competencia funcional en a) alfabetización y b) nociones elementales de aritmética, desglosada por sexo</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/4-5-1">Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -474,9 +504,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 4.7</span>
+          <span class="target-number"><span class="sr-only">Target</span> 4.6</span>
         </h3>
-        <span class="target-name">De aquí a 2030, asegurar que todos los alumnos adquieran los conocimientos teóricos y prácticos necesarios para promover el desarrollo sostenible, entre otras cosas mediante la educación para el desarrollo sostenible y los estilos de vida sostenibles, los derechos humanos, la igualdad de género, la promoción de una cultura de paz y no violencia, la ciudadanía mundial y la valoración de la diversidad cultural y la contribución de la cultura al desarrollo sostenible</span>
+        <span class="target-name">By 2030, ensure that all youth and a substantial proportion of adults, both men and women, achieve literacy and numeracy</span>
         
 
           
@@ -490,12 +520,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 4.7.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 4.6.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/4-7-1">Grado en que i) la educación para la ciudadanía mundial y ii) la educación para el desarrollo sostenible, incluida la igualdad de género y los derechos humanos, se incorporan en todos los niveles de a) las políticas nacionales de educación, b) los planes de estudio, c) la formación del profesorado y d) la evaluación de los estudiantes</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/4-6-1">Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -505,9 +535,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 4.a</span>
+          <span class="target-number"><span class="sr-only">Target</span> 4.7</span>
         </h3>
-        <span class="target-name">Construir y adecuar instalaciones educativas que tengan en cuenta las necesidades de los niños y las personas con discapacidad y las diferencias de género, y que ofrezcan entornos de aprendizaje seguros, no violentos, inclusivos y eficaces para todos</span>
+        <span class="target-name">By 2030, ensure that all learners acquire the knowledge and skills needed to promote sustainable development, including, among others, through education for sustainable development and sustainable lifestyles, human rights, gender equality, promotion of a culture of peace and non-violence, global citizenship and appreciation of cultural diversity and of culture’s contribution to sustainable development</span>
         
 
           
@@ -521,12 +551,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 4.a.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 4.7.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/4-a-1">Proporción de escuelas con acceso a a) electricidad, b) Internet con fines pedagógicos, c) computadoras con fines pedagógicos, d) infraestructura y materiales adaptados a los estudiantes con discapacidad, e) suministro básico de agua potable, f) instalaciones de saneamiento básicas separadas por sexo y g) instalaciones básicas para el lavado de manos (según las definiciones de los indicadores WASH)</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/4-7-1">Extent to which (i) global citizenship education and (ii) education for sustainable development, including gender equality and human rights, are mainstreamed at all levels in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -536,9 +566,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 4.b</span>
+          <span class="target-number"><span class="sr-only">Target</span> 4.a</span>
         </h3>
-        <span class="target-name">De aquí a 2020, aumentar considerablemente a nivel mundial el número de becas disponibles para los países en desarrollo, en particular los países menos adelantados, los pequeños Estados insulares en desarrollo y los países africanos, a fin de que sus estudiantes puedan matricularse en programas de enseñanza superior, incluidos programas de formación profesional y programas técnicos, científicos, de ingeniería y de tecnología de la información y las comunicaciones, de países desarrollados y otros países en desarrollo</span>
+        <span class="target-name">Build and upgrade education facilities that are child, disability and gender sensitive and provide safe, non-violent, inclusive and effective learning environments for all</span>
         
 
           
@@ -552,12 +582,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 4.b.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 4.a.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/4-b-1">Volumen de la asistencia oficial para el desarrollo destinada a becas, desglosado por sector y tipo de estudio</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/4-a-1">Proportion of schools with access to (a) electricity; (b) the Internet for pedagogical purposes; (c) computers for pedagogical purposes; (d) adapted infrastructure and materials for students with disabilities; (e) basic drinking water; (f) single-sex basic sanitation facilities; and (g) basic handwashing facilities (as per the WASH indicator definitions)</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
             </span>
             
           </div>
@@ -567,9 +597,9 @@ var translations = {
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 4.c</span>
+          <span class="target-number"><span class="sr-only">Target</span> 4.b</span>
         </h3>
-        <span class="target-name">De aquí a 2030, aumentar considerablemente la oferta de docentes calificados, incluso mediante la cooperación internacional para la formación de docentes en los países en desarrollo, especialmente los países menos adelantados y los pequeños Estados insulares en desarrollo</span>
+        <span class="target-name">By 2020, substantially expand globally the number of scholarships available to developing countries, in particular least developed countries, small island developing States and African countries, for enrolment in higher education, including vocational training and information and communications technology, technical, engineering and scientific programmes, in developed countries and other developing countries</span>
         
 
           
@@ -583,12 +613,43 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 4.c.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 4.b.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-site-starter/4-c-1">Proporción del profesorado de educación a) preescolar, b) primaria, c) secundaria inferior y d) secundaria superior que ha recibido al menos la mínima formación docente organizada previa al empleo o en el empleo (por ejemplo, formación pedagógica) exigida para impartir enseñanza a cada nivel en un país determinado</a></span>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/4-b-1">Volume of official development assistance flows for scholarships by sector and type of study</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
-              Explorando fuentes de datos
+              Exploring data sources
+            </span>
+            
+          </div>
+        
+      </div>
+    
+      
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Target</span> 4.c</span>
+        </h3>
+        <span class="target-name">By 2030, substantially increase the supply of qualified teachers, including through international cooperation for teacher training in developing countries, especially least developed countries and small island developing States</span>
+        
+
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 4.c.1</span>
+            </h4>
+            <span class="indicator-name"><a href="/open-sdg-site-starter/4-c-1">Proportion of teachers in: (a) pre-primary; (b) primary; (c) lower secondary; and (d) upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given country</a></span>
+            <span class="sr-only">Indicator status</span>
+            <span class="status notstarted">
+              Exploring data sources
             </span>
             
           </div>
@@ -604,11 +665,11 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
             
               <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
                 
                 </li>
               <li>
@@ -622,7 +683,7 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Galletas</a>
+                <a href="/open-sdg-site-starter/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
@@ -653,12 +714,12 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'ocultar';</script>
+    translations['general']['hide'] = 'hide';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Buscar';</script>
+    translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201124104830'></script>
+<script src='/open-sdg-site-starter/assets/js/sdg.js?v=20201124114316'></script>
 
 <script>
 $(function() {
