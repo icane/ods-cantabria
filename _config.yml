@@ -19,7 +19,7 @@ metadata_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/
 #
 # The list of languages that are translated. The first one is the default.
 languages:
-  - en
+#  - en
   - es
 #
 # That's enough for the Quick Start! The remaining settings can be configured later.
