@@ -1,7 +1,7 @@
 ---
 layout: news
 title: News & Events
-language: en
+language: es
 permalink: /news/
 ---
 
