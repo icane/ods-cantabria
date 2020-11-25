@@ -1,6 +1,6 @@
 ---
 title: Guidance
-language: en
+language: es
 permalink: /guidance/
 layout: page
 ---
