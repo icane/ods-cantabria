@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/en',
+  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'en',
+  language: 'es',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -92,7 +92,7 @@ var translations = {
 
         <title>
           
-            Goal 8 - Decent jobs and economic growth
+            Meta 8 - Trabajo Decente y Crecimiento Económico
           
         </title>
 
@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125135935">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125161341">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -133,18 +133,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-goal-by-target-vertical">
+<body class="language-es layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert" role="alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
   </div>
 </div>
 
@@ -154,21 +154,11 @@ var translations = {
   <div class="container">
 
     <a class="navbar-brand" href="/ods-cantabria/" id="home">
-      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
     </a>
 
   <div class='hidden visible-xs float-right'>
-    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-      <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/8/">Español</a></li></ul>
-
-    </div></div>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
@@ -178,36 +168,26 @@ var translations = {
             aria-haspopup="true"
             aria-expanded="false">
           <span data-target="menu" tabindex="0"
-          role="navigation">Menu</span>
+          role="navigation">Menú</span>
         </li>
-        <li><span data-target="search">Search</span></li>
+        <li><span data-target="search">Buscar</span></li>
       </ul>
 
       <div id="search" class="menu-target">
   <form action="/ods-cantabria/search">
-    <input name="q" id="indicator_search" title="Search" />
+    <input name="q" id="indicator_search" title="Buscar" />
     <label for="indicator_search">
-      <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Search:</span>
+      <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Buscar:</span>
     </label>
   </form>
 </div>
 
       
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-            <a href="/ods-cantabria/goals">Goals</a>
+            <a href="/ods-cantabria/goals">Metas</a>
           </li><li class="nav-link ">
-            <a href="/ods-cantabria/reporting-status">Reporting Status</a>
-          </li><li>
-          <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/8/">Español</a></li></ul>
-
-        </li></ul>
+            <a href="/ods-cantabria/reporting-status">Estado de informes</a>
+          </li></ul>
 
       
 
@@ -221,11 +201,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/8.png" alt="Decent jobs and economic growth - Goal 8" />
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/8.png" alt="Trabajo Decente y Crecimiento Económico - Meta 8" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 8: </span>Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all
+          <span class="hidden-sm hidden-md hidden-lg">Meta 8: </span>Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos
         </h1>
       </div>
     </div>
@@ -237,8 +217,8 @@ var translations = {
   
 
   <ol class="breadcrumb">
-    <li><a href="/ods-cantabria/">Home</a></li>
-    <li class="active">Goal 8</li>
+    <li><a href="/ods-cantabria/">Inicio</a></li>
+    <li class="active">Meta 8</li>
   </ol>
 
   <div class="container">
@@ -252,7 +232,7 @@ var translations = {
           8.1
         </div>
         <div class="col-md-11">
-          Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries
+          Mantener el crecimiento económico per cápita de conformidad con las circunstancias nacionales y, en particular, un crecimiento del producto interno bruto de al menos el 7% anual en los países menos adelantados
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -268,11 +248,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.1.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-1-1">Annual growth rate of real GDP per capita</a>
+            <a href="/ods-cantabria/8-1-1">Tasa de crecimiento anual del PIB real per cápita</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -286,7 +266,7 @@ var translations = {
           8.2
         </div>
         <div class="col-md-11">
-          Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors
+          Lograr niveles más elevados de productividad económica mediante la diversificación, la modernización tecnológica y la innovación, entre otras cosas centrándose en los sectores con gran valor añadido y un uso intensivo de la mano de obra
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -302,11 +282,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.2.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-2-1">Annual growth rate of real GDP per employed person</a>
+            <a href="/ods-cantabria/8-2-1">Tasa de crecimiento anual del PIB real por persona empleada</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -320,7 +300,7 @@ var translations = {
           8.3
         </div>
         <div class="col-md-11">
-          Promote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services
+          Promover políticas orientadas al desarrollo que apoyen las actividades productivas, la creación de puestos de trabajo decentes, el emprendimiento, la creatividad y la innovación, y fomentar la formalización y el crecimiento de las microempresas y las pequeñas y medianas empresas, incluso mediante el acceso a servicios financieros
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -336,11 +316,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.3.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-3-1">Proportion of informal employment in non‐agriculture employment, by sex</a>
+            <a href="/ods-cantabria/8-3-1">Proporción de empleo informal en el sector no agrícola, desglosada por sexo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -354,7 +334,7 @@ var translations = {
           8.4
         </div>
         <div class="col-md-11">
-          Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10‐Year Framework of Programmes on Sustainable Consumption and Production, with developed countries taking the lead
+          Mejorar progresivamente, de aquí a 2030, la producción y el consumo eficientes de los recursos mundiales y procurar desvincular el crecimiento económico de la degradación del medio ambiente, conforme al Marco Decenal de Programas sobre Modalidades de Consumo y Producción Sostenibles, empezando por los países desarrollados
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -370,11 +350,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.4.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-4-1">Material footprint, material footprint per capita, and material footprint per GDP</a>
+            <a href="/ods-cantabria/8-4-1">Huella material en términos absolutos, huella material per cápita y huella material por PIB</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -393,11 +373,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.4.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-4-2">Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP</a>
+            <a href="/ods-cantabria/8-4-2">Consumo material interno en términos absolutos, consumo material interno per cápita y consumo material interno por PIB</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -411,7 +391,7 @@ var translations = {
           8.5
         </div>
         <div class="col-md-11">
-          By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value
+          De aquí a 2030, lograr el empleo pleno y productivo y el trabajo decente para todas las mujeres y los hombres, incluidos los jóvenes y las personas con discapacidad, así como la igualdad de remuneración por trabajo de igual valor
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -427,11 +407,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.5.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-5-1">Average hourly earnings of female and male employees, by occupation, age and persons with disabilities</a>
+            <a href="/ods-cantabria/8-5-1">Ingreso medio por hora de empleadas y empleados, desglosado por ocupación, edad y personas con discapacidad</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -450,11 +430,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.5.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-5-2">Unemployment rate, by sex, age and persons with disabilities</a>
+            <a href="/ods-cantabria/8-5-2">Tasa de desempleo, desglosada por sexo, edad y personas con discapacidad</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -468,7 +448,7 @@ var translations = {
           8.6
         </div>
         <div class="col-md-11">
-          By 2020, substantially reduce the proportion of youth not in employment, education or training
+          De aquí a 2020, reducir considerablemente la proporción de jóvenes que no están empleados y no cursan estudios ni reciben capacitación
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -484,11 +464,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.6.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-6-1">Proportion of youth (aged 15–24 years) not in education, employment or training</a>
+            <a href="/ods-cantabria/8-6-1">Proporción de jóvenes (entre 15 y 24 años) que no cursan estudios, no están empleados ni reciben capacitación</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -502,7 +482,7 @@ var translations = {
           8.7
         </div>
         <div class="col-md-11">
-          Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms
+          Adoptar medidas inmediatas y eficaces para erradicar el trabajo forzoso, poner fin a las formas contemporáneas de esclavitud y la trata de personas y asegurar la prohibición y eliminación de las peores formas de trabajo infantil, incluidos el reclutamiento y la utilización de niños soldados, y, de aquí a 2025, poner fin al trabajo infantil en todas sus formas
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -518,11 +498,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.7.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-7-1">Proportion and number of children aged 5–17 years engaged in child labour, by sex and age</a>
+            <a href="/ods-cantabria/8-7-1">Proporción y número de niños de entre 5 y 17 años que realizan trabajo infantil, desglosados por sexo y edad</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -536,7 +516,7 @@ var translations = {
           8.8
         </div>
         <div class="col-md-11">
-          Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment
+          Proteger los derechos laborales y promover un entorno de trabajo seguro y sin riesgos para todos los trabajadores, incluidos los trabajadores migrantes, en particular las mujeres migrantes y las personas con empleos precarios
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -552,11 +532,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.8.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-8-1">Frequency rates of fatal and non-fatal occupational injuries, by sex and migrant status</a>
+            <a href="/ods-cantabria/8-8-1">Tasas de frecuencia de las lesiones ocupacionales mortales y no mortales, desglosadas por sexo y estatus migratorio</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -575,11 +555,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.8.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-8-2">Level of national compliance with labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status</a>
+            <a href="/ods-cantabria/8-8-2">Nivel de cumplimiento nacional de los derechos laborales (libertad de asociación y negociación colectiva) con arreglo a las fuentes textuales de la Organización Internacional del Trabajo (OIT) y la legislación interna, desglosado por sexo y estatus migratorio</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -593,7 +573,7 @@ var translations = {
           8.9
         </div>
         <div class="col-md-11">
-          By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products
+          De aquí a 2030, elaborar y poner en práctica políticas encaminadas a promover un turismo sostenible que cree puestos de trabajo y promueva la cultura y los productos locales
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -609,11 +589,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.9.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-9-1">Tourism direct GDP as a proportion of total GDP and in growth rate</a>
+            <a href="/ods-cantabria/8-9-1">PIB generado directamente por el turismo en proporción al PIB total y a la tasa de crecimiento</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -632,11 +612,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.9.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-9-2">Proportion of jobs in sustainable tourism industries out of total tourism jobs</a>
+            <a href="/ods-cantabria/8-9-2">Proporción de empleos en el sector del turismo sostenible respecto del total de empleos del turismo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -650,7 +630,7 @@ var translations = {
           8.a
         </div>
         <div class="col-md-11">
-          Increase Aid for Trade support for developing countries, in particular least developed countries, including through the Enhanced Integrated Framework for Trade-related Technical Assistance to Least Developed Countries
+          Aumentar el apoyo a la iniciativa de ayuda para el comercio en los países en desarrollo, en particular los países menos adelantados, incluso mediante el Marco Integrado Mejorado para la Asistencia Técnica a los Países Menos Adelantados en Materia de Comercio
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -666,11 +646,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.a.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-a-1">Aid for Trade commitments and disbursements</a>
+            <a href="/ods-cantabria/8-a-1">Compromisos y desembolsos en relación con la iniciativa Ayuda para el Comercio</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -684,7 +664,7 @@ var translations = {
           8.b
         </div>
         <div class="col-md-11">
-          By 2020, develop and operationalize a global strategy for youth employment and implement the Global Jobs Pact of the International Labour Organization
+          De aquí a 2020, desarrollar y poner en marcha una estrategia mundial para el empleo de los jóvenes y aplicar el Pacto Mundial para el Empleo de la Organización Internacional del Trabajo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -700,11 +680,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.b.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-b-1">Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy</a>
+            <a href="/ods-cantabria/8-b-1">Existencia de una estrategia nacional organizada y en marcha para el empleo de los jóvenes, como estrategia independiente o como parte de una estrategia nacional de empleo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -718,7 +698,7 @@ var translations = {
           8.10
         </div>
         <div class="col-md-11">
-          Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all
+          Fortalecer la capacidad de las instituciones financieras nacionales para fomentar y ampliar el acceso a los servicios bancarios, financieros y de seguros para todos
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -734,11 +714,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.10.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-10-1">(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults</a>
+            <a href="/ods-cantabria/8-10-1">a) Número de sucursales de bancos comerciales por cada 100.000 adultos y b) número de cajeros automáticos por cada 100.000 adultos</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -757,11 +737,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">8.10.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/8-10-2">Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider</a>
+            <a href="/ods-cantabria/8-10-2">Proporción de adultos (a partir de 15 años de edad) que tienen una cuenta en un banco u otra institución financiera o un proveedor de servicios de dinero móvil</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -778,12 +758,12 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
               
                 <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
               
@@ -831,12 +811,12 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201125135935'></script><script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201125161341'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

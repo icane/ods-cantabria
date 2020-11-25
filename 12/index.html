@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/en',
+  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'en',
+  language: 'es',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -92,7 +92,7 @@ var translations = {
 
         <title>
           
-            Goal 12 - Responsible consumption and production
+            Meta 12 - Producción y Consumo Responsables
           
         </title>
 
@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125135935">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125161341">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -133,18 +133,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-goal-by-target-vertical">
+<body class="language-es layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert" role="alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
   </div>
 </div>
 
@@ -154,21 +154,11 @@ var translations = {
   <div class="container">
 
     <a class="navbar-brand" href="/ods-cantabria/" id="home">
-      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
     </a>
 
   <div class='hidden visible-xs float-right'>
-    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-      <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/12/">Español</a></li></ul>
-
-    </div></div>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
@@ -178,36 +168,26 @@ var translations = {
             aria-haspopup="true"
             aria-expanded="false">
           <span data-target="menu" tabindex="0"
-          role="navigation">Menu</span>
+          role="navigation">Menú</span>
         </li>
-        <li><span data-target="search">Search</span></li>
+        <li><span data-target="search">Buscar</span></li>
       </ul>
 
       <div id="search" class="menu-target">
   <form action="/ods-cantabria/search">
-    <input name="q" id="indicator_search" title="Search" />
+    <input name="q" id="indicator_search" title="Buscar" />
     <label for="indicator_search">
-      <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Search:</span>
+      <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Buscar:</span>
     </label>
   </form>
 </div>
 
       
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-            <a href="/ods-cantabria/goals">Goals</a>
+            <a href="/ods-cantabria/goals">Metas</a>
           </li><li class="nav-link ">
-            <a href="/ods-cantabria/reporting-status">Reporting Status</a>
-          </li><li>
-          <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/12/">Español</a></li></ul>
-
-        </li></ul>
+            <a href="/ods-cantabria/reporting-status">Estado de informes</a>
+          </li></ul>
 
       
 
@@ -221,11 +201,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/12.png" alt="Responsible consumption and production - Goal 12" />
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/12.png" alt="Producción y Consumo Responsables - Meta 12" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 12: </span>Ensure sustainable consumption and production patterns
+          <span class="hidden-sm hidden-md hidden-lg">Meta 12: </span>Garantizar modalidades de consumo y producción sostenibles
         </h1>
       </div>
     </div>
@@ -237,8 +217,8 @@ var translations = {
   
 
   <ol class="breadcrumb">
-    <li><a href="/ods-cantabria/">Home</a></li>
-    <li class="active">Goal 12</li>
+    <li><a href="/ods-cantabria/">Inicio</a></li>
+    <li class="active">Meta 12</li>
   </ol>
 
   <div class="container">
@@ -252,7 +232,7 @@ var translations = {
           12.1
         </div>
         <div class="col-md-11">
-          Implement the 10‐Year Framework of Programmes on Sustainable Consumption and Production Patterns, all countries taking action, with developed countries taking the lead, taking into account the development and capabilities of developing countries
+          Aplicar el Marco Decenal de Programas sobre Modalidades de Consumo y Producción Sostenibles, con la participación de todos los países y bajo el liderazgo de los países desarrollados, teniendo en cuenta el grado de desarrollo y las capacidades de los países en desarrollo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -268,11 +248,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.1.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-1-1">Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies</a>
+            <a href="/ods-cantabria/12-1-1">Número de países que incluyen como prioridad o meta en las políticas nacionales planes de acción nacionales sobre el consumo y la producción sostenibles</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -286,7 +266,7 @@ var translations = {
           12.2
         </div>
         <div class="col-md-11">
-          By 2030, achieve the sustainable management and efficient use of natural resources
+          De aquí a 2030, lograr la gestión sostenible y el uso eficiente de los recursos naturales
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -302,11 +282,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.2.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-2-1">Material footprint, material footprint per capita, and material footprint per GDP</a>
+            <a href="/ods-cantabria/12-2-1">Huella material en términos absolutos, huella material per cápita y huella material por PIB</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -325,11 +305,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.2.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-2-2">Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP</a>
+            <a href="/ods-cantabria/12-2-2">Consumo material interno en términos absolutos, consumo material interno per cápita y consumo material interno por PIB</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -343,7 +323,7 @@ var translations = {
           12.3
         </div>
         <div class="col-md-11">
-          By 2030, halve per capita global food waste at the retail and consumer levels and reduce food losses along production and supply chains, including post-harvest losses
+          De aquí a 2030, reducir a la mitad el desperdicio de alimentos per cápita mundial en la venta al por menor y a nivel de los consumidores y reducir las pérdidas de alimentos en las cadenas de producción y suministro, incluidas las pérdidas posteriores a la cosecha
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -359,11 +339,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.3.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-3-1">Global food loss index</a>
+            <a href="/ods-cantabria/12-3-1">Índice mundial de pérdidas de alimentos</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -377,7 +357,7 @@ var translations = {
           12.4
         </div>
         <div class="col-md-11">
-          By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment
+          De aquí a 2020, lograr la gestión ecológicamente racional de los productos químicos y de todos los desechos a lo largo de su ciclo de vida, de conformidad con los marcos internacionales convenidos, y reducir significativamente su liberación a la atmósfera, el agua y el suelo a fin de minimizar sus efectos adversos en la salud humana y el medio ambiente
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -393,11 +373,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.4.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-4-1">Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement</a>
+            <a href="/ods-cantabria/12-4-1">Número de partes en los acuerdos ambientales multilaterales internacionales sobre desechos peligrosos y otros productos químicos que cumplen sus compromisos y obligaciones de transmitir información como se exige en cada uno de esos acuerdos</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -416,11 +396,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.4.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-4-2">Hazardous waste generated per capita and proportion of hazardous waste treated, by type of treatment</a>
+            <a href="/ods-cantabria/12-4-2">Desechos peligrosos generados per cápita y proporción de desechos peligrosos tratados, desglosados por tipo de tratamiento</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -434,7 +414,7 @@ var translations = {
           12.5
         </div>
         <div class="col-md-11">
-          By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse
+          De aquí a 2030, reducir considerablemente la generación de desechos mediante actividades de prevención, reducción, reciclado y reutilización
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -450,11 +430,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.5.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-5-1">National recycling rate, tons of material recycled</a>
+            <a href="/ods-cantabria/12-5-1">Tasa nacional de reciclado, en toneladas de material reciclado</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -468,7 +448,7 @@ var translations = {
           12.6
         </div>
         <div class="col-md-11">
-          Encourage companies, especially large and transnational companies, to adopt sustainable practices and to integrate sustainability information into their reporting cycle
+          Alentar a las empresas, en especial las grandes empresas y las empresas transnacionales, a que adopten prácticas sostenibles e incorporen información sobre la sostenibilidad en su ciclo de presentación de informes
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -484,11 +464,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.6.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-6-1">Number of companies publishing sustainability reports</a>
+            <a href="/ods-cantabria/12-6-1">Número de empresas que publican informes sobre sostenibilidad</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -502,7 +482,7 @@ var translations = {
           12.7
         </div>
         <div class="col-md-11">
-          Promote public procurement practices that are sustainable, in accordance with national policies and priorities
+          Promover prácticas de adquisición pública que sean sostenibles, de conformidad con las políticas y prioridades nacionales
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -518,11 +498,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.7.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-7-1">Number of countries implementing sustainable public procurement policies and action plans</a>
+            <a href="/ods-cantabria/12-7-1">Número de países que aplican políticas y planes de acción sostenibles en materia de adquisiciones públicas</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -536,7 +516,7 @@ var translations = {
           12.8
         </div>
         <div class="col-md-11">
-          By 2030, ensure that people everywhere have the relevant information and awareness for sustainable development and lifestyles in harmony with nature
+          De aquí a 2030, asegurar que las personas de todo el mundo tengan la información y los conocimientos pertinentes para el desarrollo sostenible y los estilos de vida en armonía con la naturaleza
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -552,11 +532,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.8.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-8-1">Extent to which (i) global citizenship education and (ii) education for sustainable development (including climate change education) are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment</a>
+            <a href="/ods-cantabria/12-8-1">Grado en que i) la educación para la ciudadanía mundial y ii) la educación para el desarrollo sostenible (incluida la educación sobre el cambio climático) se incorporan en a) las políticas nacionales de educación, b) los planes de estudio, c) la formación del profesorado y d) la evaluación de los estudiantes</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -570,7 +550,7 @@ var translations = {
           12.a
         </div>
         <div class="col-md-11">
-          Support developing countries to strengthen their scientific and technological capacity to move towards more sustainable patterns of consumption and production
+          Ayudar a los países en desarrollo a fortalecer su capacidad científica y tecnológica para avanzar hacia modalidades de consumo y producción más sostenibles
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -586,11 +566,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.a.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-a-1">Amount of support to developing countries on research and development for sustainable consumption and production and environmentally sound technologies</a>
+            <a href="/ods-cantabria/12-a-1">Cantidad de apoyo en materia de investigación y desarrollo prestado a los países en desarrollo para el consumo y la producción sostenibles y las tecnologías ecológicamente racionales</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -604,7 +584,7 @@ var translations = {
           12.b
         </div>
         <div class="col-md-11">
-          Develop and implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs and promotes local culture and products
+          Elaborar y aplicar instrumentos para vigilar los efectos en el desarrollo sostenible, a fin de lograr un turismo sostenible que cree puestos de trabajo y promueva la cultura y los productos locales
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -620,11 +600,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.b.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-b-1">Number of sustainable tourism strategies or policies and implemented action plans with agreed monitoring and evaluation tools</a>
+            <a href="/ods-cantabria/12-b-1">Número de estrategias o políticas de turismo sostenible y de planes de acción aplicados que incluyen instrumentos de seguimiento y evaluación convenidos</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -638,7 +618,7 @@ var translations = {
           12.c
         </div>
         <div class="col-md-11">
-          Rationalize inefficient fossil-fuel subsidies that encourage wasteful consumption by removing market distortions, in accordance with national circumstances, including by restructuring taxation and phasing out those harmful subsidies, where they exist, to reflect their environmental impacts, taking fully into account the specific needs and conditions of developing countries and minimizing the possible adverse impacts on their development in a manner that protects the poor and the affected communities
+          Racionalizar los subsidios ineficientes a los combustibles fósiles que fomentan el consumo antieconómico eliminando las distorsiones del mercado, de acuerdo con las circunstancias nacionales, incluso mediante la reestructuración de los sistemas tributarios y la eliminación gradual de los subsidios perjudiciales, cuando existan, para reflejar su impacto ambiental, teniendo plenamente en cuenta las necesidades y condiciones específicas de los países en desarrollo y minimizando los posibles efectos adversos en su desarrollo, de manera que se proteja a los pobres y a las comunidades afectadas
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -654,11 +634,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">12.c.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/12-c-1">Amount of fossil-fuel subsidies per unit of GDP (production and consumption) and as a proportion of total national expenditure on fossil fuels</a>
+            <a href="/ods-cantabria/12-c-1">Cuantía de los subsidios a los combustibles fósiles por unidad de PIB (producción y consumo) y en proporción al total de los gastos nacionales en combustibles fósiles</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -675,12 +655,12 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
               
                 <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
               
@@ -728,12 +708,12 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201125135935'></script><script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201125161341'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

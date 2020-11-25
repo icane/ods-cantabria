@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/en',
+  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'en',
+  language: 'es',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -92,7 +92,7 @@ var translations = {
 
         <title>
           
-            Goal 4 - Quality education
+            Meta 4 - Educación de Calidad
           
         </title>
 
@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125135935">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125161341">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -133,18 +133,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-goal-by-target-vertical">
+<body class="language-es layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert" role="alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
   </div>
 </div>
 
@@ -154,21 +154,11 @@ var translations = {
   <div class="container">
 
     <a class="navbar-brand" href="/ods-cantabria/" id="home">
-      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
     </a>
 
   <div class='hidden visible-xs float-right'>
-    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-      <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/4/">Español</a></li></ul>
-
-    </div></div>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
@@ -178,36 +168,26 @@ var translations = {
             aria-haspopup="true"
             aria-expanded="false">
           <span data-target="menu" tabindex="0"
-          role="navigation">Menu</span>
+          role="navigation">Menú</span>
         </li>
-        <li><span data-target="search">Search</span></li>
+        <li><span data-target="search">Buscar</span></li>
       </ul>
 
       <div id="search" class="menu-target">
   <form action="/ods-cantabria/search">
-    <input name="q" id="indicator_search" title="Search" />
+    <input name="q" id="indicator_search" title="Buscar" />
     <label for="indicator_search">
-      <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Search:</span>
+      <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Buscar:</span>
     </label>
   </form>
 </div>
 
       
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-            <a href="/ods-cantabria/goals">Goals</a>
+            <a href="/ods-cantabria/goals">Metas</a>
           </li><li class="nav-link ">
-            <a href="/ods-cantabria/reporting-status">Reporting Status</a>
-          </li><li>
-          <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/4/">Español</a></li></ul>
-
-        </li></ul>
+            <a href="/ods-cantabria/reporting-status">Estado de informes</a>
+          </li></ul>
 
       
 
@@ -221,11 +201,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/4.png" alt="Quality education - Goal 4" />
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/4.png" alt="Educación de Calidad - Meta 4" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 4: </span>Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all
+          <span class="hidden-sm hidden-md hidden-lg">Meta 4: </span>Garantizar una educación inclusiva y equitativa de calidad y promover oportunidades de aprendizaje permanente para todos
         </h1>
       </div>
     </div>
@@ -237,8 +217,8 @@ var translations = {
   
 
   <ol class="breadcrumb">
-    <li><a href="/ods-cantabria/">Home</a></li>
-    <li class="active">Goal 4</li>
+    <li><a href="/ods-cantabria/">Inicio</a></li>
+    <li class="active">Meta 4</li>
   </ol>
 
   <div class="container">
@@ -252,7 +232,7 @@ var translations = {
           4.1
         </div>
         <div class="col-md-11">
-          By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes
+          De aquí a 2030, asegurar que todas las niñas y todos los niños terminen la enseñanza primaria y secundaria, que ha de ser gratuita, equitativa y de calidad y producir resultados de aprendizaje pertinentes y efectivos
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -268,11 +248,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">4.1.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/4-1-1">Proportion of children and young people (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex</a>
+            <a href="/ods-cantabria/4-1-1">Proporción de niños, niñas y adolescentes que, a) en los cursos segundo y tercero, b) al final de la enseñanza primaria y c) al final de la enseñanza secundaria inferior, han alcanzado al menos un nivel mínimo de competencia en i) lectura y ii) matemáticas, desglosada por sexo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -286,7 +266,7 @@ var translations = {
           4.2
         </div>
         <div class="col-md-11">
-          By 2030, ensure that all girls and boys have access to quality early childhood development, care and pre‐primary education so that they are ready for primary education
+          De aquí a 2030, asegurar que todas las niñas y todos los niños tengan acceso a servicios de atención y desarrollo en la primera infancia y educación preescolar de calidad, a fin de que estén preparados para la enseñanza primaria
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -302,11 +282,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">4.2.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/4-2-1">Proportion of children under 5 years of age who are developmentally on track in health, learning and psychosocial well-being, by sex</a>
+            <a href="/ods-cantabria/4-2-1">Proporción de niños menores de 5 años cuyo desarrollo es adecuado en cuanto a la salud, el aprendizaje y el bienestar psicosocial, desglosada por sexo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -325,11 +305,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">4.2.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/4-2-2">Participation rate in organized learning (one year before the official primary entry age), by sex</a>
+            <a href="/ods-cantabria/4-2-2">Tasa de participación en el aprendizaje organizado (un año antes de la edad oficial de ingreso en la enseñanza primaria), desglosada por sexo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -343,7 +323,7 @@ var translations = {
           4.3
         </div>
         <div class="col-md-11">
-          By 2030, ensure equal access for all women and men to affordable and quality technical, vocational and tertiary education, including university
+          De aquí a 2030, asegurar el acceso igualitario de todos los hombres y las mujeres a una formación técnica, profesional y superior de calidad, incluida la enseñanza universitaria
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -359,11 +339,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">4.3.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/4-3-1">Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex</a>
+            <a href="/ods-cantabria/4-3-1">Tasa de participación de los jóvenes y adultos en la enseñanza y formación académica y no académica en los últimos 12 meses, desglosada por sexo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -377,7 +357,7 @@ var translations = {
           4.4
         </div>
         <div class="col-md-11">
-          By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship
+          De aquí a 2030, aumentar considerablemente el número de jóvenes y adultos que tienen las competencias necesarias, en particular técnicas y profesionales, para acceder al empleo, el trabajo decente y el emprendimiento
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -393,11 +373,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">4.4.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/4-4-1">Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill</a>
+            <a href="/ods-cantabria/4-4-1">Proporción de jóvenes y adultos con competencias en tecnología de la información y las comunicaciones (TIC), desglosada por tipo de competencia técnica</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -411,7 +391,7 @@ var translations = {
           4.5
         </div>
         <div class="col-md-11">
-          By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations
+          De aquí a 2030, eliminar las disparidades de género en la educación y asegurar el acceso igualitario a todos los niveles de la enseñanza y la formación profesional para las personas vulnerables, incluidas las personas con discapacidad, los pueblos indígenas y los niños en situaciones de vulnerabilidad
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -427,11 +407,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">4.5.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/4-5-1">Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated</a>
+            <a href="/ods-cantabria/4-5-1">Índices de paridad (entre mujeres y hombres, zonas rurales y urbanas, quintiles de riqueza superior e inferior y grupos como los discapacitados, los pueblos indígenas y los afectados por los conflictos, a medida que se disponga de datos) para todos los indicadores educativos de esta lista que puedan desglosarse</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -445,7 +425,7 @@ var translations = {
           4.6
         </div>
         <div class="col-md-11">
-          By 2030, ensure that all youth and a substantial proportion of adults, both men and women, achieve literacy and numeracy
+          De aquí a 2030, asegurar que todos los jóvenes y una proporción considerable de los adultos, tanto hombres como mujeres, estén alfabetizados y tengan nociones elementales de aritmética
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -461,11 +441,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">4.6.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/4-6-1">Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex</a>
+            <a href="/ods-cantabria/4-6-1">Proporción de la población en un grupo de edad determinado que ha alcanzado al menos un nivel fijo de competencia funcional en a) alfabetización y b) nociones elementales de aritmética, desglosada por sexo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -479,7 +459,7 @@ var translations = {
           4.7
         </div>
         <div class="col-md-11">
-          By 2030, ensure that all learners acquire the knowledge and skills needed to promote sustainable development, including, among others, through education for sustainable development and sustainable lifestyles, human rights, gender equality, promotion of a culture of peace and non-violence, global citizenship and appreciation of cultural diversity and of culture’s contribution to sustainable development
+          De aquí a 2030, asegurar que todos los alumnos adquieran los conocimientos teóricos y prácticos necesarios para promover el desarrollo sostenible, entre otras cosas mediante la educación para el desarrollo sostenible y los estilos de vida sostenibles, los derechos humanos, la igualdad de género, la promoción de una cultura de paz y no violencia, la ciudadanía mundial y la valoración de la diversidad cultural y la contribución de la cultura al desarrollo sostenible
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -495,11 +475,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">4.7.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/4-7-1">Extent to which (i) global citizenship education and (ii) education for sustainable development, including gender equality and human rights, are mainstreamed at all levels in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment</a>
+            <a href="/ods-cantabria/4-7-1">Grado en que i) la educación para la ciudadanía mundial y ii) la educación para el desarrollo sostenible, incluida la igualdad de género y los derechos humanos, se incorporan en todos los niveles de a) las políticas nacionales de educación, b) los planes de estudio, c) la formación del profesorado y d) la evaluación de los estudiantes</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -513,7 +493,7 @@ var translations = {
           4.a
         </div>
         <div class="col-md-11">
-          Build and upgrade education facilities that are child, disability and gender sensitive and provide safe, non-violent, inclusive and effective learning environments for all
+          Construir y adecuar instalaciones educativas que tengan en cuenta las necesidades de los niños y las personas con discapacidad y las diferencias de género, y que ofrezcan entornos de aprendizaje seguros, no violentos, inclusivos y eficaces para todos
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -529,11 +509,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">4.a.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/4-a-1">Proportion of schools with access to (a) electricity; (b) the Internet for pedagogical purposes; (c) computers for pedagogical purposes; (d) adapted infrastructure and materials for students with disabilities; (e) basic drinking water; (f) single-sex basic sanitation facilities; and (g) basic handwashing facilities (as per the WASH indicator definitions)</a>
+            <a href="/ods-cantabria/4-a-1">Proporción de escuelas con acceso a a) electricidad, b) Internet con fines pedagógicos, c) computadoras con fines pedagógicos, d) infraestructura y materiales adaptados a los estudiantes con discapacidad, e) suministro básico de agua potable, f) instalaciones de saneamiento básicas separadas por sexo y g) instalaciones básicas para el lavado de manos (según las definiciones de los indicadores WASH)</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -547,7 +527,7 @@ var translations = {
           4.b
         </div>
         <div class="col-md-11">
-          By 2020, substantially expand globally the number of scholarships available to developing countries, in particular least developed countries, small island developing States and African countries, for enrolment in higher education, including vocational training and information and communications technology, technical, engineering and scientific programmes, in developed countries and other developing countries
+          De aquí a 2020, aumentar considerablemente a nivel mundial el número de becas disponibles para los países en desarrollo, en particular los países menos adelantados, los pequeños Estados insulares en desarrollo y los países africanos, a fin de que sus estudiantes puedan matricularse en programas de enseñanza superior, incluidos programas de formación profesional y programas técnicos, científicos, de ingeniería y de tecnología de la información y las comunicaciones, de países desarrollados y otros países en desarrollo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -563,11 +543,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">4.b.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/4-b-1">Volume of official development assistance flows for scholarships by sector and type of study</a>
+            <a href="/ods-cantabria/4-b-1">Volumen de la asistencia oficial para el desarrollo destinada a becas, desglosado por sector y tipo de estudio</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -581,7 +561,7 @@ var translations = {
           4.c
         </div>
         <div class="col-md-11">
-          By 2030, substantially increase the supply of qualified teachers, including through international cooperation for teacher training in developing countries, especially least developed countries and small island developing States
+          De aquí a 2030, aumentar considerablemente la oferta de docentes calificados, incluso mediante la cooperación internacional para la formación de docentes en los países en desarrollo, especialmente los países menos adelantados y los pequeños Estados insulares en desarrollo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -597,11 +577,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">4.c.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/4-c-1">Proportion of teachers in: (a) pre-primary; (b) primary; (c) lower secondary; and (d) upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given country</a>
+            <a href="/ods-cantabria/4-c-1">Proporción del profesorado de educación a) preescolar, b) primaria, c) secundaria inferior y d) secundaria superior que ha recibido al menos la mínima formación docente organizada previa al empleo o en el empleo (por ejemplo, formación pedagógica) exigida para impartir enseñanza a cada nivel en un país determinado</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -618,12 +598,12 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
               
                 <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
               
@@ -671,12 +651,12 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201125135935'></script><script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201125161341'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

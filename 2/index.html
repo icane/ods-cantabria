@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/en',
+  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'en',
+  language: 'es',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -92,7 +92,7 @@ var translations = {
 
         <title>
           
-            Goal 2 - Zero hunger
+            Meta 2 - Hambre Cero
           
         </title>
 
@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125135935">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125161341">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -133,18 +133,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-goal-by-target-vertical">
+<body class="language-es layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert" role="alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
   </div>
 </div>
 
@@ -154,21 +154,11 @@ var translations = {
   <div class="container">
 
     <a class="navbar-brand" href="/ods-cantabria/" id="home">
-      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
     </a>
 
   <div class='hidden visible-xs float-right'>
-    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-      <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/2/">Español</a></li></ul>
-
-    </div></div>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
@@ -178,36 +168,26 @@ var translations = {
             aria-haspopup="true"
             aria-expanded="false">
           <span data-target="menu" tabindex="0"
-          role="navigation">Menu</span>
+          role="navigation">Menú</span>
         </li>
-        <li><span data-target="search">Search</span></li>
+        <li><span data-target="search">Buscar</span></li>
       </ul>
 
       <div id="search" class="menu-target">
   <form action="/ods-cantabria/search">
-    <input name="q" id="indicator_search" title="Search" />
+    <input name="q" id="indicator_search" title="Buscar" />
     <label for="indicator_search">
-      <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Search:</span>
+      <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Buscar:</span>
     </label>
   </form>
 </div>
 
       
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-            <a href="/ods-cantabria/goals">Goals</a>
+            <a href="/ods-cantabria/goals">Metas</a>
           </li><li class="nav-link ">
-            <a href="/ods-cantabria/reporting-status">Reporting Status</a>
-          </li><li>
-          <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/2/">Español</a></li></ul>
-
-        </li></ul>
+            <a href="/ods-cantabria/reporting-status">Estado de informes</a>
+          </li></ul>
 
       
 
@@ -221,11 +201,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/2.png" alt="Zero hunger - Goal 2" />
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/2.png" alt="Hambre Cero - Meta 2" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 2: </span>End hunger, achieve food security and improved nutrition and promote sustainable agriculture
+          <span class="hidden-sm hidden-md hidden-lg">Meta 2: </span>Poner fin al hambre, lograr la seguridad alimentaria y la mejora de la nutrición y promover la agricultura sostenible
         </h1>
       </div>
     </div>
@@ -237,8 +217,8 @@ var translations = {
   
 
   <ol class="breadcrumb">
-    <li><a href="/ods-cantabria/">Home</a></li>
-    <li class="active">Goal 2</li>
+    <li><a href="/ods-cantabria/">Inicio</a></li>
+    <li class="active">Meta 2</li>
   </ol>
 
   <div class="container">
@@ -252,7 +232,7 @@ var translations = {
           2.1
         </div>
         <div class="col-md-11">
-          By 2030, end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious and sufficient food all year round
+          De aquí a 2030, poner fin al hambre y asegurar el acceso de todas las personas, en particular los pobres y las personas en situaciones de vulnerabilidad, incluidos los niños menores de 1 año, a una alimentación sana, nutritiva y suficiente durante todo el año
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -268,11 +248,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.1.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-1-1">Prevalence of undernourishment</a>
+            <a href="/ods-cantabria/2-1-1">Prevalencia de la subalimentación</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -291,11 +271,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.1.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-1-2">Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)</a>
+            <a href="/ods-cantabria/2-1-2">Prevalencia de la inseguridad alimentaria moderada o grave entre la población, según la escala de experiencia de inseguridad alimentaria</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -309,7 +289,7 @@ var translations = {
           2.2
         </div>
         <div class="col-md-11">
-          By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5 years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons
+          De aquí a 2030, poner fin a todas las formas de malnutrición, incluso logrando, a más tardar en 2025, las metas convenidas internacionalmente sobre el retraso del crecimiento y la emaciación de los niños menores de 5 años, y abordar las necesidades de nutrición de las adolescentes, las mujeres embarazadas y lactantes y las personas de edad
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -325,11 +305,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.2.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-2-1">Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age</a>
+            <a href="/ods-cantabria/2-2-1">Prevalencia del retraso del crecimiento (estatura para la edad, desviación típica < -2 de la mediana de los patrones de crecimiento infantil de la Organización Mundial de la Salud (OMS)) entre los niños menores de 5 años</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -348,11 +328,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.2.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-2-2">Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)</a>
+            <a href="/ods-cantabria/2-2-2">Prevalencia de la malnutrición (peso para la estatura, desviación típica > +2 o < -2 de la mediana de los patrones de crecimiento infantil de la OMS) entre los niños menores de 5 años, desglosada por tipo (emaciación y sobrepeso)</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -366,7 +346,7 @@ var translations = {
           2.3
         </div>
         <div class="col-md-11">
-          By 2030, double the agricultural productivity and incomes of small-scale food producers, in particular women, indigenous peoples, family farmers, pastoralists and fishers, including through secure and equal access to land, other productive resources and inputs, knowledge, financial services, markets and opportunities for value addition and non-farm employment
+          De aquí a 2030, duplicar la productividad agrícola y los ingresos de los productores de alimentos en pequeña escala, en particular las mujeres, los pueblos indígenas, los agricultores familiares, los ganaderos y los pescadores, entre otras cosas mediante un acceso seguro y equitativo a las tierras, a otros recursos e insumos de producción y a los conocimientos, los servicios financieros, los mercados y las oportunidades para añadir valor y obtener empleos no agrícolas
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -382,11 +362,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.3.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-3-1">Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size</a>
+            <a href="/ods-cantabria/2-3-1">Volumen de producción por unidad de trabajo desglosado por tamaño y tipo de explotación (agropecuaria/ganadera/forestal)</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -405,11 +385,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.3.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-3-2">Average income of small-scale food producers, by sex and indigenous status</a>
+            <a href="/ods-cantabria/2-3-2">Media de ingresos de los productores de alimentos en pequeña escala, desglosada por sexo y condición indígena</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -423,7 +403,7 @@ var translations = {
           2.4
         </div>
         <div class="col-md-11">
-          By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality
+          De aquí a 2030, asegurar la sostenibilidad de los sistemas de producción de alimentos y aplicar prácticas agrícolas resilientes que aumenten la productividad y la producción, contribuyan al mantenimiento de los ecosistemas, fortalezcan la capacidad de adaptación al cambio climático, los fenómenos meteorológicos extremos, las sequías, las inundaciones y otros desastres, y mejoren progresivamente la calidad de la tierra y el suelo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -439,11 +419,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.4.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-4-1">Proportion of agricultural area under productive and sustainable agriculture</a>
+            <a href="/ods-cantabria/2-4-1">Proporción de la superficie agrícola en que se practica una agricultura productiva y sostenible</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -457,7 +437,7 @@ var translations = {
           2.5
         </div>
         <div class="col-md-11">
-          By 2020, maintain the genetic diversity of seeds, cultivated plants and farmed and domesticated animals and their related wild species, including through soundly managed and diversified seed and plant banks at the national, regional and international levels, and promote access to and fair and equitable sharing of benefits arising from the utilization of genetic resources and associated traditional knowledge, as internationally agreed
+          De aquí a 2020, mantener la diversidad genética de las semillas, las plantas cultivadas y los animales de granja y domesticados y sus correspondientes especies silvestres, entre otras cosas mediante una buena gestión y diversificación de los bancos de semillas y plantas a nivel nacional, regional e internacional, y promover el acceso a los beneficios que se deriven de la utilización de los recursos genéticos y los conocimientos tradicionales conexos y su distribución justa y equitativa, según lo convenido internacionalmente
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -473,11 +453,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.5.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-5-1">Number of plant and animal genetic resources for food and agriculture secured in either medium- or long-term conservation facilities</a>
+            <a href="/ods-cantabria/2-5-1">Número de recursos genéticos vegetales y animales para la alimentación y la agricultura preservados en instalaciones de conservación a medio y largo plazo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -496,11 +476,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.5.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-5-2">Proportion of local breeds classified as being at risk, not at risk or at unknown level of risk of extinction</a>
+            <a href="/ods-cantabria/2-5-2">Proporción de razas y variedades locales consideradas en riesgo de extinción, sin riesgo o con un nivel de riesgo desconocido</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -514,7 +494,7 @@ var translations = {
           2.a
         </div>
         <div class="col-md-11">
-          Increase investment, including through enhanced international cooperation, in rural infrastructure, agricultural research and extension services, technology development and plant and livestock gene banks in order to enhance agricultural productive capacity in developing countries, in particular least developed countries
+          Aumentar, incluso mediante una mayor cooperación internacional, las inversiones en infraestructura rural, investigación y servicios de extensión agrícola, desarrollo tecnológico y bancos de genes de plantas y ganado a fin de mejorar la capacidad de producción agropecuaria en los países en desarrollo, particularmente en los países menos adelantados
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -530,11 +510,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.a.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-a-1">The agriculture orientation index for government expenditures</a>
+            <a href="/ods-cantabria/2-a-1">Índice de orientación agrícola para el gasto público</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -553,11 +533,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.a.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-a-2">Total official flows (official development assistance plus other official flows) to the agriculture sector</a>
+            <a href="/ods-cantabria/2-a-2">Total de corrientes oficiales de recursos (asistencia oficial para el desarrollo más otras corrientes oficiales) destinado al sector agrícola</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -571,7 +551,7 @@ var translations = {
           2.b
         </div>
         <div class="col-md-11">
-          Correct and prevent trade restrictions and distortions in world agricultural markets, including through the parallel elimination of all forms of agricultural export subsidies and all export measures with equivalent effect, in accordance with the mandate of the Doha Development Round
+          Corregir y prevenir las restricciones y distorsiones comerciales en los mercados agropecuarios mundiales, incluso mediante la eliminación paralela de todas las formas de subvención a las exportaciones agrícolas y todas las medidas de exportación con efectos equivalentes, de conformidad con el mandato de la Ronda de Doha para el Desarrollo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -587,11 +567,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.b.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-b-1">Agricultural export subsidies</a>
+            <a href="/ods-cantabria/2-b-1">Subsidios a la exportación de productos agropecuarios</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -605,7 +585,7 @@ var translations = {
           2.c
         </div>
         <div class="col-md-11">
-          Adopt measures to ensure the proper functioning of food commodity markets and their derivatives and facilitate timely access to market information, including on food reserves, in order to help limit extreme food price volatility
+          Adoptar medidas para asegurar el buen funcionamiento de los mercados de productos básicos alimentarios y sus derivados y facilitar el acceso oportuno a la información sobre los mercados, incluso sobre las reservas de alimentos, a fin de ayudar a limitar la extrema volatilidad de los precios de los alimentos
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -621,11 +601,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">2.c.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/2-c-1">Indicator of food price anomalies</a>
+            <a href="/ods-cantabria/2-c-1">Indicador de anomalías en los precios de los alimentos</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -642,12 +622,12 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
               
                 <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
               
@@ -695,12 +675,12 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201125135935'></script><script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201125161341'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

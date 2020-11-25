@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/en',
+  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'en',
+  language: 'es',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -92,7 +92,7 @@ var translations = {
 
         <title>
           
-            Goal 17 - Partnerships for the goals
+            Meta 17 - Alianzas para Lograr los Objetivos
           
         </title>
 
@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125135935">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125161341">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -133,18 +133,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-goal-by-target-vertical">
+<body class="language-es layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert" role="alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
   </div>
 </div>
 
@@ -154,21 +154,11 @@ var translations = {
   <div class="container">
 
     <a class="navbar-brand" href="/ods-cantabria/" id="home">
-      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
     </a>
 
   <div class='hidden visible-xs float-right'>
-    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-      <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/17/">Español</a></li></ul>
-
-    </div></div>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
@@ -178,36 +168,26 @@ var translations = {
             aria-haspopup="true"
             aria-expanded="false">
           <span data-target="menu" tabindex="0"
-          role="navigation">Menu</span>
+          role="navigation">Menú</span>
         </li>
-        <li><span data-target="search">Search</span></li>
+        <li><span data-target="search">Buscar</span></li>
       </ul>
 
       <div id="search" class="menu-target">
   <form action="/ods-cantabria/search">
-    <input name="q" id="indicator_search" title="Search" />
+    <input name="q" id="indicator_search" title="Buscar" />
     <label for="indicator_search">
-      <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Search:</span>
+      <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Buscar:</span>
     </label>
   </form>
 </div>
 
       
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-            <a href="/ods-cantabria/goals">Goals</a>
+            <a href="/ods-cantabria/goals">Metas</a>
           </li><li class="nav-link ">
-            <a href="/ods-cantabria/reporting-status">Reporting Status</a>
-          </li><li>
-          <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/17/">Español</a></li></ul>
-
-        </li></ul>
+            <a href="/ods-cantabria/reporting-status">Estado de informes</a>
+          </li></ul>
 
       
 
@@ -221,11 +201,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/17.png" alt="Partnerships for the goals - Goal 17" />
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/17.png" alt="Alianzas para Lograr los Objetivos - Meta 17" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 17: </span>Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development
+          <span class="hidden-sm hidden-md hidden-lg">Meta 17: </span>Fortalecer los medios de implementación y revitalizar la Alianza Mundial para el Desarrollo Sostenible
         </h1>
       </div>
     </div>
@@ -237,8 +217,8 @@ var translations = {
   
 
   <ol class="breadcrumb">
-    <li><a href="/ods-cantabria/">Home</a></li>
-    <li class="active">Goal 17</li>
+    <li><a href="/ods-cantabria/">Inicio</a></li>
+    <li class="active">Meta 17</li>
   </ol>
 
   <div class="container">
@@ -252,7 +232,7 @@ var translations = {
           17.1
         </div>
         <div class="col-md-11">
-          Strengthen domestic resource mobilization, including through international support to developing countries, to improve domestic capacity for tax and other revenue collection
+          Fortalecer la movilización de recursos internos, incluso mediante la prestación de apoyo internacional a los países en desarrollo, con el fin de mejorar la capacidad nacional para recaudar ingresos fiscales y de otra índole
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -268,11 +248,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.1.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-1-1">Total government revenue as a proportion of GDP, by source</a>
+            <a href="/ods-cantabria/17-1-1">Total de ingresos del gobierno en proporción al PIB, desglosado por fuente</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -291,11 +271,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.1.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-1-2">Proportion of domestic budget funded by domestic taxes</a>
+            <a href="/ods-cantabria/17-1-2">Proporción del presupuesto nacional financiado por impuestos internos</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -309,7 +289,7 @@ var translations = {
           17.2
         </div>
         <div class="col-md-11">
-          Developed countries to implement fully their official development assistance commitments, including the commitment by many developed countries to achieve the target of 0.7 per cent of gross national income for official development assistance (ODA/GNI) to developing countries and 0.15 to 0.20 per cent of ODA/GNI to least developed countries; ODA providers are encouraged to consider setting a target to provide at least 0.20 per cent of ODA/GNI to least developed countries
+          Velar por que los países desarrollados cumplan plenamente sus compromisos en relación con la asistencia oficial para el desarrollo, incluido el compromiso de numerosos países desarrollados de alcanzar el objetivo de destinar el 0,7% del ingreso nacional bruto a la asistencia oficial para el desarrollo de los países en desarrollo y entre el 0,15% y el 0,20% del ingreso nacional bruto a la asistencia oficial para el desarrollo de los países menos adelantados; se alienta a los proveedores de asistencia oficial para el desarrollo a que consideren la posibilidad de fijar una meta para destinar al menos el 0,20% del ingreso nacional bruto a la asistencia oficial para el desarrollo de los países menos adelantados
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -325,11 +305,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.2.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-2-1">Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)</a>
+            <a href="/ods-cantabria/17-2-1">Asistencia oficial para el desarrollo neta, total y para los países menos adelantados en proporción al ingreso nacional bruto (INB) de los donantes del Comité de Asistencia para el Desarrollo de la Organización de Cooperación y Desarrollo Económicos (OCDE)</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -343,7 +323,7 @@ var translations = {
           17.3
         </div>
         <div class="col-md-11">
-          Mobilize additional financial resources for developing countries from multiple sources
+          Movilizar recursos financieros adicionales de múltiples fuentes para los países en desarrollo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -359,11 +339,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.3.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-3-1">Foreign direct investment (FDI), official development assistance and South-South cooperation as a proportion of total domestic budget</a>
+            <a href="/ods-cantabria/17-3-1">Inversión extranjera directa, asistencia oficial para el desarrollo y cooperación Sur-Sur en proporción al presupuesto nacional total</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -382,11 +362,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.3.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-3-2">Volume of remittances (in United States dollars) as a proportion of total GDP</a>
+            <a href="/ods-cantabria/17-3-2">Volumen de remesas (en dólares de los Estados Unidos) en proporción al PIB total</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -400,7 +380,7 @@ var translations = {
           17.4
         </div>
         <div class="col-md-11">
-          Assist developing countries in attaining long-term debt sustainability through coordinated policies aimed at fostering debt financing, debt relief and debt restructuring, as appropriate, and address the external debt of highly indebted poor countries to reduce debt distress
+          Ayudar a los países en desarrollo a lograr la sostenibilidad de la deuda a largo plazo con políticas coordinadas orientadas a fomentar la financiación, el alivio y la reestructuración de la deuda, según proceda, y hacer frente a la deuda externa de los países pobres muy endeudados a fin de reducir el endeudamiento excesivo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -416,11 +396,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.4.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-4-1">Debt service as a proportion of exports of goods and services</a>
+            <a href="/ods-cantabria/17-4-1">Servicio de la deuda en proporción a las exportaciones de bienes y servicios</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -434,7 +414,7 @@ var translations = {
           17.5
         </div>
         <div class="col-md-11">
-          Adopt and implement investment promotion regimes for least developed countries
+          Adoptar y aplicar sistemas de promoción de las inversiones en favor de los países menos adelantados
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -450,11 +430,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.5.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-5-1">Number of countries that adopt and implement investment promotion regimes for least developed countries</a>
+            <a href="/ods-cantabria/17-5-1">Número de países que adoptan y aplican sistemas de promoción de las inversiones en favor de los países menos adelantados</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -468,7 +448,7 @@ var translations = {
           17.6
         </div>
         <div class="col-md-11">
-          Enhance North-South, South-South and triangular regional and international cooperation on and access to science, technology and innovation and enhance knowledge-sharing on mutually agreed terms, including through improved coordination among existing mechanisms, in particular at the United Nations level, and through a global technology facilitation mechanism
+          Mejorar la cooperación regional e internacional Norte-Sur, Sur-Sur y triangular en materia de ciencia, tecnología e innovación y el acceso a estas, y aumentar el intercambio de conocimientos en condiciones mutuamente convenidas, incluso mejorando la coordinación entre los mecanismos existentes, en particular a nivel de las Naciones Unidas, y mediante un mecanismo mundial de facilitación de la tecnología
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -484,11 +464,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.6.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-6-1">Number of science and/or technology cooperation agreements and programmes between countries, by type of cooperation</a>
+            <a href="/ods-cantabria/17-6-1">Número de acuerdos y programas de cooperación en materia de ciencia o tecnología suscritos por los países, desglosado por tipo de cooperación</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -507,11 +487,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.6.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-6-2">Fixed Internet broadband subscriptions per 100 inhabitants, by speed</a>
+            <a href="/ods-cantabria/17-6-2">Número de abonados a Internet de banda ancha fija por cada 100 habitantes, desglosado por velocidad</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -525,7 +505,7 @@ var translations = {
           17.7
         </div>
         <div class="col-md-11">
-          Promote the development, transfer, dissemination and diffusion of environmentally sound technologies to developing countries on favourable terms, including on concessional and preferential terms, as mutually agreed
+          Promover el desarrollo de tecnologías ecológicamente racionales y su transferencia, divulgación y difusión a los países en desarrollo en condiciones favorables, incluso en condiciones concesionarias y preferenciales, según lo convenido de mutuo acuerdo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -541,11 +521,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.7.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-7-1">Total amount of approved funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies</a>
+            <a href="/ods-cantabria/17-7-1">Total de los fondos aprobados para los países en desarrollo a fin de promover el desarrollo, la transferencia y la difusión de tecnologías ecológicamente racionales</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -559,7 +539,7 @@ var translations = {
           17.8
         </div>
         <div class="col-md-11">
-          Fully operationalize the technology bank and science, technology and innovation capacity-building mechanism for least developed countries by 2017 and enhance the use of enabling technology, in particular information and communications technology
+          Poner en pleno funcionamiento, a más tardar en 2017, el banco de tecnología y el mecanismo de apoyo a la creación de capacidad en materia de ciencia, tecnología e innovación para los países menos adelantados y aumentar la utilización de tecnologías instrumentales, en particular la tecnología de la información y las comunicaciones
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -575,11 +555,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.8.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-8-1">Proportion of individuals using the Internet</a>
+            <a href="/ods-cantabria/17-8-1">Proporción de personas que utilizan Internet</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -593,7 +573,7 @@ var translations = {
           17.9
         </div>
         <div class="col-md-11">
-          Enhance international support for implementing effective and targeted capacity-building in developing countries to support national plans to implement all the Sustainable Development Goals, including through North-South, South-South and triangular cooperation
+          Aumentar el apoyo internacional para realizar actividades de creación de capacidad eficaces y específicas en los países en desarrollo a fin de respaldar los planes nacionales de implementación de todos los Objetivos de Desarrollo Sostenible, incluso mediante la cooperación Norte-Sur, Sur-Sur y triangular
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -609,11 +589,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.9.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-9-1">Dollar value of financial and technical assistance (including through North-South, South‐South and triangular cooperation) committed to developing countries</a>
+            <a href="/ods-cantabria/17-9-1">Valor en dólares de la asistencia financiera y técnica (incluso mediante la cooperación Norte-Sur, Sur‐Sur y triangular) prometida a los países en desarrollo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -627,7 +607,7 @@ var translations = {
           17.10
         </div>
         <div class="col-md-11">
-          Promote a universal, rules-based, open, non‐discriminatory and equitable multilateral trading system under the World Trade Organization, including through the conclusion of negotiations under its Doha Development Agenda
+          Promover un sistema de comercio multilateral universal, basado en normas, abierto, no discriminatorio y equitativo en el marco de la Organización Mundial del Comercio, incluso mediante la conclusión de las negociaciones en el marco del Programa de Doha para el Desarrollo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -643,11 +623,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.10.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-10-1">Worldwide weighted tariff-average</a>
+            <a href="/ods-cantabria/17-10-1">Promedio arancelario mundial ponderado</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -661,7 +641,7 @@ var translations = {
           17.11
         </div>
         <div class="col-md-11">
-          Significantly increase the exports of developing countries, in particular with a view to doubling the least developed countries’ share of global exports by 2020
+          Aumentar significativamente las exportaciones de los países en desarrollo, en particular con miras a duplicar la participación de los países menos adelantados en las exportaciones mundiales de aquí a 2020
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -677,11 +657,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.11.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-11-1">Developing countries’ and least developed countries’ share of global exports</a>
+            <a href="/ods-cantabria/17-11-1">Participación de los países en desarrollo y los países menos adelantados en las exportaciones mundiales</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -695,7 +675,7 @@ var translations = {
           17.12
         </div>
         <div class="col-md-11">
-          Realize timely implementation of duty-free and quota-free market access on a lasting basis for all least developed countries, consistent with World Trade Organization decisions, including by ensuring that preferential rules of origin applicable to imports from least developed countries are transparent and simple, and contribute to facilitating market access
+          Lograr la consecución oportuna del acceso a los mercados libre de derechos y contingentes de manera duradera para todos los países menos adelantados, conforme a las decisiones de la Organización Mundial del Comercio, incluso velando por que las normas de origen preferenciales aplicables a las importaciones de los países menos adelantados sean transparentes y sencillas y contribuyan a facilitar el acceso a los mercados
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -711,11 +691,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.12.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-12-1">Average tariffs faced by developing countries, least developed countries and small island developing States</a>
+            <a href="/ods-cantabria/17-12-1">Promedio de los aranceles que enfrentan los países en desarrollo, los países menos adelantados y los pequeños Estados insulares en desarrollo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -729,7 +709,7 @@ var translations = {
           17.13
         </div>
         <div class="col-md-11">
-          Enhance global macroeconomic stability, including through policy coordination and policy coherence
+          Aumentar la estabilidad macroeconómica mundial, incluso mediante la coordinación y coherencia de las políticas
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -745,11 +725,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.13.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-13-1">Macroeconomic Dashboard</a>
+            <a href="/ods-cantabria/17-13-1">Tablero macroeconómico</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -763,7 +743,7 @@ var translations = {
           17.14
         </div>
         <div class="col-md-11">
-          Enhance policy coherence for sustainable development
+          Mejorar la coherencia de las políticas para el desarrollo sostenible
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -779,11 +759,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.14.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-14-1">Number of countries with mechanisms in place to enhance policy coherence of sustainable development</a>
+            <a href="/ods-cantabria/17-14-1">Número de países que cuentan con mecanismos para mejorar la coherencia de las políticas de desarrollo sostenible</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -797,7 +777,7 @@ var translations = {
           17.15
         </div>
         <div class="col-md-11">
-          Respect each country’s policy space and leadership to establish and implement policies for poverty eradication and sustainable development
+          Respetar el margen normativo y el liderazgo de cada país para establecer y aplicar políticas de erradicación de la pobreza y desarrollo sostenible
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -813,11 +793,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.15.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-15-1">Extent of use of country-owned results frameworks and planning tools by providers of development cooperation</a>
+            <a href="/ods-cantabria/17-15-1">Grado de utilización de los marcos de resultados y las herramientas de planificación de los propios países por los proveedores de cooperación para el desarrollo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -831,7 +811,7 @@ var translations = {
           17.16
         </div>
         <div class="col-md-11">
-          Enhance the Global Partnership for Sustainable Development, complemented by multi-stakeholder partnerships that mobilize and share knowledge, expertise, technology and financial resources, to support the achievement of the Sustainable Development Goals in all countries, in particular developing countries
+          Mejorar la Alianza Mundial para el Desarrollo Sostenible, complementada por alianzas entre múltiples interesados que movilicen e intercambien conocimientos, especialización, tecnología y recursos financieros, a fin de apoyar el logro de los Objetivos de Desarrollo Sostenible en todos los países, particularmente los países en desarrollo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -847,11 +827,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.16.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-16-1">Number of countries reporting progress in multi-stakeholder development effectiveness monitoring frameworks that support the achievement of the sustainable development goals</a>
+            <a href="/ods-cantabria/17-16-1">Número de países que informan de sus progresos en los marcos de múltiples interesados para el seguimiento de la eficacia de las actividades de desarrollo que apoyan el logro de los Objetivos de Desarrollo Sostenible</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -865,7 +845,7 @@ var translations = {
           17.17
         </div>
         <div class="col-md-11">
-          Encourage and promote effective public, public-private and civil society partnerships, building on the experience and resourcing strategies of partnerships
+          Fomentar y promover la constitución de alianzas eficaces en las esferas pública, público-privada y de la sociedad civil, aprovechando la experiencia y las estrategias de obtención de recursos de las alianzas
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -881,11 +861,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.17.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-17-1">Amount of United States dollars committed to public-private and civil society partnerships</a>
+            <a href="/ods-cantabria/17-17-1">Suma en dólares de los Estados Unidos prometida a las: a) alianzas público-privadas y b) alianzas con la sociedad civil</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -899,7 +879,7 @@ var translations = {
           17.18
         </div>
         <div class="col-md-11">
-          By 2020, enhance capacity-building support to developing countries, including for least developed countries and small island developing States, to increase significantly the availability of high-quality, timely and reliable data disaggregated by income, gender, age, race, ethnicity, migratory status, disability, geographic location and other characteristics relevant in national contexts
+          De aquí a 2020, mejorar el apoyo a la creación de capacidad prestado a los países en desarrollo, incluidos los países menos adelantados y los pequeños Estados insulares en desarrollo, para aumentar significativamente la disponibilidad de datos oportunos, fiables y de gran calidad desglosados por ingresos, sexo, edad, raza, origen étnico, estatus migratorio, discapacidad, ubicación geográfica y otras características pertinentes en los contextos nacionales
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -915,11 +895,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.18.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-18-1">Proportion of sustainable development indicators produced at the national level with full disaggregation when relevant to the target, in accordance with the Fundamental Principles of Official Statistics</a>
+            <a href="/ods-cantabria/17-18-1">Proporción de indicadores de desarrollo sostenible producidos a nivel nacional, con pleno desglose cuando sea pertinente para la meta, de conformidad con los Principios Fundamentales de las Estadísticas Oficiales</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -938,11 +918,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.18.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-18-2">Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics</a>
+            <a href="/ods-cantabria/17-18-2">Número de países cuya legislación nacional sobre estadísticas cumple los Principios Fundamentales de las Estadísticas Oficiales</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -961,11 +941,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.18.3</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-18-3">Number of countries with a national statistical plan that is fully funded and under implementation, by source of funding</a>
+            <a href="/ods-cantabria/17-18-3">Número de países que cuentan con un plan estadístico nacional plenamente financiado y en proceso de aplicación, desglosado por fuente de financiación</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -979,7 +959,7 @@ var translations = {
           17.19
         </div>
         <div class="col-md-11">
-          By 2030, build on existing initiatives to develop measurements of progress on sustainable development that complement gross domestic product, and support statistical capacity-building in developing countries
+          De aquí a 2030, aprovechar las iniciativas existentes para elaborar indicadores que permitan medir los progresos en materia de desarrollo sostenible y complementen el producto interno bruto, y apoyar la creación de capacidad estadística en los países en desarrollo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -995,11 +975,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.19.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-19-1">Dollar value of all resources made available to strengthen statistical capacity in developing countries</a>
+            <a href="/ods-cantabria/17-19-1">Valor en dólares de todos los recursos proporcionados para fortalecer la capacidad estadística de los países en desarrollo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -1018,11 +998,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">17.19.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/17-19-2">Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration</a>
+            <a href="/ods-cantabria/17-19-2">Proporción de países que a) han realizado al menos un censo de población y vivienda en los últimos diez años; y b) han registrado el 100% de los nacimientos y el 80% de las defunciones</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -1039,12 +1019,12 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
               
                 <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
               
@@ -1092,12 +1072,12 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201125135935'></script><script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201125161341'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

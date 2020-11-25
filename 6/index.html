@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/en',
+  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'en',
+  language: 'es',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -92,7 +92,7 @@ var translations = {
 
         <title>
           
-            Goal 6 - Clean water and sanitation
+            Meta 6 - Agua Limpia y Saneamiento
           
         </title>
 
@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125135935">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125161341">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -133,18 +133,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-goal-by-target-vertical">
+<body class="language-es layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert" role="alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
   </div>
 </div>
 
@@ -154,21 +154,11 @@ var translations = {
   <div class="container">
 
     <a class="navbar-brand" href="/ods-cantabria/" id="home">
-      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
     </a>
 
   <div class='hidden visible-xs float-right'>
-    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-      <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/6/">Español</a></li></ul>
-
-    </div></div>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
@@ -178,36 +168,26 @@ var translations = {
             aria-haspopup="true"
             aria-expanded="false">
           <span data-target="menu" tabindex="0"
-          role="navigation">Menu</span>
+          role="navigation">Menú</span>
         </li>
-        <li><span data-target="search">Search</span></li>
+        <li><span data-target="search">Buscar</span></li>
       </ul>
 
       <div id="search" class="menu-target">
   <form action="/ods-cantabria/search">
-    <input name="q" id="indicator_search" title="Search" />
+    <input name="q" id="indicator_search" title="Buscar" />
     <label for="indicator_search">
-      <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Search:</span>
+      <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Buscar:</span>
     </label>
   </form>
 </div>
 
       
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-            <a href="/ods-cantabria/goals">Goals</a>
+            <a href="/ods-cantabria/goals">Metas</a>
           </li><li class="nav-link ">
-            <a href="/ods-cantabria/reporting-status">Reporting Status</a>
-          </li><li>
-          <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/6/">Español</a></li></ul>
-
-        </li></ul>
+            <a href="/ods-cantabria/reporting-status">Estado de informes</a>
+          </li></ul>
 
       
 
@@ -221,11 +201,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/6.png" alt="Clean water and sanitation - Goal 6" />
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/6.png" alt="Agua Limpia y Saneamiento - Meta 6" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 6: </span>Ensure availability and sustainable management of water and sanitation for all
+          <span class="hidden-sm hidden-md hidden-lg">Meta 6: </span>Garantizar la disponibilidad y la gestión sostenible del agua y el saneamiento para todos
         </h1>
       </div>
     </div>
@@ -237,8 +217,8 @@ var translations = {
   
 
   <ol class="breadcrumb">
-    <li><a href="/ods-cantabria/">Home</a></li>
-    <li class="active">Goal 6</li>
+    <li><a href="/ods-cantabria/">Inicio</a></li>
+    <li class="active">Meta 6</li>
   </ol>
 
   <div class="container">
@@ -252,7 +232,7 @@ var translations = {
           6.1
         </div>
         <div class="col-md-11">
-          By 2030, achieve universal and equitable access to safe and affordable drinking water for all
+          De aquí a 2030, lograr el acceso universal y equitativo al agua potable a un precio asequible para todos
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -268,11 +248,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">6.1.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/6-1-1">Proportion of population using safely managed drinking water services</a>
+            <a href="/ods-cantabria/6-1-1">Proporción de la población que utiliza servicios de suministro de agua potable gestionados sin riesgos</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -286,7 +266,7 @@ var translations = {
           6.2
         </div>
         <div class="col-md-11">
-          By 2030, achieve access to adequate and equitable sanitation and hygiene for all and end open defecation, paying special attention to the needs of women and girls and those in vulnerable situations
+          De aquí a 2030, lograr el acceso a servicios de saneamiento e higiene adecuados y equitativos para todos y poner fin a la defecación al aire libre, prestando especial atención a las necesidades de las mujeres y las niñas y las personas en situaciones de vulnerabilidad
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -302,11 +282,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">6.2.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/6-2-1">Proportion of population using safely managed sanitation services, including a handwashing facility with soap and water</a>
+            <a href="/ods-cantabria/6-2-1">Proporción de la población que utiliza: a) servicios de saneamiento gestionados sin riesgos y b) instalaciones para el lavado de manos con agua y jabón</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -320,7 +300,7 @@ var translations = {
           6.3
         </div>
         <div class="col-md-11">
-          By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally
+          De aquí a 2030, mejorar la calidad del agua reduciendo la contaminación, eliminando el vertimiento y minimizando la emisión de productos químicos y materiales peligrosos, reduciendo a la mitad el porcentaje de aguas residuales sin tratar y aumentando considerablemente el reciclado y la reutilización sin riesgos a nivel mundial
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -336,11 +316,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">6.3.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/6-3-1">Proportion of wastewater safely treated</a>
+            <a href="/ods-cantabria/6-3-1">Proporción de aguas residuales tratadas de manera adecuada</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -359,11 +339,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">6.3.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/6-3-2">Proportion of bodies of water with good ambient water quality</a>
+            <a href="/ods-cantabria/6-3-2">Proporción de masas de agua de buena calidad</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -377,7 +357,7 @@ var translations = {
           6.4
         </div>
         <div class="col-md-11">
-          By 2030, substantially increase water-use efficiency across all sectors and ensure sustainable withdrawals and supply of freshwater to address water scarcity and substantially reduce the number of people suffering from water scarcity
+          De aquí a 2030, aumentar considerablemente el uso eficiente de los recursos hídricos en todos los sectores y asegurar la sostenibilidad de la extracción y el abastecimiento de agua dulce para hacer frente a la escasez de agua y reducir considerablemente el número de personas que sufren falta de agua
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -393,11 +373,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">6.4.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/6-4-1">Change in water-use efficiency over time</a>
+            <a href="/ods-cantabria/6-4-1">Cambio en el uso eficiente de los recursos hídricos con el paso del tiempo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -416,11 +396,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">6.4.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/6-4-2">Level of water stress: freshwater withdrawal as a proportion of available freshwater resources</a>
+            <a href="/ods-cantabria/6-4-2">Nivel de estrés hídrico: extracción de agua dulce en proporción a los recursos de agua dulce disponibles</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -434,7 +414,7 @@ var translations = {
           6.5
         </div>
         <div class="col-md-11">
-          By 2030, implement integrated water resources management at all levels, including through transboundary cooperation as appropriate
+          De aquí a 2030, implementar la gestión integrada de los recursos hídricos a todos los niveles, incluso mediante la cooperación transfronteriza, según proceda
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -450,11 +430,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">6.5.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/6-5-1">Degree of integrated water resources management implementation (0 to 100)</a>
+            <a href="/ods-cantabria/6-5-1">Grado de implementación de la gestión integrada de los recursos hídricos (0‐100)</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -473,11 +453,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">6.5.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/6-5-2">Proportion of transboundary basin area with an operational arrangement for water cooperation</a>
+            <a href="/ods-cantabria/6-5-2">Proporción de la superficie de cuencas transfronterizas sujetas a arreglos operacionales para la cooperación en materia de aguas</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -491,7 +471,7 @@ var translations = {
           6.6
         </div>
         <div class="col-md-11">
-          By 2020, protect and restore water-related ecosystems, including mountains, forests, wetlands, rivers, aquifers and lakes
+          De aquí a 2020, proteger y restablecer los ecosistemas relacionados con el agua, incluidos los bosques, las montañas, los humedales, los ríos, los acuíferos y los lagos
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -507,11 +487,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">6.6.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/6-6-1">Change in the extent of water-related ecosystems over time</a>
+            <a href="/ods-cantabria/6-6-1">Cambio en la extensión de los ecosistemas relacionados con el agua con el paso del tiempo</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -525,7 +505,7 @@ var translations = {
           6.a
         </div>
         <div class="col-md-11">
-          By 2030, expand international cooperation and capacity-building support to developing countries in water- and sanitation-related activities and programmes, including water harvesting, desalination, water efficiency, wastewater treatment, recycling and reuse technologies
+          De aquí a 2030, ampliar la cooperación internacional y el apoyo prestado a los países en desarrollo para la creación de capacidad en actividades y programas relativos al agua y el saneamiento, como los de captación de agua, desalinización, uso eficiente de los recursos hídricos, tratamiento de aguas residuales, reciclado y tecnologías de reutilización
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -541,11 +521,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">6.a.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/6-a-1">Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan</a>
+            <a href="/ods-cantabria/6-a-1">Volumen de la asistencia oficial para el desarrollo destinada al agua y el saneamiento que forma parte de un plan de gastos coordinados por el gobierno</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -559,7 +539,7 @@ var translations = {
           6.b
         </div>
         <div class="col-md-11">
-          Support and strengthen the participation of local communities in improving water and sanitation management
+          Apoyar y fortalecer la participación de las comunidades locales en la mejora de la gestión del agua y el saneamiento
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -575,11 +555,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">6.b.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/6-b-1">Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management</a>
+            <a href="/ods-cantabria/6-b-1">Proporción de dependencias administrativas locales que han establecido políticas y procedimientos operacionales para la participación de las comunidades locales en la gestión del agua y el saneamiento</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -596,12 +576,12 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
               
                 <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
               
@@ -649,12 +629,12 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201125135935'></script><script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201125161341'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/en',
+  remoteDataBaseUrl: 'https://icane.github.io/ods-data-cantabria/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'en',
+  language: 'es',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -92,7 +92,7 @@ var translations = {
 
         <title>
           
-            Goal 11 - Sustainable cities &amp; communities
+            Meta 11 - Cuidades y Comunidades Sostenibles
           
         </title>
 
@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125135935">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201125161341">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -133,18 +133,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-goal-by-target-vertical">
+<body class="language-es layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert" role="alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
   </div>
 </div>
 
@@ -154,21 +154,11 @@ var translations = {
   <div class="container">
 
     <a class="navbar-brand" href="/ods-cantabria/" id="home">
-      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
     </a>
 
   <div class='hidden visible-xs float-right'>
-    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-      <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/11/">Español</a></li></ul>
-
-    </div></div>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
@@ -178,36 +168,26 @@ var translations = {
             aria-haspopup="true"
             aria-expanded="false">
           <span data-target="menu" tabindex="0"
-          role="navigation">Menu</span>
+          role="navigation">Menú</span>
         </li>
-        <li><span data-target="search">Search</span></li>
+        <li><span data-target="search">Buscar</span></li>
       </ul>
 
       <div id="search" class="menu-target">
   <form action="/ods-cantabria/search">
-    <input name="q" id="indicator_search" title="Search" />
+    <input name="q" id="indicator_search" title="Buscar" />
     <label for="indicator_search">
-      <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Search:</span>
+      <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Buscar:</span>
     </label>
   </form>
 </div>
 
       
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-            <a href="/ods-cantabria/goals">Goals</a>
+            <a href="/ods-cantabria/goals">Metas</a>
           </li><li class="nav-link ">
-            <a href="/ods-cantabria/reporting-status">Reporting Status</a>
-          </li><li>
-          <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
-  <i class="fa fa-globe"></i>
-  <span class="language-toggle-text">English</span>
-  <i class="language-toggle fa fa-chevron-down"></i>
-  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
-</a>
-
-<ul class="language-options language-toggle"><li><a href="/ods-cantabria/es/11/">Español</a></li></ul>
-
-        </li></ul>
+            <a href="/ods-cantabria/reporting-status">Estado de informes</a>
+          </li></ul>
 
       
 
@@ -221,11 +201,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/11.png" alt="Sustainable cities &amp; communities - Goal 11" />
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/11.png" alt="Cuidades y Comunidades Sostenibles - Meta 11" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 11: </span>Make cities and human settlements inclusive, safe, resilient and sustainable
+          <span class="hidden-sm hidden-md hidden-lg">Meta 11: </span>Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles
         </h1>
       </div>
     </div>
@@ -237,8 +217,8 @@ var translations = {
   
 
   <ol class="breadcrumb">
-    <li><a href="/ods-cantabria/">Home</a></li>
-    <li class="active">Goal 11</li>
+    <li><a href="/ods-cantabria/">Inicio</a></li>
+    <li class="active">Meta 11</li>
   </ol>
 
   <div class="container">
@@ -252,7 +232,7 @@ var translations = {
           11.1
         </div>
         <div class="col-md-11">
-          By 2030, ensure access for all to adequate, safe and affordable housing and basic services and upgrade slums
+          De aquí a 2030, asegurar el acceso de todas las personas a viviendas y servicios básicos adecuados, seguros y asequibles y mejorar los barrios marginales
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -268,11 +248,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.1.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-1-1">Proportion of urban population living in slums, informal settlements or inadequate housing</a>
+            <a href="/ods-cantabria/11-1-1">Proporción de la población urbana que vive en barrios marginales, asentamientos informales o viviendas inadecuadas</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -286,7 +266,7 @@ var translations = {
           11.2
         </div>
         <div class="col-md-11">
-          By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons
+          De aquí a 2030, proporcionar acceso a sistemas de transporte seguros, asequibles, accesibles y sostenibles para todos y mejorar la seguridad vial, en particular mediante la ampliación del transporte público, prestando especial atención a las necesidades de las personas en situación de vulnerabilidad, las mujeres, los niños, las personas con discapacidad y las personas de edad
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -302,11 +282,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.2.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-2-1">Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities</a>
+            <a href="/ods-cantabria/11-2-1">Proporción de la población que tiene fácil acceso al transporte público, desglosada por sexo, edad y personas con discapacidad</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -320,7 +300,7 @@ var translations = {
           11.3
         </div>
         <div class="col-md-11">
-          By 2030, enhance inclusive and sustainable urbanization and capacity for participatory, integrated and sustainable human settlement planning and management in all countries
+          De aquí a 2030, aumentar la urbanización inclusiva y sostenible y la capacidad para la planificación y la gestión participativas, integradas y sostenibles de los asentamientos humanos en todos los países
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -336,11 +316,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.3.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-3-1">Ratio of land consumption rate to population growth rate</a>
+            <a href="/ods-cantabria/11-3-1">Relación entre la tasa de consumo de tierras y la tasa de crecimiento de la población</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -359,11 +339,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.3.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-3-2">Proportion of cities with a direct participation structure of civil society in urban planning and management that operate regularly and democratically</a>
+            <a href="/ods-cantabria/11-3-2">Proporción de ciudades que cuentan con una estructura de participación directa de la sociedad civil en la planificación y la gestión urbanas y funcionan con regularidad y democráticamente</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -377,7 +357,7 @@ var translations = {
           11.4
         </div>
         <div class="col-md-11">
-          Strengthen efforts to protect and safeguard the world’s cultural and natural heritage
+          Redoblar los esfuerzos para proteger y salvaguardar el patrimonio cultural y natural del mundo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -393,11 +373,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.4.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-4-1">Total expenditure (public and private) per capita spent on the preservation, protection and conservation of all cultural and natural heritage, by type of heritage (cultural, natural, mixed and World Heritage Centre designation), level of government (national, regional and local/municipal), type of expenditure (operating expenditure/investment) and type of private funding (donations in kind, private non-profit sector and sponsorship)</a>
+            <a href="/ods-cantabria/11-4-1">Total de gastos (públicos y privados) per cápita destinados a la preservación, protección y conservación de todo el patrimonio cultural y natural, desglosado por tipo de patrimonio (cultural, natural, mixto y reconocido por el Centro del Patrimonio Mundial), nivel de gobierno (nacional, regional y local o municipal), tipo de gastos (gastos de funcionamiento o inversiones) y tipo de financiación privada (donaciones en especie, financiación procedente del sector privado sin fines de lucro y patrocinio)</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -411,7 +391,7 @@ var translations = {
           11.5
         </div>
         <div class="col-md-11">
-          By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global gross domestic product caused by disasters, including water-related disasters, with a focus on protecting the poor and people in vulnerable situations
+          De aquí a 2030, reducir significativamente el número de muertes causadas por los desastres, incluidos los relacionados con el agua, y de personas afectadas por ellos, y reducir considerablemente las pérdidas económicas directas provocadas por los desastres en comparación con el producto interno bruto mundial, haciendo especial hincapié en la protección de los pobres y las personas en situaciones de vulnerabilidad
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -427,11 +407,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.5.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-5-1">Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population</a>
+            <a href="/ods-cantabria/11-5-1">Número de personas muertas, desaparecidas y afectadas directamente atribuido a desastres por cada 100.000 personas</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -450,11 +430,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.5.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-5-2">Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters</a>
+            <a href="/ods-cantabria/11-5-2">Pérdidas económicas directas en relación con el PIB mundial, daños en la infraestructura esencial y número de interrupciones de los servicios básicos atribuidos a desastres</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -468,7 +448,7 @@ var translations = {
           11.6
         </div>
         <div class="col-md-11">
-          By 2030, reduce the adverse per capita environmental impact of cities, including by paying special attention to air quality and municipal and other waste management
+          De aquí a 2030, reducir el impacto ambiental negativo per cápita de las ciudades, incluso prestando especial atención a la calidad del aire y la gestión de los desechos municipales y de otro tipo
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -484,11 +464,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.6.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-6-1">Proportion of urban solid waste regularly collected and with adequate final discharge out of total urban solid waste generated, by cities</a>
+            <a href="/ods-cantabria/11-6-1">Proporción de desechos sólidos urbanos recogidos periódicamente y con una descarga final adecuada respecto del total de desechos sólidos urbanos generados, desglosada por ciudad</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -507,11 +487,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.6.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-6-2">Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)</a>
+            <a href="/ods-cantabria/11-6-2">Niveles medios anuales de partículas finas en suspensión (por ejemplo, PM2.5 y PM10) en las ciudades (ponderados según la población)</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -525,7 +505,7 @@ var translations = {
           11.7
         </div>
         <div class="col-md-11">
-          By 2030, provide universal access to safe, inclusive and accessible, green and public spaces, in particular for women and children, older persons and persons with disabilities
+          De aquí a 2030, proporcionar acceso universal a zonas verdes y espacios públicos seguros, inclusivos y accesibles, en particular para las mujeres y los niños, las personas de edad y las personas con discapacidad
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -541,11 +521,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.7.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-7-1">Average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities</a>
+            <a href="/ods-cantabria/11-7-1">Proporción media de la superficie edificada de las ciudades que se dedica a espacios abiertos para uso público de todos, desglosada por sexo, edad y personas con discapacidad</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -564,11 +544,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.7.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-7-2">Proportion of persons victim of physical or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months</a>
+            <a href="/ods-cantabria/11-7-2">Proporción de personas que han sido víctimas de acoso físico o sexual en los últimos 12 meses, desglosada por sexo, edad, grado de discapacidad y lugar del hecho</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -582,7 +562,7 @@ var translations = {
           11.a
         </div>
         <div class="col-md-11">
-          Support positive economic, social and environmental links between urban, peri-urban and rural areas by strengthening national and regional development planning
+          Apoyar los vínculos económicos, sociales y ambientales positivos entre las zonas urbanas, periurbanas y rurales fortaleciendo la planificación del desarrollo nacional y regional
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -598,11 +578,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.a.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-a-1">Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs, by size of city</a>
+            <a href="/ods-cantabria/11-a-1">Proporción de la población residente en ciudades que aplican planes de desarrollo urbano y regional que tienen en cuenta las previsiones demográficas y las necesidades de recursos, desglosada por tamaño de ciudad</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -616,7 +596,7 @@ var translations = {
           11.b
         </div>
         <div class="col-md-11">
-          By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, and develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015–2030, holistic disaster risk management at all levels
+          De aquí a 2020, aumentar considerablemente el número de ciudades y asentamientos humanos que adoptan e implementan políticas y planes integrados para promover la inclusión, el uso eficiente de los recursos, la mitigación del cambio climático y la adaptación a él y la resiliencia ante los desastres, y desarrollar y poner en práctica, en consonancia con el Marco de Sendái para la Reducción del Riesgo de Desastres 2015‐2030, la gestión integral de los riesgos de desastre a todos los niveles
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -632,11 +612,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.b.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-b-1">Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030</a>
+            <a href="/ods-cantabria/11-b-1">Número de países que adoptan y aplican estrategias nacionales de reducción del riesgo de desastres en consonancia con el Marco de Sendái para la Reducción del Riesgo de Desastres 2015‐2030</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -655,11 +635,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.b.2</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-b-2">Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies</a>
+            <a href="/ods-cantabria/11-b-2">Proporción de gobiernos locales que adoptan y aplican estrategias locales de reducción del riesgo de desastres en consonancia con las estrategias nacionales de reducción del riesgo de desastres</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -673,7 +653,7 @@ var translations = {
           11.c
         </div>
         <div class="col-md-11">
-          Support least developed countries, including through financial and technical assistance, in building sustainable and resilient buildings utilizing local materials
+          Proporcionar apoyo a los países menos adelantados, incluso mediante asistencia financiera y técnica, para que puedan construir edificios sostenibles y resilientes utilizando materiales locales
         </div>
         
         <div class="row no-gutters goal-indicator indicator-cards">
@@ -689,11 +669,11 @@ var translations = {
 
           <div class="col-md-1 col-md-offset-1">11.c.1</div>
           <div class="col-md-8">
-            <a href="/ods-cantabria/11-c-1">Proportion of financial support to the least developed countries that is allocated to the construction and retrofitting of sustainable, resilient and resource-efficient buildings utilizing local materials</a>
+            <a href="/ods-cantabria/11-c-1">Proporción del apoyo financiero a los países menos adelantados que se asigna a la construcción y el reacondicionamiento con materiales locales de edificios sostenibles, resilientes y eficientes en el uso de recursos</a>
           </div>
           <div class="col-md-2 status-column">
             <span class="status notstarted">
-              Exploring data sources
+              Explorando fuentes de datos
             </span>
           </div>
           
@@ -710,12 +690,12 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
               
                 <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
               
@@ -763,12 +743,12 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201125135935'></script><script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201125161341'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
