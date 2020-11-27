@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201127102840">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201127103530">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -330,11 +330,34 @@ var translations = {
   <% } %>
 </script>
 
+<script type="text/template" id="series_template">
+  <% if(serieses.length) { %>
+    <h4>Serie</h4>
+    <fieldset>
+      <legend class="sr-only">Serie</legend>
+      <% _.each(serieses, function(seriesItem, index) { %>
+        <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
+        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
+      <% }); %>
+    </fieldset>
+  <% } %>
+</script>
+
 <script>translations['indicator'] = {"chart":"Gráfico","clear_all":"Limpiar todo","clear_selections":"Borrar selecciones","data_not_available":"Esta información no está disponible. Elija datos alternativos para mostrar.","dataset_size_warning":"Hay demasiados conjuntos de datos para mostrar en el gráfico. No todo se mostrará hasta que elimine algunas selecciones.","download_chart":"Descargar CSV de gráfico","download_chart_image":"Descargar imagen del gráfico","download_chart_image_title":"Descargar gráfico como imagen","download_csv":"Descargar CSV","download_csv_title":"Descargar como CSV","download_geojson":"Descargar GeoJSON","download_geojson_title":"Descargar como GeoJSON","download_headline":"Descargar CSV global","download_headline_title":"Descargar datos globales como CSV","download_source":"Descargar CSV fuente","download_source_sdmx":"Descargar SDMX fuente","download_source_sdmx_title":"Descargar los datos fuente como SDMX","download_source_title":"Descargar los datos fuente como CSV","download_table":"Descargar la tabla CSV","edit":"Editar","edit_data":"Editar datos","edit_metadata":"Editar metadatos","footnote":"Nota","geographical_area":"Área geográfica","global_metadata":"Metadatos globales","global_metadata_blurb":"Esta tabla proporciona información sobre los metadatos para los indicadores de los ODS tal como los define la Comisión de Estadística de la ONU. La <a href=\"https://unstats.un.org/sdgs/metadata/\">División de Estadística de las Naciones Unidas proporciona</a> los metadatos globales completos .","legend_help":"Haga clic en la leyenda para eliminar líneas individuales del gráfico.","loading":"Cargando","loading_map":"Cargando mapa","map":"Mapa","national_metadata":"Metadatos nacionales","national_metadata_blurb":"Esta tabla proporciona metadatos para el indicador real disponible a partir de las estadísticas de %country_name más cercanas al correspondiente indicador global de SDG. Tenga en cuenta que incluso cuando el indicador global de ODS esté totalmente disponible a partir de las estadísticas de %country_adjective, se debe consultar esta tabla para obtener información sobre la metodología nacional y otra información de metadatos específicos de %country_adjective.","no_data_hint":"No hay opciones disponibles debido a los filtros anteriores","select_all":"Seleccionar todo","series":"Serie","series_help":"Elija categorías de las listas desplegables a continuación para ver diferentes desgloses de los datos. Algunos no estarán disponibles hasta que se elija un nivel superior.","source":"Fuente","sources":"Fuentes","sub_categories":"Subcategorías","table":"Tabla","unit_of_measurement":"Unidad de medida","units_type":"Tipo de unidades","variable_hint":"Disponible cuando se selecciona «%field»","view_indicator_list":"Ver la lista de indicadores de este objetivo"};</script>
 
 <script>translations['data'] = null;</script>
 
 
+<div class="container">
+  <ol class="breadcrumb">
+  
+  <li><a href="/ods-cantabria/">Inicio</a></li>
+  <li><a href="/ods-cantabria/15" title="Proteger, restablecer y promover el uso sostenible de los ecosistemas terrestres, gestionar sosteniblemente los bosques, luchar contra la desertificación, detener e invertir la degradación de las tierras y detener la pérdida de biodiversidad">Meta 15</a></li>
+  <li class="active">Indicador 15.3.1</li>
+  
+</ol>
+
+</div>
 <div class="heading goal-banner indicator goal-15">
   <div class="container">
     <div class="row">
@@ -356,14 +379,6 @@ var translations = {
 </div>
 
 <div id="main-content" class="container goal-15">
-  <ol class="breadcrumb">
-  
-  <li><a href="/ods-cantabria/">Inicio</a></li>
-  <li><a href="/ods-cantabria/15" title="Proteger, restablecer y promover el uso sostenible de los ecosistemas terrestres, gestionar sosteniblemente los bosques, luchar contra la desertificación, detener e invertir la degradación de las tierras y detener la pérdida de biodiversidad">Meta 15</a></li>
-  <li class="active">Indicador 15.3.1</li>
-  
-</ol>
-
   
 
   
@@ -1078,7 +1093,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201127102840'></script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201127103530'></script>
 
 <script>
 $(function() {
