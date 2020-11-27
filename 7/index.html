@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201127084200">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201127093333">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -217,11 +217,20 @@ var translations = {
 </header>
 
 
+<div class="container">
+  <ol class="breadcrumb">
+    
+    <li><a href="/ods-cantabria/">Inicio</a></li>
+    <li class="active">Meta 7</li>
+    
+  </ol>
+</div>
+
 <div class="heading goal-banner goal-7">
   <div class="container">
     <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" alt="Energía Asequible y No Contaminante - Meta 7" />
+      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" alt="Energía Asequible y No Contaminante - Meta 7" id="goal-7"/>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
@@ -232,30 +241,22 @@ var translations = {
   </div>
 </div>
 
-<div id="main-content" class="container goal-indicators goal-7">
+<div id="main-content" class="container">
 
   
 
-  <ol class="breadcrumb">
-    <li><a href="/ods-cantabria/">Inicio</a></li>
-    <li class="active">Meta 7</li>
-  </ol>
-
   <div class="container">
-    <h2>Targets and indicators</h2>
+    <h2>Metas e indicadores</h2>
 
     
     
       
-      <div class="row no-gutters goal-target">
-        <div class="col-md-1">
-          7.1
-        </div>
-        <div class="col-md-11">
-          De aquí a 2030, garantizar el acceso universal a servicios energéticos asequibles, fiables y modernos
-        </div>
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Objetivo</span> 7.1</span>
+        </h3>
+        <span class="target-name">De aquí a 2030, garantizar el acceso universal a servicios energéticos asequibles, fiables y modernos</span>
         
-        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -266,19 +267,18 @@ var translations = {
           
           
 
-          <div class="col-md-1 col-md-offset-1">7.1.1</div>
-          <div class="col-md-8">
-            <a href="/ods-cantabria/7-1-1">Proporción de la población que tiene acceso a la electricidad</a>
-          </div>
-          <div class="col-md-2 status-column">
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.1.1</span>
+            </h4>
+            <span class="indicator-name"><a href="/ods-cantabria/7-1-1">Proporción de la población que tiene acceso a la electricidad</a></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
+            
           </div>
-          
-        </div>
         
-        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -289,30 +289,27 @@ var translations = {
           
           
 
-          <div class="col-md-1 col-md-offset-1">7.1.2</div>
-          <div class="col-md-8">
-            <a href="/ods-cantabria/7-1-2">Proporción de la población cuya fuente primaria de energía son los combustibles y tecnologías limpios</a>
-          </div>
-          <div class="col-md-2 status-column">
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.1.2</span>
+            </h4>
+            <span class="indicator-name"><a href="/ods-cantabria/7-1-2">Proporción de la población cuya fuente primaria de energía son los combustibles y tecnologías limpios</a></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
+            
           </div>
-          
-        </div>
         
       </div>
     
       
-      <div class="row no-gutters goal-target">
-        <div class="col-md-1">
-          7.2
-        </div>
-        <div class="col-md-11">
-          De aquí a 2030, aumentar considerablemente la proporción de energía renovable en el conjunto de fuentes energéticas
-        </div>
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Objetivo</span> 7.2</span>
+        </h3>
+        <span class="target-name">De aquí a 2030, aumentar considerablemente la proporción de energía renovable en el conjunto de fuentes energéticas</span>
         
-        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -323,30 +320,27 @@ var translations = {
           
           
 
-          <div class="col-md-1 col-md-offset-1">7.2.1</div>
-          <div class="col-md-8">
-            <a href="/ods-cantabria/7-2-1">Proporción de energía renovable en el consumo final total de energía</a>
-          </div>
-          <div class="col-md-2 status-column">
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.2.1</span>
+            </h4>
+            <span class="indicator-name"><a href="/ods-cantabria/7-2-1">Proporción de energía renovable en el consumo final total de energía</a></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
+            
           </div>
-          
-        </div>
         
       </div>
     
       
-      <div class="row no-gutters goal-target">
-        <div class="col-md-1">
-          7.3
-        </div>
-        <div class="col-md-11">
-          De aquí a 2030, duplicar la tasa mundial de mejora de la eficiencia energética
-        </div>
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Objetivo</span> 7.3</span>
+        </h3>
+        <span class="target-name">De aquí a 2030, duplicar la tasa mundial de mejora de la eficiencia energética</span>
         
-        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -357,30 +351,27 @@ var translations = {
           
           
 
-          <div class="col-md-1 col-md-offset-1">7.3.1</div>
-          <div class="col-md-8">
-            <a href="/ods-cantabria/7-3-1">Intensidad energética medida en función de la energía primaria y el PIB</a>
-          </div>
-          <div class="col-md-2 status-column">
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.3.1</span>
+            </h4>
+            <span class="indicator-name"><a href="/ods-cantabria/7-3-1">Intensidad energética medida en función de la energía primaria y el PIB</a></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
+            
           </div>
-          
-        </div>
         
       </div>
     
       
-      <div class="row no-gutters goal-target">
-        <div class="col-md-1">
-          7.a
-        </div>
-        <div class="col-md-11">
-          De aquí a 2030, aumentar la cooperación internacional para facilitar el acceso a la investigación y la tecnología relativas a la energía limpia, incluidas las fuentes renovables, la eficiencia energética y las tecnologías avanzadas y menos contaminantes de combustibles fósiles, y promover la inversión en infraestructura energética y tecnologías limpias
-        </div>
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Objetivo</span> 7.a</span>
+        </h3>
+        <span class="target-name">De aquí a 2030, aumentar la cooperación internacional para facilitar el acceso a la investigación y la tecnología relativas a la energía limpia, incluidas las fuentes renovables, la eficiencia energética y las tecnologías avanzadas y menos contaminantes de combustibles fósiles, y promover la inversión en infraestructura energética y tecnologías limpias</span>
         
-        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -391,30 +382,27 @@ var translations = {
           
           
 
-          <div class="col-md-1 col-md-offset-1">7.a.1</div>
-          <div class="col-md-8">
-            <a href="/ods-cantabria/7-a-1">Corrientes financieras internacionales hacia los países en desarrollo para apoyar la investigación y el desarrollo de energías limpias y la producción de energía renovable, incluidos los sistemas híbridos</a>
-          </div>
-          <div class="col-md-2 status-column">
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.a.1</span>
+            </h4>
+            <span class="indicator-name"><a href="/ods-cantabria/7-a-1">Corrientes financieras internacionales hacia los países en desarrollo para apoyar la investigación y el desarrollo de energías limpias y la producción de energía renovable, incluidos los sistemas híbridos</a></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
+            
           </div>
-          
-        </div>
         
       </div>
     
       
-      <div class="row no-gutters goal-target">
-        <div class="col-md-1">
-          7.b
-        </div>
-        <div class="col-md-11">
-          De aquí a 2030, ampliar la infraestructura y mejorar la tecnología para prestar servicios energéticos modernos y sostenibles para todos en los países en desarrollo, en particular los países menos adelantados, los pequeños Estados insulares en desarrollo y los países en desarrollo sin litoral, en consonancia con sus respectivos programas de apoyo
-        </div>
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Objetivo</span> 7.b</span>
+        </h3>
+        <span class="target-name">De aquí a 2030, ampliar la infraestructura y mejorar la tecnología para prestar servicios energéticos modernos y sostenibles para todos en los países en desarrollo, en particular los países menos adelantados, los pequeños Estados insulares en desarrollo y los países en desarrollo sin litoral, en consonancia con sus respectivos programas de apoyo</span>
         
-        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -425,17 +413,17 @@ var translations = {
           
           
 
-          <div class="col-md-1 col-md-offset-1">7.b.1</div>
-          <div class="col-md-8">
-            <a href="/ods-cantabria/7-b-1">Inversiones en eficiencia energética en proporción al PIB y a la cuantía de la inversión extranjera directa en transferencias financieras destinadas a infraestructura y tecnología para servicios de desarrollo sostenible</a>
-          </div>
-          <div class="col-md-2 status-column">
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 7.b.1</span>
+            </h4>
+            <span class="indicator-name"><a href="/ods-cantabria/7-b-1">Inversiones en eficiencia energética en proporción al PIB y a la cuantía de la inversión extranjera directa en transferencias financieras destinadas a infraestructura y tecnología para servicios de desarrollo sostenible</a></span>
+            <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
+            
           </div>
-          
-        </div>
         
       </div>
     
@@ -506,7 +494,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201127084200'></script><script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201127093333'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -577,4 +565,3 @@ $(function() {
 
 </body>
 </html>
-
