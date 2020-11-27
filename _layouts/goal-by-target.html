@@ -68,13 +68,13 @@
       {% assign tag_classes = tag_classes | join: " " %}
 
       <div class="col-md-12 {{ tag_classes }} goal-indicator">
-       ++ {{ indicator.hide_status }} ++
         <span>
           {{ indicator.number }}
-          {% if indicator.reporting_status != 'testing' %}
+          
+          {% if indicator.hide_status != true %}
             <span class="status {{ status_css }}">
             {{ status_desc }}
-          </span>
+            </span>
           {% endif %}
 
         </span>
