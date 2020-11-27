@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -90,10 +90,11 @@ var translations = {
         <!-- Title and meta description
         ================================================== -->
 
-        
-    <title>Meta 9 - Industria, Innovación e Infraestructura - Indicators For The Sustainable Development Goals</title>
-
-
+        <title>
+          
+            Meta 9 - Industria, Innovación e Infraestructura
+          
+        </title>
 
         <meta name="description" content="">
         <meta property="og:description" content="">
@@ -121,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201127103530">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201127105627">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -140,7 +141,7 @@ var translations = {
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
-  <div class="disclaimer-alert">
+  <div class="disclaimer-alert" role="alert">
     <strong class="phase-tag">Alfa</strong>
     
     Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
@@ -152,143 +153,75 @@ var translations = {
 <header role="banner">
   <div class="container">
 
-    <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/ods-cantabria/" id="home">
-        <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
-      </a>
+    <a class="navbar-brand" href="/ods-cantabria/" id="home">
+      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+    </a>
 
-      <div class="mobile-widgets">
-        <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-          <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/ods-cantabria/en/9/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
+  <div class='hidden visible-xs float-right'>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+      <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
+  <i class="fa fa-globe"></i>
+  <span class="language-toggle-text">Español</span>
+  <i class="language-toggle fa fa-chevron-down"></i>
+  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
+</a>
 
-        </div></div>
-    </div>
+<ul class="language-options language-toggle"><li><a href="/ods-cantabria/en/9/">English</a></li></ul>
+
+    </div></div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
       <ul class="top-level">
         <li id="menuToggle"
             aria-label="Menu toggle. Click to expand or collapse the menu."
-            aria-haspopup="true">
-          <button data-target="menu-mobile" aria-expanded="false">Menú</button>
-          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/ods-cantabria/goals">Metas</a>
-    </li><li class="nav-link ">
-    <a href="/ods-cantabria/reporting-status">Estado de informes</a>
-    </li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/ods-cantabria/en/9/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
-
+            aria-haspopup="true"
+            aria-expanded="false">
+          <span data-target="menu" tabindex="0"
+          role="navigation">Menú</span>
         </li>
-        <li id="searchToggle"
-            aria-label="Search toggle. Click to expand or collapse the search bar."
-            aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Buscar</button>
-          <div id="search-mobile" class="menu-target">
-  <form action="/ods-cantabria/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
-    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
-    <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-        </li>
+        <li><span data-target="search">Buscar</span></li>
       </ul>
 
       <div id="search" class="menu-target">
   <form action="/ods-cantabria/search">
-    <input type="text" name="q" id="indicator_search" title="Buscar" />
-    <label class="sr-only" for="indicator_search">Buscar</label>
-    <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input name="q" id="indicator_search" title="Buscar" />
+    <label for="indicator_search">
+      <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Buscar:</span>
+    </label>
   </form>
 </div>
 
-
+      
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/ods-cantabria/goals">Metas</a>
-    </li><li class="nav-link ">
-    <a href="/ods-cantabria/reporting-status">Estado de informes</a>
-    </li><li class="language-toggle-menu-header">
-    
+            <a href="/ods-cantabria/goals">Metas</a>
+          </li><li class="nav-link ">
+            <a href="/ods-cantabria/reporting-status">Estado de informes</a>
+          </li><li>
+          <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
+  <i class="fa fa-globe"></i>
+  <span class="language-toggle-text">Español</span>
+  <i class="language-toggle fa fa-chevron-down"></i>
+  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
+</a>
 
+<ul class="language-options language-toggle"><li><a href="/ods-cantabria/en/9/">English</a></li></ul>
 
+        </li></ul>
 
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/ods-cantabria/en/9/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
-
+      
 
     </nav>
   </div>
 
 </header>
-<div id="top" tabindex=-1></div>
 
-
-<div class="container">
-  <ol class="breadcrumb">
-  
-  <li><a href="/ods-cantabria/">Inicio</a></li>
-  <li class="active">Meta 9</li>
-  
-</ol>
-
-</div>
 
 <div class="heading goal-banner goal-9">
   <div class="container">
     <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" alt="Industria, Innovación e Infraestructura - Meta 9" id="goal-9"/>
+      <div class="col-xs-4 col-md-3 col-lg-2">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/9.png" alt="Industria, Innovación e Infraestructura - Meta 9" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
@@ -299,9 +232,14 @@ var translations = {
   </div>
 </div>
 
-<div id="main-content" class="container">
+<div id="main-content" class="container goal-indicators goal-9">
 
   
+
+  <ol class="breadcrumb">
+    <li><a href="/ods-cantabria/">Inicio</a></li>
+    <li class="active">Meta 9</li>
+  </ol>
 
   <div class="container">
     <h2>Targets and indicators</h2>
@@ -309,12 +247,15 @@ var translations = {
     
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 9.1</span>
-        </h3>
-        <span class="target-name">Desarrollar infraestructuras fiables, sostenibles, resilientes y de calidad, incluidas infraestructuras regionales y transfronterizas, para apoyar el desarrollo económico y el bienestar humano, haciendo especial hincapié en el acceso asequible y equitativo para todos</span>
+      <div class="row no-gutters goal-target">
+        <div class="col-md-1">
+          9.1
+        </div>
+        <div class="col-md-11">
+          Desarrollar infraestructuras fiables, sostenibles, resilientes y de calidad, incluidas infraestructuras regionales y transfronterizas, para apoyar el desarrollo económico y el bienestar humano, haciendo especial hincapié en el acceso asequible y equitativo para todos
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -325,18 +266,19 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.1.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-1-1">Proporción de la población rural que vive a menos de 2 km de una carretera transitable todo el año</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.1.1</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-1-1">Proporción de la población rural que vive a menos de 2 km de una carretera transitable todo el año</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -347,27 +289,30 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.1.2</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-1-2">Volumen de transporte de pasajeros y carga, desglosado por medio de transporte</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.1.2</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-1-2">Volumen de transporte de pasajeros y carga, desglosado por medio de transporte</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
       </div>
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 9.2</span>
-        </h3>
-        <span class="target-name">Promover una industrialización inclusiva y sostenible y, de aquí a 2030, aumentar significativamente la contribución de la industria al empleo y al producto interno bruto, de acuerdo con las circunstancias nacionales, y duplicar esa contribución en los países menos adelantados</span>
+      <div class="row no-gutters goal-target">
+        <div class="col-md-1">
+          9.2
+        </div>
+        <div class="col-md-11">
+          Promover una industrialización inclusiva y sostenible y, de aquí a 2030, aumentar significativamente la contribución de la industria al empleo y al producto interno bruto, de acuerdo con las circunstancias nacionales, y duplicar esa contribución en los países menos adelantados
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -378,18 +323,19 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.2.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-2-1">Valor añadido del sector manufacturo en proporción al PIB y per cápita</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.2.1</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-2-1">Valor añadido del sector manufacturo en proporción al PIB y per cápita</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -400,27 +346,30 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.2.2</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-2-2">Empleo del sector manufacturero en proporción al empleo total</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.2.2</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-2-2">Empleo del sector manufacturero en proporción al empleo total</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
       </div>
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 9.3</span>
-        </h3>
-        <span class="target-name">Aumentar el acceso de las pequeñas industrias y otras empresas, particularmente en los países en desarrollo, a los servicios financieros, incluidos créditos asequibles, y su integración en las cadenas de valor y los mercados</span>
+      <div class="row no-gutters goal-target">
+        <div class="col-md-1">
+          9.3
+        </div>
+        <div class="col-md-11">
+          Aumentar el acceso de las pequeñas industrias y otras empresas, particularmente en los países en desarrollo, a los servicios financieros, incluidos créditos asequibles, y su integración en las cadenas de valor y los mercados
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -431,18 +380,19 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.3.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-3-1">Proporción del valor añadido total del sector industrial correspondiente a las pequeñas industrias</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.3.1</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-3-1">Proporción del valor añadido total del sector industrial correspondiente a las pequeñas industrias</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -453,27 +403,30 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.3.2</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-3-2">Proporción de las pequeñas industrias que han obtenido un préstamo o una línea de crédito</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.3.2</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-3-2">Proporción de las pequeñas industrias que han obtenido un préstamo o una línea de crédito</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
       </div>
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 9.4</span>
-        </h3>
-        <span class="target-name">De aquí a 2030, modernizar la infraestructura y reconvertir las industrias para que sean sostenibles, utilizando los recursos con mayor eficacia y promoviendo la adopción de tecnologías y procesos industriales limpios y ambientalmente racionales, y logrando que todos los países tomen medidas de acuerdo con sus capacidades respectivas</span>
+      <div class="row no-gutters goal-target">
+        <div class="col-md-1">
+          9.4
+        </div>
+        <div class="col-md-11">
+          De aquí a 2030, modernizar la infraestructura y reconvertir las industrias para que sean sostenibles, utilizando los recursos con mayor eficacia y promoviendo la adopción de tecnologías y procesos industriales limpios y ambientalmente racionales, y logrando que todos los países tomen medidas de acuerdo con sus capacidades respectivas
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -484,27 +437,30 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.4.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-4-1">Emisiones de CO2 por unidad de valor añadido</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.4.1</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-4-1">Emisiones de CO2 por unidad de valor añadido</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
       </div>
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 9.5</span>
-        </h3>
-        <span class="target-name">Aumentar la investigación científica y mejorar la capacidad tecnológica de los sectores industriales de todos los países, en particular los países en desarrollo, entre otras cosas fomentando la innovación y aumentando considerablemente, de aquí a 2030, el número de personas que trabajan en investigación y desarrollo por millón de habitantes y los gastos de los sectores público y privado en investigación y desarrollo</span>
+      <div class="row no-gutters goal-target">
+        <div class="col-md-1">
+          9.5
+        </div>
+        <div class="col-md-11">
+          Aumentar la investigación científica y mejorar la capacidad tecnológica de los sectores industriales de todos los países, en particular los países en desarrollo, entre otras cosas fomentando la innovación y aumentando considerablemente, de aquí a 2030, el número de personas que trabajan en investigación y desarrollo por millón de habitantes y los gastos de los sectores público y privado en investigación y desarrollo
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -515,18 +471,19 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.5.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-5-1">Gastos en investigación y desarrollo en proporción al PIB</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.5.1</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-5-1">Gastos en investigación y desarrollo en proporción al PIB</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -537,27 +494,30 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.5.2</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-5-2">Número de investigadores (en equivalente a tiempo completo) por cada millón de habitantes</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.5.2</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-5-2">Número de investigadores (en equivalente a tiempo completo) por cada millón de habitantes</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
       </div>
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 9.a</span>
-        </h3>
-        <span class="target-name">Facilitar el desarrollo de infraestructuras sostenibles y resilientes en los países en desarrollo mediante un mayor apoyo financiero, tecnológico y técnico a los países africanos, los países menos adelantados, los países en desarrollo sin litoral y los pequeños Estados insulares en desarrollo</span>
+      <div class="row no-gutters goal-target">
+        <div class="col-md-1">
+          9.a
+        </div>
+        <div class="col-md-11">
+          Facilitar el desarrollo de infraestructuras sostenibles y resilientes en los países en desarrollo mediante un mayor apoyo financiero, tecnológico y técnico a los países africanos, los países menos adelantados, los países en desarrollo sin litoral y los pequeños Estados insulares en desarrollo
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -568,27 +528,30 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.a.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-a-1">Total de apoyo internacional oficial (asistencia oficial para el desarrollo más otras corrientes oficiales de recursos) destinado a la infraestructura</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.a.1</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-a-1">Total de apoyo internacional oficial (asistencia oficial para el desarrollo más otras corrientes oficiales de recursos) destinado a la infraestructura</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
       </div>
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 9.b</span>
-        </h3>
-        <span class="target-name">Apoyar el desarrollo de tecnologías, la investigación y la innovación nacionales en los países en desarrollo, incluso garantizando un entorno normativo propicio a la diversificación industrial y la adición de valor a los productos básicos, entre otras cosas</span>
+      <div class="row no-gutters goal-target">
+        <div class="col-md-1">
+          9.b
+        </div>
+        <div class="col-md-11">
+          Apoyar el desarrollo de tecnologías, la investigación y la innovación nacionales en los países en desarrollo, incluso garantizando un entorno normativo propicio a la diversificación industrial y la adición de valor a los productos básicos, entre otras cosas
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -599,27 +562,30 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.b.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-b-1">Proporción del valor añadido por la industria de tecnología mediana y alta en el valor añadido total</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.b.1</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-b-1">Proporción del valor añadido por la industria de tecnología mediana y alta en el valor añadido total</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
       </div>
     
       
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Objetivo</span> 9.c</span>
-        </h3>
-        <span class="target-name">Aumentar significativamente el acceso a la tecnología de la información y las comunicaciones y esforzarse por proporcionar acceso universal y asequible a Internet en los países menos adelantados de aquí a 2020</span>
+      <div class="row no-gutters goal-target">
+        <div class="col-md-1">
+          9.c
+        </div>
+        <div class="col-md-11">
+          Aumentar significativamente el acceso a la tecnología de la información y las comunicaciones y esforzarse por proporcionar acceso universal y asequible a Internet en los países menos adelantados de aquí a 2020
+        </div>
         
+        <div class="row no-gutters goal-indicator indicator-cards">
 
           
           
@@ -630,17 +596,17 @@ var translations = {
           
           
 
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicador</span> 9.c.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/ods-cantabria/9-c-1">Proporción de la población con cobertura de red móvil, desglosada por tecnología</a></span>
-            <span class="sr-only">Indicator status</span>
+          <div class="col-md-1 col-md-offset-1">9.c.1</div>
+          <div class="col-md-8">
+            <a href="/ods-cantabria/9-c-1">Proporción de la población con cobertura de red móvil, desglosada por tecnología</a>
+          </div>
+          <div class="col-md-2 status-column">
             <span class="status notstarted">
               Explorando fuentes de datos
             </span>
-            
           </div>
+          
+        </div>
         
       </div>
     
@@ -655,27 +621,32 @@ var translations = {
           <ul>
             <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
-              <li>
+              
+                <li>
                 
                   <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
-              <li>
+              
+                <li>
                 
                   <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
                 
                 </li>
-              <li>
+              
+                <li>
                 
                   <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
                 
                 </li>
-              <li>
+              
+                <li>
                 <a href="/ods-cantabria/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
-            </ul>
+            
+          </ul>
         </div>
       </div>
     </div>
@@ -697,7 +668,6 @@ var translations = {
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
@@ -707,9 +677,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201127103530'></script>
-
-<script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201127105627'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -742,13 +710,15 @@ $(function() {
               chartTitle: domData.charttitle,
               chartTitles: domData.charttitles,
               measurementUnit: domData.measurementunit,
+              copyright: domData.copyright,
+              dataSource: domData.datasource,
+              geographicalArea: domData.geographicalarea,
               showData: domData.showdata,
+              footnote: domData.footnote,
               graphType: domData.graphtype,
               startValues: domData.startvalues,
               graphLimits: domData.graphlimits,
               stackedDisaggregation: domData.stackeddisaggregation,
-              graphAnnotations: domData.graphannotations,
-              indicatorDownloads: domData.indicatordownloads,
             }),
             view  = new indicatorView(model, {
               rootElement: '#indicatorData',

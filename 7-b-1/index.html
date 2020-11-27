@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -90,10 +90,11 @@ var translations = {
         <!-- Title and meta description
         ================================================== -->
 
-        
-    <title>Indicador 7.b.1 - Inversiones en eficiencia energética en proporción al PIB y a la cuantía de la inversión extranjera directa en transferencias financieras destinadas a infraestructura y tecnología para servicios de desarrollo sostenible - Indicators For The Sustainable Development Goals</title>
-
-
+        <title>
+          
+            Indicador 7.b.1 - Meta 7
+          
+        </title>
 
         <meta name="description" content="">
         <meta property="og:description" content="">
@@ -121,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201127103530">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201127105627">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -140,7 +141,7 @@ var translations = {
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
-  <div class="disclaimer-alert">
+  <div class="disclaimer-alert" role="alert">
     <strong class="phase-tag">Alfa</strong>
     
     Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
@@ -152,163 +153,93 @@ var translations = {
 <header role="banner">
   <div class="container">
 
-    <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/ods-cantabria/" id="home">
-        <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
-      </a>
+    <a class="navbar-brand" href="/ods-cantabria/" id="home">
+      <img src="/ods-cantabria/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+    </a>
 
-      <div class="mobile-widgets">
-        <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-          <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/ods-cantabria/en/7-b-1/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
+  <div class='hidden visible-xs float-right'>
+    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+      <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
+  <i class="fa fa-globe"></i>
+  <span class="language-toggle-text">Español</span>
+  <i class="language-toggle fa fa-chevron-down"></i>
+  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
+</a>
 
-        </div></div>
-    </div>
+<ul class="language-options language-toggle"><li><a href="/ods-cantabria/en/7-b-1/">English</a></li></ul>
+
+    </div></div>
 
     <nav class="navbar navbar-default" id="main-nav">
 
       <ul class="top-level">
         <li id="menuToggle"
             aria-label="Menu toggle. Click to expand or collapse the menu."
-            aria-haspopup="true">
-          <button data-target="menu-mobile" aria-expanded="false">Menú</button>
-          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/ods-cantabria/goals">Metas</a>
-    </li><li class="nav-link ">
-    <a href="/ods-cantabria/reporting-status">Estado de informes</a>
-    </li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/ods-cantabria/en/7-b-1/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
-
+            aria-haspopup="true"
+            aria-expanded="false">
+          <span data-target="menu" tabindex="0"
+          role="navigation">Menú</span>
         </li>
-        <li id="searchToggle"
-            aria-label="Search toggle. Click to expand or collapse the search bar."
-            aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Buscar</button>
-          <div id="search-mobile" class="menu-target">
-  <form action="/ods-cantabria/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" />
-    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
-    <button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-        </li>
+        <li><span data-target="search">Buscar</span></li>
       </ul>
 
       <div id="search" class="menu-target">
   <form action="/ods-cantabria/search">
-    <input type="text" name="q" id="indicator_search" title="Buscar" />
-    <label class="sr-only" for="indicator_search">Buscar</label>
-    <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <input name="q" id="indicator_search" title="Buscar" />
+    <label for="indicator_search">
+      <button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button><span>Buscar:</span>
+    </label>
   </form>
 </div>
 
-
+      
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/ods-cantabria/goals">Metas</a>
-    </li><li class="nav-link ">
-    <a href="/ods-cantabria/reporting-status">Estado de informes</a>
-    </li><li class="language-toggle-menu-header">
-    
+            <a href="/ods-cantabria/goals">Metas</a>
+          </li><li class="nav-link ">
+            <a href="/ods-cantabria/reporting-status">Estado de informes</a>
+          </li><li>
+          <a class="language-toggle-button" onclick="$(this).next('.language-toggle').toggle(); return false;">
+  <i class="fa fa-globe"></i>
+  <span class="language-toggle-text">Español</span>
+  <i class="language-toggle fa fa-chevron-down"></i>
+  <i class="language-toggle fa fa-chevron-up" style="display:none;"></i>
+</a>
 
+<ul class="language-options language-toggle"><li><a href="/ods-cantabria/en/7-b-1/">English</a></li></ul>
 
+        </li></ul>
 
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/ods-cantabria/en/7-b-1/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li></ul>
-
+      
 
     </nav>
   </div>
 
 </header>
-<div id="top" tabindex=-1></div>
 
 
 <script type="text/template" id="item_template">
   <% _.each(fields, function(fieldItem) { %>
     <div class="variable-selector<% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed child<% }%>" data-field="<%=fieldItem.field%>">
-      <button class='accessBtn' tabindex='0' aria-expanded='false'
-        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        aria-describedby='variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>'
-        <% }%>
-      >
-        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
-          <span aria-hidden="true"><%=translations.t(fieldItem.field)%><i class="fa fa-chevron-down"></i></span>
-          <span class="sr-only">Show sub-categories: <%=translations.t(fieldItem.field)%></span>
-        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
-      </button>
+      <button class='accessBtn' tabindex='0' aria-expanded='false'><h5><%=translations.t(fieldItem.field)%><i class="fa fa-chevron-down"></i></h5></button>
       <div class="bar">
         <div class="selected"></div>
       </div>
       <div class="variable-options">
-        <fieldset>
-          <legend class="sr-only">Subcategorías - <%=translations.t(fieldItem.field)%></legend>
-          <div>
-            <button data-type="select">Seleccionar todo</button>
-            <button data-type="clear">Limpiar todo</button>
-          </div>
-          <% _.each(fieldItem.values, function(item) { %>
-            <label>
-              <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
-            </label>
-          <% }); %>
-        </fieldset>
+        <div>
+          <button data-type="select">Seleccionar todo</button>
+          <button data-type="clear">Limpiar todo</button>
+        </div>
+        <% _.each(fieldItem.values, function(item) { %>
+          <label>
+            <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
+          </label>
+        <% }); %>
       </div>
 
       <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Disponible cuando se selecciona «<%= translations.t(_.findWhere(edges, { To: fieldItem.field }).From) %>»
+        <div class="variable-hint">Disponible cuando se selecciona «<%= translations.t(_.findWhere(edges, { To: fieldItem.field }).From) %>»
         </div>
-        <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
+        <div class="no-data-hint">
           No hay opciones disponibles debido a los filtros anteriores
         </div>
       <% }%>
@@ -320,26 +251,10 @@ var translations = {
 <script type="text/template" id="units_template">
   <% if(units.length) { %>
     <h4>Tipo de unidades</h4>
-    <fieldset>
-      <legend class="sr-only">Tipo de unidades</legend>
-      <% _.each(units, function(unitsItem, index) { %>
-        <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
-        <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
-      <% }); %>
-    </fieldset>
-  <% } %>
-</script>
-
-<script type="text/template" id="series_template">
-  <% if(serieses.length) { %>
-    <h4>Serie</h4>
-    <fieldset>
-      <legend class="sr-only">Serie</legend>
-      <% _.each(serieses, function(seriesItem, index) { %>
-        <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
-        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
-      <% }); %>
-    </fieldset>
+    <% _.each(units, function(unitsItem, index) { %>
+      <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
+      <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
+    <% }); %>
   <% } %>
 </script>
 
@@ -348,30 +263,18 @@ var translations = {
 <script>translations['data'] = null;</script>
 
 
-<div class="container">
-  <ol class="breadcrumb">
-  
-  <li><a href="/ods-cantabria/">Inicio</a></li>
-  <li><a href="/ods-cantabria/7" title="Garantizar el acceso a una energía asequible, fiable, sostenible y moderna para todos">Meta 7</a></li>
-  <li class="active">Indicador 7.b.1</li>
-  
-</ol>
-
-</div>
 <div class="heading goal-banner indicator goal-7">
   <div class="container">
     <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+      <div class="col-xs-4 col-md-3 col-lg-2 goal-icon">
         <a href="/ods-cantabria/7" title="Ver la lista de indicadores de este objetivo">
-          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" alt="Energía Asequible y No Contaminante - Meta 7" id="goal-7"/>
+          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/7.png" alt="Energía Asequible y No Contaminante - Meta 7" />
         </a>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
         <div>
-          <h1>
-            Indicador 7.b.1
-            <span class="lead-copy">Inversiones en eficiencia energética en proporción al PIB y a la cuantía de la inversión extranjera directa en transferencias financieras destinadas a infraestructura y tecnología para servicios de desarrollo sostenible</span>
-          </h1>
+          <h1>Indicador 7.b.1</h1>
+          <p class="lead-copy">Inversiones en eficiencia energética en proporción al PIB y a la cuantía de la inversión extranjera directa en transferencias financieras destinadas a infraestructura y tecnología para servicios de desarrollo sostenible</p>
         </div>
       </div>
     </div>
@@ -379,14 +282,25 @@ var translations = {
 </div>
 
 <div id="main-content" class="container goal-7">
-  
+  <ol class="breadcrumb">
+  <li><a href="/ods-cantabria/">Inicio</a></li>
+  <li><a href="/ods-cantabria/7" title="Garantizar el acceso a una energía asequible, fiable, sostenible y moderna para todos">Meta 7</a></li>
+  <li class="active">Indicador 7.b.1</li>
+</ol>
 
   
 
   
 
+  
+
 
   
+
+
+
+
+
 
 
 <div class="row"
@@ -397,6 +311,10 @@ var translations = {
   data-charttitle="Inversiones en eficiencia energética en proporción al PIB y a la cuantía de la inversión extranjera directa en transferencias financieras destinadas a infraestructura y tecnología para servicios de desarrollo sostenible"
   data-charttitles="null"
   data-measurementunit=""
+  data-datasource=""
+  data-copyright=""
+  data-geographicalarea=""
+  data-footnote=""
   data-showdata="false"
   data-graphtype="line"
   data-geocoderegex=""
@@ -404,8 +322,6 @@ var translations = {
   data-startvalues="null"
   data-graphlimits="null"
   data-stackeddisaggregation=""
-  data-graphannotations="null"
-  data-indicatordownloads="null"
 >
   
   <div id="indicator-main" class="indicator-main col-md-12">
@@ -413,21 +329,21 @@ var translations = {
   <ul class="nav nav-tabs spacer medium" role="tablist">
 
   <li role="presentation" class="nav-item active">
-  <a class="nav-link" data-toggle="tab" id="tab-national" href="#national" aria-controls="national" role="tab" data-on="click"
+  <a class="nav-link" data-toggle="tab" href="#national" aria-controls="national" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to National Metadata tab"
 >Metadatos nacionales</a>
 </li>
 <li role="presentation" class="nav-item">
-  <a class="nav-link" data-toggle="tab" id="tab-global" href="#global" aria-controls="global" role="tab" data-on="click"
+  <a class="nav-link" data-toggle="tab" href="#global" aria-controls="global" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Global Metadata tab"
 >Metadatos globales</a>
 </li>
 <li role="presentation" class="nav-item">
-  <a class="nav-link" data-toggle="tab" id="tab-sources" href="#sources" aria-controls="sources" role="tab" data-on="click"
+  <a class="nav-link" data-toggle="tab" href="#sources" aria-controls="sources" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Sources tab"
@@ -1041,27 +957,32 @@ data-event-label="Change to Sources tab"
           <ul>
             <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
-              <li>
+              
+                <li>
                 
                   <a href="mailto:my-email-address@example.com" target="_blank">Contáctenos</a>
                 
                 </li>
-              <li>
+              
+                <li>
                 
                   <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
                 
                 </li>
-              <li>
+              
+                <li>
                 
                   <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
                 
                 </li>
-              <li>
+              
+                <li>
                 <a href="/ods-cantabria/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
-            </ul>
+            
+          </ul>
         </div>
       </div>
     </div>
@@ -1083,7 +1004,6 @@ data-event-label="Change to Sources tab"
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
@@ -1093,9 +1013,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201127103530'></script>
-
-<script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201127105627'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
@@ -1128,13 +1046,15 @@ $(function() {
               chartTitle: domData.charttitle,
               chartTitles: domData.charttitles,
               measurementUnit: domData.measurementunit,
+              copyright: domData.copyright,
+              dataSource: domData.datasource,
+              geographicalArea: domData.geographicalarea,
               showData: domData.showdata,
+              footnote: domData.footnote,
               graphType: domData.graphtype,
               startValues: domData.startvalues,
               graphLimits: domData.graphlimits,
               stackedDisaggregation: domData.stackeddisaggregation,
-              graphAnnotations: domData.graphannotations,
-              indicatorDownloads: domData.indicatordownloads,
             }),
             view  = new indicatorView(model, {
               rootElement: '#indicatorData',
