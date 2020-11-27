@@ -45,7 +45,6 @@
     </div>
     <div class="indicator-cards col-md-6 row no-gutters">
     {% for indicator in group.items %}
-      {{ indicator.reporting_status }}
       {% assign status_css = indicator.reporting_status | slugify %}
       {% if indicator.reporting_status == 'notapplicable' %}
         {% assign status_desc = page.t.status.not_applicable %}
@@ -69,11 +68,11 @@
       {% assign tag_classes = tag_classes | join: " " %}
 
       <div class="col-md-12 {{ tag_classes }} goal-indicator">
+       ++ {{ indicator.hide_status }} ++
         <span>
           {{ indicator.number }}
-
           {% if indicator.reporting_status != 'testing' %}
-        <!--  <span class="status {{ status_css }}"> -->
+            <span class="status {{ status_css }}">
             {{ status_desc }}
           </span>
           {% endif %}
