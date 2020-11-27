@@ -41,7 +41,7 @@ environment: staging
 create_indicators:
   layout: indicator
 create_goals:
-  layout: goal-by-target
+  layout: goal
 create_pages:
   pages:
     - folder: /
