@@ -25,7 +25,7 @@
   {{ content }}
 
   <div class="container">
-    <h2>Metas e indicadores</h2>
+    <h2>Targets and indicators</h2>
 
     {% assign goal_indicators = page.indicators | where: 'goal_number', page.goal.number | group_by: 'target_number' %}
     {% for group in goal_indicators %}
