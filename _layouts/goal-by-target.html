@@ -71,13 +71,13 @@
       <div class="col-md-12 {{ tag_classes }} goal-indicator">
         <span>
           {{ indicator.number }}
-          
+          {{ status_desc }}
           {% if indicator.reporting_status != 'testing' %}
-          <span class="status {{ status_css }}">
+        <!--  <span class="status {{ status_css }}"> -->
             {{ status_desc }}
           </span>
           {% endif %}
-          
+
         </span>
         <a href="{{ indicator.url }}">
           {{ indicator.name }}
