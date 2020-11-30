@@ -10,9 +10,9 @@
     {% endif %}
 
     {% assign country_name = site.country.name | t %}
-    {{ country_name }}
+    {{ site.country_name }}
     {% assign heading_default = page.t.frontpage.heading | replace: '%name', country_name %}
-    {{ heading_default }}
+    {{ site.frontpage_heading }}
     <h2 class="spacer medium">{{ site.frontpage_heading | default: heading_default | t }}</h2>
 
     {% assign instructions_default = page.t.frontpage.instructions | replace_first: '%before_link', '<span id="jump-to-search"><a>' | replace_first: '%after_link', '</a></span>' | replace_first: '%name', country_name %}
