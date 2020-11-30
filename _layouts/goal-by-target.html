@@ -1,15 +1,11 @@
 {% include head.html %}
 {% include header.html %}
 
-<div class="container">
-  {% include components/goal/breadcrumbs.html %}
-</div>
-
 <div class="heading goal-banner goal-{{ page.goal.number }}">
   <div class="container">
     <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="{{ page.goal.icon }}" alt="{{ page.goal.short | escape }} - {{ page.t.general.goal }} {{ page.goal.number }}" id="goal-{{ page.goal.number }}" />
+      <div class="col-xs-4 col-md-3 col-lg-2">
+        <img src="{{ page.goal.icon }}" alt="{{ page.goal.short | escape }} - {{ page.t.general.goal }} {{ page.goal.number }}" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
@@ -23,6 +19,11 @@
 <div id="main-content" class="container goal-indicators goal-{{ page.goal.number }} goal-by-target">
 
   {{ content }}
+
+  <ol class="breadcrumb">
+    <li><a href="{{ page.baseurl }}">{{ page.t.general.home }}</a></li>
+    <li class="active">{{ page.t.general.goal }} {{ page.goal.number }}</li>
+  </ol>
 
   <div class="visible-md-block visible-lg-block">
     <div class="col-md-6">
@@ -45,6 +46,7 @@
     </div>
     <div class="indicator-cards col-md-6 row no-gutters">
     {% for indicator in group.items %}
+
       {% assign status_css = indicator.reporting_status | slugify %}
       {% if indicator.reporting_status == 'notapplicable' %}
         {% assign status_desc = page.t.status.not_applicable %}
@@ -68,27 +70,27 @@
       {% assign tag_classes = tag_classes | join: " " %}
 
       <div class="col-md-12 {{ tag_classes }} goal-indicator">
-        <span>
-          {{ indicator.number }}
-          
-          {% if indicator.hide_status != true %}
+        <a href="{{ indicator.url }}">
+          <span>
+            {{ indicator.number }}
+
+            {% if indicator.hide_status != true %}
             <span class="status {{ status_css }}">
             {{ status_desc }}
             </span>
-          {% endif %}
+            {% endif %}
 
-        </span>
-        <a href="{{ indicator.url }}">
+          </span>
           {{ indicator.name }}
+          {% if indicator.tags %}
+            <ul class="tags">
+            {% for tag in indicator.tags %}
+              {% assign tag_class = tag | slugify %}
+              <li class="tag-{{ tag_class }} warning">{{ tag | t }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
         </a>
-        {% if indicator.tags %}
-          <ul class="tags">
-          {% for tag in indicator.tags %}
-            {% assign tag_class = tag | slugify %}
-            <li class="tag-{{ tag_class }} warning">{{ tag | t }}</li>
-          {% endfor %}
-          </ul>
-        {% endif %}
       </div>
     {% endfor %}
     </div>
