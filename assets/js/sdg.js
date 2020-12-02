@@ -18,3 +18,4 @@
 {%- include assets/js/plugins/leaflet.selectionLegend.js -%}
 {%- include assets/js/plugins/leaflet.yearSlider.js -%}
 {%- include assets/js/googleAnalytics.js -%}
+{%- include assets/js/custom/prueba.js -%}
