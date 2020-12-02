@@ -43,38 +43,6 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/1-2-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-2-2-1",
-          "title": "Proporción de personas en riesgo de pobreza o exclusión social: indicador AROPE, considerando el umbral nacional de pobreza",
-          "description": "",
-          "keywords": "",
-          "href": "/ods-cantabria/1-2-2-1",
-          "status": "complete"
-        },
-        {
-          "id": "1-2-2-1-1",
-          "title": "Proporción de personas en riesgo de pobreza o exclusión social: indicador AROPE, considerando el umbral autonómico de pobreza",
-          "description": "",
-          "keywords": "",
-          "href": "/ods-cantabria/1-2-2-1-1",
-          "status": "complete"
-        },
-        {
-          "id": "1-2-2-2",
-          "title": "Proporción de personas con carencia material severa",
-          "description": "",
-          "keywords": "",
-          "href": "/ods-cantabria/1-2-2-2",
-          "status": "complete"
-        },
-        {
-          "id": "1-2-2-3",
-          "title": "Proporción de personas viviendo en hogares con baja intensidad de trabajo",
-          "description": "",
-          "keywords": "",
-          "href": "/ods-cantabria/1-2-2-3",
           "status": "complete"
         },
         {
