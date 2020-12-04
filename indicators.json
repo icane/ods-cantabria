@@ -19,11 +19,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/1-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-2-1-1",
-          "title": "Proporción de personas en riesgo de pobreza relativa, considerando el umbral nacional de pobreza",
+          "title": "Título de prueba para un cuarto nivel de indicadores",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/1-2-1-1",
@@ -31,7 +31,7 @@
         },
         {
           "id": "1-2-1-1-1",
-          "title": "Proporción de personas en riesgo de pobreza relativa, considerando el umbral autonómico de pobreza",
+          "title": "global_indicators.1-2-1-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/1-2-1-1-1",
@@ -75,11 +75,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/1-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-5-1-1",
-          "title": "Número de personas muertas directamente atribuido a desastres por cada 100.000 habitantes",
+          "title": "global_indicators.1-5-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/1-5-1-1",
@@ -203,11 +203,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/2-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "2-4-1-1",
-          "title": "Proporción de la superficie agrícola en que se practica una agricultura productiva y sostenible",
+          "title": "global_indicators.2-4-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/2-4-1-1",
@@ -275,11 +275,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-1-1-1",
-          "title": "Tasa de mortalidad materna",
+          "title": "global_indicators.3-1-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-1-1-1",
@@ -299,11 +299,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-2-1-1",
-          "title": "Tasa de mortalidad de menores de 5 años",
+          "title": "global_indicators.3-2-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-2-1-1",
@@ -315,11 +315,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-2-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-2-2-1",
-          "title": "Tasa de mortalidad neonatal",
+          "title": "global_indicators.3-2-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-2-2-1",
@@ -371,11 +371,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-4-1-1",
-          "title": "Tasa de mortalidad atribuida a las enfermedades cardiovasculares",
+          "title": "global_indicators.3-4-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-4-1-1",
@@ -383,7 +383,7 @@
         },
         {
           "id": "3-4-1-2",
-          "title": "Tasa de mortalidad atribuida a las enfermedades respiratorias crónicas",
+          "title": "global_indicators.3-4-1-2-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-4-1-2",
@@ -391,7 +391,7 @@
         },
         {
           "id": "3-4-1-3",
-          "title": "Tasa de mortalidad atribuida a la diabetes",
+          "title": "global_indicators.3-4-1-3-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-4-1-3",
@@ -399,7 +399,7 @@
         },
         {
           "id": "3-4-1-4",
-          "title": "Tasa de mortalidad atribuida al cáncer",
+          "title": "global_indicators.3-4-1-4-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-4-1-4",
@@ -411,11 +411,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-4-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-4-2-1",
-          "title": "Tasa de mortalidad por suicidio",
+          "title": "global_indicators.3-4-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-4-2-1",
@@ -443,11 +443,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-6-1-1",
-          "title": "Tasa de mortalidad por lesiones debidas a accidentes de tráfico",
+          "title": "global_indicators.3-6-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-6-1-1",
@@ -467,11 +467,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-7-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-7-2-1",
-          "title": "Tasa de fecundidad de las adolescentes entre 10 y 14 años por cada 1.000 mujeres de ese grupo de edad",
+          "title": "global_indicators.3-7-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-7-2-1",
@@ -479,7 +479,7 @@
         },
         {
           "id": "3-7-2-2",
-          "title": "Tasa de fecundidad de las adolescentes entre 15 y 19 años por cada 1.000 mujeres de ese grupo de edad",
+          "title": "global_indicators.3-7-2-2-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-7-2-2",
@@ -523,11 +523,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-9-3",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-9-3-1",
-          "title": "Tasa de mortalidad atribuida a intoxicaciones involuntarias",
+          "title": "global_indicators.3-9-3-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-9-3-1",
@@ -619,11 +619,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/4-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "4-3-1-2",
-          "title": "Proporción de personas entre 25 y 64 años que han realizado estudios o formación en las últimas cuatro semanas",
+          "title": "global_indicators.4-3-1-2-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/4-3-1-2",
@@ -631,7 +631,7 @@
         },
         {
           "id": "4-3-1-3",
-          "title": "Proporción de personas entre 15 y 24 años que han realizado estudios o formación en las últimas cuatro semanas",
+          "title": "global_indicators.4-3-1-3-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/4-3-1-3",
@@ -639,7 +639,7 @@
         },
         {
           "id": "4-3-1-4",
-          "title": "Proporción de personas entre 15 y 64 años que han realizado estudios o formación en las últimas cuatro semanas",
+          "title": "global_indicators.4-3-1-4-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/4-3-1-4",
@@ -659,11 +659,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/4-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "4-5-1-3",
-          "title": "Índice de paridad entre municipios de 10.000 o menos habitantes y municipios de más de 10.000 habitantes de la población entre 15 y 64 años que ha realizado estudios o formación en las últimas cuatro semanas",
+          "title": "global_indicators.4-5-1-3-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/4-5-1-3",
@@ -671,7 +671,7 @@
         },
         {
           "id": "4-5-1-5",
-          "title": "Índice de paridad entre mujeres y hombres de la población entre 15 y 64 años que ha realizado estudios o formación en las últimas cuatro semanas",
+          "title": "global_indicators.4-5-1-5-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/4-5-1-5",
@@ -787,11 +787,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/5-5-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-5-2-1",
-          "title": "Proporción de mujeres en cargos directivos",
+          "title": "global_indicators.5-5-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/5-5-2-1",
@@ -799,7 +799,7 @@
         },
         {
           "id": "5-5-2-2",
-          "title": "Proporción de mujeres en alta dirección",
+          "title": "global_indicators.5-5-2-2-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/5-5-2-2",
@@ -838,8 +838,16 @@
           "status": "notstarted"
         },
         {
+          "id": "5-a-1a",
+          "title": "global_indicators.5-a-1a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/5-a-1a",
+          "status": "complete"
+        },
+        {
           "id": "5-a-1a-1",
-          "title": "Proporción de titulares de explotaciones agrícolas, respecto al total de personas trabajadoras en la agricultura",
+          "title": "global_indicators.5-a-1a-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/5-a-1a-1",
@@ -847,7 +855,7 @@
         },
         {
           "id": "5-a-1a-2",
-          "title": "Proporción de hombres titulares de explotaciones agrícolas, respecto al total de hombres trabajadores en la agricultura",
+          "title": "global_indicators.5-a-1a-2-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/5-a-1a-2",
@@ -855,15 +863,23 @@
         },
         {
           "id": "5-a-1a-3",
-          "title": "Proporción de mujeres titulares de explotaciones agrícolas, respecto al total de mujeres trabajadoras en la agricultura",
+          "title": "global_indicators.5-a-1a-3-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/5-a-1a-3",
           "status": "complete"
         },
         {
+          "id": "5-a-1b",
+          "title": "global_indicators.5-a-1b-title",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/5-a-1b",
+          "status": "complete"
+        },
+        {
           "id": "5-a-1b-1",
-          "title": "Proporción de mujeres titulares de explotaciones agrícolas, respecto al total de titulares de explotaciones agrícolas",
+          "title": "global_indicators.5-a-1b-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/5-a-1b-1",
@@ -871,7 +887,7 @@
         },
         {
           "id": "5-a-1b-2",
-          "title": "Proporción de mujeres titulares de explotaciones agrícolas en propiedad, respecto al total de titulares de explotaciones agrícolas en propiedad",
+          "title": "global_indicators.5-a-1b-2-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/5-a-1b-2",
@@ -879,7 +895,7 @@
         },
         {
           "id": "5-a-1b-3",
-          "title": "Proporción de mujeres titulares de explotaciones agrícolas en arrendamiento, respecto al total de titulares de explotaciones agrícolas en arrendamiento",
+          "title": "global_indicators.5-a-1b-3-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/5-a-1b-3",
@@ -1115,11 +1131,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/8-5-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-5-2-2",
-          "title": "Tasa de desempleo de hombres",
+          "title": "global_indicators.8-5-2-2-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/8-5-2-2",
@@ -1127,7 +1143,7 @@
         },
         {
           "id": "8-5-2-3",
-          "title": "Tasa de desempleo de mujeres",
+          "title": "global_indicators.8-5-2-3-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/8-5-2-3",
@@ -1139,11 +1155,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/8-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-6-1-1",
-          "title": "Proporción de jóvenes entre 15 y 24 años que no cursan estudios, no están empleados ni reciben formación",
+          "title": "global_indicators.8-6-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/8-6-1-1",
@@ -1259,11 +1275,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/9-2-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-2-2-1",
-          "title": "Proporción de personas ocupadas en el sector manufacturero",
+          "title": "global_indicators.9-2-2-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/9-2-2-1",
@@ -1347,11 +1363,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/10-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-1-1-1",
-          "title": "Tasa de crecimiento per cápita de los ingresos de los hogares del 40% más pobre de la población",
+          "title": "global_indicators.10-1-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/10-1-1-1",
@@ -1359,7 +1375,7 @@
         },
         {
           "id": "10-1-1-4",
-          "title": "Tasa de crecimiento per cápita de los ingresos de los hogares de la población total",
+          "title": "global_indicators.10-1-1-4-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/10-1-1-4",
@@ -1371,11 +1387,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/10-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-2-1-1",
-          "title": "Proporción de personas que viven por debajo del 50% de la mediana de los ingresos, considerando la mediana nacional",
+          "title": "global_indicators.10-2-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/10-2-1-1",
@@ -1383,7 +1399,7 @@
         },
         {
           "id": "10-2-1-1-1",
-          "title": "Proporción de personas que viven por debajo del 50% de la mediana de los ingresos, considerando la mediana autonómica",
+          "title": "global_indicators.10-2-1-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/10-2-1-1-1",
@@ -1515,11 +1531,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/11-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-5-1-1",
-          "title": "Número de personas muertas directamente atribuido a desastres por cada 100.000 habitantes",
+          "title": "global_indicators.11-5-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/11-5-1-1",
@@ -1723,11 +1739,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/13-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "13-1-1-1",
-          "title": "Número de personas muertas directamente atribuido a desastres por cada 100.000 habitantes",
+          "title": "global_indicators.13-1-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/13-1-1-1",
@@ -2035,11 +2051,11 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/16-1-4",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-1-4-1",
-          "title": "Proporción de personas que se sienten seguras al caminar sola en su zona de residencia",
+          "title": "global_indicators.16-1-4-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/16-1-4-1",
