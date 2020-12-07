@@ -31,7 +31,7 @@ languages:
 #remote_theme: open-sdg/open-sdg@master
 
 # Replace this title as needed.
-title: Indicators For The Sustainable Development Goals
+title: Indicadores de Desarrollo Sostenible
 url: ""
 data_dir: data
 environment: staging
@@ -64,9 +64,9 @@ analytics:
 
 # Replace the email addresses below.
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: icane@cantabria.es
+  suggestions: icane@cantabria.es
+  functional: icane@cantabria.es
 
 # International Support
 # Eg name: Australia and adjective: Australian
@@ -131,11 +131,11 @@ menu:
   #  translation_key: menu.updates
 
 footer_menu:
-  - path: mailto:my-email-address@example.com
+  - path: mailto:icane@cantabria.es
     translation_key: menu.contact_us
-  - path: https://twitter.com/MyTwitterAccount
+  - path: https://twitter.com/icane_es
     translation_key: general.twitter
-  - path: https://facebook.com/MyFacebookAccount
+  - path: https://facebook.com/icaneCantabria
     translation_key: general.facebook
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
