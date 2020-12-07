@@ -32,6 +32,7 @@
           {% else %}
             {{ page.indicator[indicator_metadata.name] | markdownify }}
           {% endif %}
+          {{ page.indicator[indicator_metadata.name] }}_x_{{ indicator_metadata.name }}
         </td>
         </tr>
         {% endunless %}
