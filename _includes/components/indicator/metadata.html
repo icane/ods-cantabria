@@ -1,9 +1,10 @@
 <table class="table">
   {% for indicator_metadata in site.data.schema %}
-    {% if indicator_metadata.name == "national_indicator_description" or 
+    <!-- {% if indicator_metadata.name == "national_indicator_description" or 
             indicator_metadata.name == "target_name" or
             indicator_metadata.name == "target_id" or
             indicator_metadata.name == "computation_definitions" %}
+    -->
  
       {%- assign metadata_label = indicator_metadata.name | translate_metadata_field -%}
     <!-- {% if indicator_metadata.field.scope == include.scope %} -->
@@ -44,7 +45,7 @@
             </td>
             </tr>
             {% endunless %}
-
-     {% endif %}
+    <!-- {% endif %} -->        
+    <!-- {% endif %} -->
   {% endfor %}
 </table>
