@@ -1,6 +1,5 @@
 <table class="table">
   {% for indicator_metadata in site.data.schema %}
-    {{ indicator_metadata.name }}_x_
     {%- assign metadata_label = indicator_metadata.name | translate_metadata_field -%}
    <!-- {% if indicator_metadata.field.scope == include.scope %} -->
       {% if site.hide_empty_metadata %}
@@ -9,10 +8,11 @@
         {% endunless %}
       {% endif %}
 
-      <!--{% if indicator_metadata.name == "national_indicator_description" or 
+      {% if indicator_metadata.name == "national_indicator_description" or 
             indicator_metadata.name == "target_name" or
-            indicator_metadata.name == "target_id" %}
-      -->
+            indicator_metadata.name == "target_id" or
+            indicator_metadata.name == "computation_definitions" %}
+      
 
         {% unless indicator_metadata.name contains "_url_text" or indicator_metadata.name contains "_link_text" %}
         <tr>
@@ -44,7 +44,7 @@
           </tr>
           {% endunless %}
 
-      <!-- {% endif %} -->
+      {% endif %}
     <!-- {% endif %} -->
   {% endfor %}
 </table>
