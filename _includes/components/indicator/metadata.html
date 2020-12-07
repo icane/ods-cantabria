@@ -8,7 +8,7 @@
         {% endunless %}
       {% endif %}
 
-      {% if indicator_metadata.name = "national_indicator_description" %}
+      {% if indicator_metadata.name == "national_indicator_description" %}
 
         {% unless indicator_metadata.name contains "_url_text" or indicator_metadata.name contains "_link_text" %}
         <tr>
