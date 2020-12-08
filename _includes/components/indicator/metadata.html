@@ -19,7 +19,7 @@
               {% assign url_text = 'Link' %}
             {% endunless %}
 
-            {{ url_text }}
+            {{ url_text | remove: ": see changes on GitHub" | date: "%d/%m/%Y"}}
 
             {% if page.indicator[indicator_metadata.name] contains "http" or page.indicator[indicator_metadata.name] contains "mailto" %}
               <a href="{{ page.indicator[indicator_metadata.name] }}" target="_blank">
