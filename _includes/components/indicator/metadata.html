@@ -19,13 +19,17 @@
               {% assign url_text = 'Link' %}
             {% endunless %}
 
-            {{ url_text | remove: ": see changes on GitHub" | date: "%d/%m/%Y"}}
+            {% if indicator_metadata.name == "national_data_update_url" %}
+              {{ url_text | remove: ": see changes on GitHub" | date: "%d/%m/%Y"}}
+            {% else %}
 
-            {% if page.indicator[indicator_metadata.name] contains "http" or page.indicator[indicator_metadata.name] contains "mailto" %}
-              <a href="{{ page.indicator[indicator_metadata.name] }}" target="_blank">
-                {{ url_text }} <span class="visuallyhidden">{{ page.t.general.opens_new_window }}</span>
-              </a>
-            {% endif %}
+              {% if page.indicator[indicator_metadata.name] contains "http" or page.indicator[indicator_metadata.name] contains "mailto" %}
+                <a href="{{ page.indicator[indicator_metadata.name] }}" target="_blank">
+                  {{ url_text }} <span class="visuallyhidden">{{ page.t.general.opens_new_window }}</span>
+                </a>
+              {% endif %}
+              
+            {% end if %}
 
           {% elsif indicator_metadata.field.element == 'multiselect' %}
             {% for item in page.indicator[indicator_metadata.name] %}
