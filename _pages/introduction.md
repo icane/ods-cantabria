@@ -5,7 +5,7 @@ language: es
 layout: page
 ---
 <p align="center">
-  <img width="250" src="/ods-cantabria/assets/img/SDG Wheel_Transparent-01.png">
+  <img width="250" src="/ods-cantabria/assets/img/SDG Wheel_Transparent-01.png" alt="Apoyamos el desarrollo sostenible">
 </p>
 ### INDICADORES PARA LOS OBJETIVOS DE DESARROLLO SOSTENIBLE 2030 A NIVEL DE COMUNIDAD AUTÓNOMA
 
