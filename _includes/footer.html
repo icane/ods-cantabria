@@ -13,6 +13,12 @@
             <li>
               <img src="{{ site.baseurl }}/assets/img/Logo_Icane.png" alt="Logo Icane">
             </li>
+            <li>
+              <div>
+                <a href="{{ site.baseurl }}">Linea uno</a><br>
+                <a href="{{ site.baseurl }}">Linea dos</a>
+              </div>
+            </li>
 
             {% if site.footer_menu %}
               {% for item in site.footer_menu %}
@@ -32,13 +38,6 @@
             {% endif %}
 
             <li><a href="https://open-sdg.org">{{ page.t.general.built_using_open_sdg }}</a></li>
-
-            <li>
-              <div>
-                <a href="{{ site.baseurl }}">Linea uno</a>
-                <a href="{{ site.baseurl }}">Linea dos</a>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
