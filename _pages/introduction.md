@@ -1,11 +1,12 @@
 ---
-title: Presentación
+title: #Presentación
 permalink: /introduction/
 language: es
 layout: page
 ---
-
-![Apoyamos los objetivos de desarrollo sostenible](/ods-cantabria/assets/img/SDG Wheel_Transparent-01.png)
+<p align="center">
+  <img width="250" src="/ods-cantabria/assets/img/SDG Wheel_Transparent-01.png">
+</p>
 ### INDICADORES PARA LOS OBJETIVOS DE DESARROLLO SOSTENIBLE 2030 A NIVEL DE COMUNIDAD AUTÓNOMA
 
 En el año 2015 la ONU aprobó la Agenda 2030 sobre el desarrollo sostenible, en la que se fijaron 17 objetivos, que incluyen desde la eliminación de la pobreza hasta el combate al cambio climático, la educación, la igualdad de la mujer, la defensa del medio ambiente o el diseño de nuestras ciudades. Cada uno de estos objetivos contiene una serie de metas específicas, que particularizan las acciones a desarrollar.
