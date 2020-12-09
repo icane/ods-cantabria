@@ -1,26 +1,18 @@
 <footer role="contentinfo">
   <div class="container">
-    <div class="row">
-      <div class="col-md-2">
-        <p align="center">
-          <img style="width: 150px; height: 95px" src="{{ site.baseurl }}/assets/img/Consejeria_Hacienda-Gobierno_Cantabria.png" alt="Logo Consejería de Hacienda - Gobierno de Cantabria">
-        </p>
-      </div>
-      <div class="col-md-2">
-        <p align="center">
-          <img style="width: 150px; height: 95px" src="{{ site.baseurl }}/assets/img/Logo_Camino_Lebaniego.png" alt="Logo Camino Lebaniego">
-        </p>
-      </div>      
-      <div class="col-md-2">
-        <p align="center">
-          <img src="{{ site.baseurl }}/assets/img/Logo_Icane.png" alt="Logo Icane">
-        </p>
-      </div>
-    </div>
-    <div class="row">
+    <div class="row"></div>
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
+            <li>
+                <img style="width: 150px; height: 95px" src="{{ site.baseurl }}/assets/img/Consejeria_Hacienda-Gobierno_Cantabria.png" alt="Logo Consejería de Hacienda - Gobierno de Cantabria">
+            </li>
+            <li>
+              <img style="width: 150px; height: 95px" src="{{ site.baseurl }}/assets/img/Logo_Camino_Lebaniego.png" alt="Logo Camino Lebaniego">
+            </li>
+            <li>
+              <img src="{{ site.baseurl }}/assets/img/Logo_Icane.png" alt="Logo Icane">
+            </li>
             <li><a href="https://open-sdg.org">{{ page.t.general.built_using_open_sdg }}</a></li>
             {% if site.footer_menu %}
               {% for item in site.footer_menu %}
@@ -42,6 +34,7 @@
         </div>
       </div>
     </div>
+   </div> 
   </div>
 </footer>
 
