@@ -1,5 +1,5 @@
 ---
-title: About
+title: Introduction
 permalink: /en/introduction/
 language: en
 layout: page
