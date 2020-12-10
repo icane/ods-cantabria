@@ -17,11 +17,11 @@
               <img src="{{ site.baseurl }}/assets/img/Logo_Icane.png" alt="Logo Icane">
             </li>
             <li>
-              <div class="col-md-12">
-                <p style="text-align: right; margin-bottom: 0px;">
+              <div style="width:50px;">
+                <p>
                   <a href="http://twitter.com/icane_es" target="_blank"><img src="{{ site.baseurl }}/assets/img/twitter_icon.png" alt="Icono de enlace a Twitter ICANE"></a>
                 </p>
-                <p style="text-align: right; margin-bottom: 0px;">
+                <p>
                   <a href="http://www.facebook.com/icaneCantabria" target="_blank"><img src="{{ site.baseurl }}/assets/img/facebook_icon.png" alt="Logotipo Facebook ICANE" width="32" height="32"></a>
                 </p>
               </div>
@@ -29,7 +29,6 @@
             {% if site.footer_menu %}
               {% for item in site.footer_menu %}
                 <li>
-                  <div class="col-md-12">
                 {% if item.path contains ":" %}
                   <a href="{{ item.path }}" target="_blank">{{ item.translation_key | t }}</a>
                 {% else %}
@@ -40,7 +39,6 @@
                   {%- endif -%}
                   <a href="{{ page.baseurl }}{{ item_path }}">{{ item.translation_key | t }}</a>
                 {% endif %}
-                  </div>
                 </li>
               {% endfor %}
             {% endif %}
