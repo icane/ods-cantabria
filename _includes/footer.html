@@ -3,37 +3,27 @@
     <div class="row"></div>
       <div class="col-xs-12">
         <div id="footerLinks">
-          <ul>
+          <ul style="display: flex; flex-direction: column; align-items: center;">
             <li>
-                <div aling="center">
-                  <img style="width: 150px; height: 95px" src="{{ site.baseurl }}/assets/img/Consejeria_Hacienda-Gobierno_Cantabria.png" alt="Logo Consejería de Hacienda - Gobierno de Cantabria">
-                </div>
+              <img style="width: 150px; height: 95px" src="{{ site.baseurl }}/assets/img/Consejeria_Hacienda-Gobierno_Cantabria.png" alt="Logo Consejería de Hacienda - Gobierno de Cantabria">
             </li>
             <li>
-              <div aling="center">
-                <img style="width: 150px; height: 95px" src="{{ site.baseurl }}/assets/img/Logo_Camino_Lebaniego.png" alt="Logo Camino Lebaniego">
-              </div>
+              <img style="width: 150px; height: 95px" src="{{ site.baseurl }}/assets/img/Logo_Camino_Lebaniego.png" alt="Logo Camino Lebaniego">
             </li>
             <li>
-              <div aling="center">
-                <img src="{{ site.baseurl }}/assets/img/Logo_Icane.png" alt="Logo Icane">
-              </div>
+              <img src="{{ site.baseurl }}/assets/img/Logo_Icane.png" alt="Logo Icane">
             </li>
             <li>
-              <div aling="center">
-                <p style="text-align: right; margin-bottom: 0px;">
-                  <a href="http://twitter.com/icane_es" target="_blank"><img src="{{ site.baseurl }}/assets/img/twitter_icon.png" alt="Icono de enlace a Twitter ICANE"></a>
-                </p>
-                <p style="text-align: right; margin-bottom: 0px;">
-                  <a href="http://www.facebook.com/icaneCantabria" target="_blank"><img src="{{ site.baseurl }}/assets/img/facebook_icon.png" alt="Logotipo Facebook ICANE" width="32" height="32"></a>
-                </p>
-              </div>
+              <p style="text-align: right; margin-bottom: 0px;">
+                <a href="http://twitter.com/icane_es" target="_blank"><img src="{{ site.baseurl }}/assets/img/twitter_icon.png" alt="Icono de enlace a Twitter ICANE"></a>
+              </p>
+              <p style="text-align: right; margin-bottom: 0px;">
+                <a href="http://www.facebook.com/icaneCantabria" target="_blank"><img src="{{ site.baseurl }}/assets/img/facebook_icon.png" alt="Logotipo Facebook ICANE" width="32" height="32"></a>
+              </p>
             </li>
-
             {% if site.footer_menu %}
               {% for item in site.footer_menu %}
                 <li>
-                  <div aling="center">
                 {% if item.path contains ":" %}
                   <a href="{{ item.path }}" target="_blank">{{ item.translation_key | t }}</a>
                 {% else %}
@@ -44,7 +34,6 @@
                   {%- endif -%}
                   <a href="{{ page.baseurl }}{{ item_path }}">{{ item.translation_key | t }}</a>
                 {% endif %}
-                  </div>
                 </li>
               {% endfor %}
             {% endif %}
