@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201210065604">
+        <link rel="stylesheet" href="/ods-cantabria/assets/css/style.css?v=20201210071259">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -687,48 +687,35 @@ var translations = {
     <div class="row"></div>
       <div class="col-xs-12">
         <div id="footerLinks">
-          <ul>
+          <ul style="display: flex; flex-direction: column; align-items: center;">
             <li>
-                <div aling="center">
-                  <img style="width: 150px; height: 95px" src="/ods-cantabria/assets/img/Consejeria_Hacienda-Gobierno_Cantabria.png" alt="Logo Consejería de Hacienda - Gobierno de Cantabria">
-                </div>
+              <img style="width: 150px; height: 95px" src="/ods-cantabria/assets/img/Consejeria_Hacienda-Gobierno_Cantabria.png" alt="Logo Consejería de Hacienda - Gobierno de Cantabria">
             </li>
             <li>
-              <div aling="center">
-                <img style="width: 150px; height: 95px" src="/ods-cantabria/assets/img/Logo_Camino_Lebaniego.png" alt="Logo Camino Lebaniego">
-              </div>
+              <img style="width: 150px; height: 95px" src="/ods-cantabria/assets/img/Logo_Camino_Lebaniego.png" alt="Logo Camino Lebaniego">
             </li>
             <li>
-              <div aling="center">
-                <img src="/ods-cantabria/assets/img/Logo_Icane.png" alt="Logo Icane">
-              </div>
+              <img src="/ods-cantabria/assets/img/Logo_Icane.png" alt="Logo Icane">
             </li>
             <li>
-              <div aling="center">
-                <p style="text-align: right; margin-bottom: 0px;">
-                  <a href="http://twitter.com/icane_es" target="_blank"><img src="/ods-cantabria/assets/img/twitter_icon.png" alt="Icono de enlace a Twitter ICANE"></a>
-                </p>
-                <p style="text-align: right; margin-bottom: 0px;">
-                  <a href="http://www.facebook.com/icaneCantabria" target="_blank"><img src="/ods-cantabria/assets/img/facebook_icon.png" alt="Logotipo Facebook ICANE" width="32" height="32"></a>
-                </p>
-              </div>
+              <p style="text-align: right; margin-bottom: 0px;">
+                <a href="http://twitter.com/icane_es" target="_blank"><img src="/ods-cantabria/assets/img/twitter_icon.png" alt="Icono de enlace a Twitter ICANE"></a>
+              </p>
+              <p style="text-align: right; margin-bottom: 0px;">
+                <a href="http://www.facebook.com/icaneCantabria" target="_blank"><img src="/ods-cantabria/assets/img/facebook_icon.png" alt="Logotipo Facebook ICANE" width="32" height="32"></a>
+              </p>
             </li>
-
             
               
                 <li>
-                  <div aling="center">
                 
                   <a href="mailto:icane@cantabria.es" target="_blank">Contact us</a>
                 
-                  </div>
                 </li>
               
                 <li>
-                  <div aling="center">
                 <a href="/ods-cantabria/en/about/cookies-and-privacy/">Cookies</a>
                 
-                  </div>
                 </li>
               
             
@@ -766,7 +753,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/ods-cantabria/assets/js/sdg.js?v=20201210065604'></script><script>
+<script src='/ods-cantabria/assets/js/sdg.js?v=20201210071259'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
