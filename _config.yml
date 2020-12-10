@@ -133,10 +133,10 @@ menu:
   #  translation_key: menu.updates
 
 footer_menu:
-  - path: https://twitter.com/icane_es
-    translation_key: general.twitter
-  - path: https://facebook.com/icaneCantabria
-    translation_key: general.facebook
+  # - path: https://twitter.com/icane_es
+  #   translation_key: general.twitter
+  # - path: https://facebook.com/icaneCantabria
+  #   translation_key: general.facebook
   - path: mailto:icane@cantabria.es
     translation_key: menu.contact_us
   - path: /about/cookies-and-privacy/
