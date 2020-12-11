@@ -11,7 +11,7 @@
 #
 # NOTE: This "production" version only contains differences from _config.yml.
 
-baseurl: "/ods-cantabria"
+baseurl: ""
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
 remote_data_prefix: "https://ods-cantabria.github.io/ods-data-cantabria"
