@@ -14,7 +14,7 @@
 baseurl: ""
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
-remote_data_prefix: "https://ods-cantabria.github.io/ods-data-cantabria/"
+remote_data_prefix: "https://ods-cantabria.github.io/ods-data-cantabria"
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
