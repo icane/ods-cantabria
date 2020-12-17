@@ -639,7 +639,7 @@
         },
         {
           "id": "5-a-1",
-          "title": "(a) Proportion of total agricultural population with ownership or secure rights over agricultural land, by sex; and (b) share of women among owners or rights-bearers of agricultural land, by type of tenure",
+          "title": "global_indicators.5-a-1-title",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/en/5-a-1",
@@ -655,7 +655,7 @@
         },
         {
           "id": "5-a-1a",
-          "title": "global_indicators.5-a-1a-title",
+          "title": "Proportion of total agricultural population with ownership or secure rights over agricultural land, by sex",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/en/5-a-1a",
@@ -663,7 +663,7 @@
         },
         {
           "id": "5-a-1b",
-          "title": "global_indicators.5-a-1b-title",
+          "title": "Proportion of women among owners or rights-bearers of agricultural land, by type of tenure",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/en/5-a-1b",
