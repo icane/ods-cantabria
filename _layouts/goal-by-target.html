@@ -69,32 +69,37 @@
       {% endif %}
       {% assign tag_classes = tag_classes | join: " " %}
 
-      {% if indicator.hide_status != true %}
+      {% if indicator.reporting_status == 'complete' %}
 
-      <div class="col-md-12 {{ tag_classes }} goal-indicator">
-        <a href="{{ indicator.url }}">
-          <span>
-            {{ indicator.number }}
+        {% if indicator.hide_status != true %}
 
-            {% if indicator.hide_status != true %}
-            <span class="status {{ status_css }}">
-            {{ status_desc }}
+        <div class="col-md-12 {{ tag_classes }} goal-indicator">
+          <a href="{{ indicator.url }}">
+            <span>
+              {{ indicator.number }}
+
+              {% if indicator.hide_status != true %}
+              <span class="status {{ status_css }}">
+              {{ status_desc }}
+              </span>
+              {% endif %}
+
             </span>
+            {{ indicator.name }}
+            {% if indicator.tags %}
+              <ul class="tags">
+              {% for tag in indicator.tags %}
+                {% assign tag_class = tag | slugify %}
+                <li class="tag-{{ tag_class }} warning">{{ tag | t }}</li>
+              {% endfor %}
+              </ul>
             {% endif %}
+          </a>
+        </div>
+        {% endif %}
 
-          </span>
-          {{ indicator.name }}
-          {% if indicator.tags %}
-            <ul class="tags">
-            {% for tag in indicator.tags %}
-              {% assign tag_class = tag | slugify %}
-              <li class="tag-{{ tag_class }} warning">{{ tag | t }}</li>
-            {% endfor %}
-            </ul>
-          {% endif %}
-        </a>
-      </div>
       {% endif %}
+
     {% endfor %}
     </div>
   {% endfor %}
