@@ -18,4 +18,4 @@ remote_data_prefix: "https://ods-cantabria.github.io/ods-data-cantabria"
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
-  ga_prod: ''
+  ga_prod: 'G-8M9NYZJ30W'
