@@ -43,7 +43,7 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/en/1-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-4-2",
@@ -355,7 +355,7 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/en/3-7-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-7-2",
@@ -379,7 +379,7 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/en/3-8-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-9-1",
@@ -587,7 +587,7 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/en/5-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-3-2",
@@ -931,7 +931,7 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/en/8-9-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-9-2",
@@ -1019,7 +1019,7 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/en/9-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-3-2",
@@ -2100,6 +2100,14 @@
           "keywords": "",
           "href": "/ods-cantabria/en/17-19-2",
           "status": "notstarted"
+        },
+        {
+          "id": "17-19-2a",
+          "title": "global_indicators.17-19-2a-title",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/en/17-19-2a",
+          "status": "complete"
         }]
     }
   }]
