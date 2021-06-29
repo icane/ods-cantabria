@@ -12,7 +12,11 @@
         </div>
         <% _.each(fieldItem.values, function(item) { %>
           <label>
-            <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
+            {% if item.value == "Cantabria" or item.value == "España" %}
+              <input type="checkbox" checked> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
+            {% elsif%}
+              <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
+            {% endif %}
           </label>
         <% }); %>
       </div>
