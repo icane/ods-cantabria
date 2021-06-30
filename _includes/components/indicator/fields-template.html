@@ -18,7 +18,7 @@
           <label>
               <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
           </label>
-        <% }); updateWithSelectedFields();%>
+        <% });%>
       </div>
 
       <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
