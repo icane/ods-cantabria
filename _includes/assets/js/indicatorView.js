@@ -57,6 +57,8 @@ var indicatorView = function (model, options) {
         $main.removeClass('indicator-main-full');
       }
     });
+
+    updateWithSelectedFields();
   });
 
   this._model.onDataComplete.attach(function (sender, args) {
