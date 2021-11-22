@@ -1,54 +1,6 @@
 [
   {
     "goal": {
-      "id": " 11",
-      "title": "global_goals. 11-title",
-      "indicators": [
-        
-        {
-          "id": " 11-5-1",
-          "title": "Número de personas muertas, desaparecidas y afectadas directamente atribuido a desastres por cada 100.000 personas",
-          "description": "",
-          "keywords": "",
-          "href": "/ods-cantabria/ 11-5-1",
-          "status": "complete"
-        }]
-    }
-  },
-  {
-    "goal": {
-      "id": " 12",
-      "title": "global_goals. 12-title",
-      "indicators": [
-        
-        {
-          "id": " 12-5-1",
-          "title": "Tasa nacional de reciclado, en toneladas de material reciclado",
-          "description": "",
-          "keywords": "",
-          "href": "/ods-cantabria/ 12-5-1",
-          "status": "complete"
-        }]
-    }
-  },
-  {
-    "goal": {
-      "id": " 13",
-      "title": "global_goals. 13-title",
-      "indicators": [
-        
-        {
-          "id": " 13-1-1",
-          "title": "Número de personas muertas, desaparecidas y afectadas directamente atribuido a desastres por cada 100.000 personas",
-          "description": "",
-          "keywords": "",
-          "href": "/ods-cantabria/ 13-1-1",
-          "status": "complete"
-        }]
-    }
-  },
-  {
-    "goal": {
       "id": "1",
       "title": "Poner fin a la pobreza en todas sus formas y en todo el mundo",
       "indicators": [
