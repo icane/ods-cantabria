@@ -24,13 +24,10 @@ languages:
 #
 # That's enough for the Quick Start! The remaining settings can be configured later.
 
-
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 # Recommended: set this to a particular "release" of Open SDG. For example:
 #remote_theme: open-sdg/open-sdg@1.1.0
 #remote_theme: open-sdg/open-sdg@master
-
-data_edit_url: data
 
 # Replace this title as needed.
 title: Indicadores de Desarrollo Sostenible
@@ -59,7 +56,7 @@ create_pages:
       layout: search
 
 analytics:
-  ga_prod: ''
+  ga_prod: ""
 
 # Sticky share buttons (facebook, twitter and email)
 #sharethis_property: '5d279253faeee40012f195e1'
@@ -167,7 +164,6 @@ exclude:
   - README
   - README.md
   - LICENSE
-
 # Optionally uncomment and update the settings below to control the mapping functionality.
 # These are only a few of the possible settings. For more details, see:
 # https://open-sdg.readthedocs.io/en/latest/maps/
