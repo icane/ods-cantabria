@@ -15,5 +15,6 @@ JEKYLL_BASEURL=$(
 mkdir -p ./_test$JEKYLL_BASEURL &&
 cp -r ./_site/* ./_test$JEKYLL_BASEURL/ &&
 touch ./_test/index.html &&
+gem update --system 3.2.3 &&
 bundle exec htmlproofer --disable-external ./_test &&
 rm -rf ./_test
