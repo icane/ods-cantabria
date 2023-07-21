@@ -43,7 +43,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@3.6.2
       with:
         REPOSITORY_NAME: ods-cantabria/ods-cantabria
-        ACCESS_TOKEN: ${{ secrets.token }}
+        ACCESS_TOKEN: ${{ secrets.TOKEN }}
         BRANCH: master
         FOLDER: _site
         CLEAN: true
