@@ -13,9 +13,12 @@ remote_data_prefix: "https://icane.github.io/ods-data-cantabria/"
 # In the next few items, replace "open-sdg" with the name of your GitHub
 # organization, and "open-sdg-data-starter" with the name of your data repository.
 # URL for the "Edit Data" button on indicators.
-data_edit_url: http://prose.io/#icane/open-sdg-data-starter/edit/develop/data/indicator_[id].csv
+
+#data_edit_url: http://prose.io/#icane/ods-data-cantabria/edit/develop/data/indicator_[id].csv
+
 # URL for the "Edit Metadata" button on indicators.
-metadata_edit_url: http://prose.io/#icane/open-sdg-data-starter/edit/develop/meta/[id].md
+#metadata_edit_url: http://prose.io/#icane/ods-data-cantabria/edit/develop/meta/[id].md
+
 #
 # The list of languages that are translated. The first one is the default.
 languages:
@@ -23,7 +26,6 @@ languages:
   - en
 #
 # That's enough for the Quick Start! The remaining settings can be configured later.
-
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 # Recommended: set this to a particular "release" of Open SDG. For example:
@@ -57,7 +59,7 @@ create_pages:
       layout: search
 
 analytics:
-  ga_prod: ''
+  ga_prod: ""
 
 # Sticky share buttons (facebook, twitter and email)
 #sharethis_property: '5d279253faeee40012f195e1'
@@ -165,7 +167,6 @@ exclude:
   - README
   - README.md
   - LICENSE
-
 # Optionally uncomment and update the settings below to control the mapping functionality.
 # These are only a few of the possible settings. For more details, see:
 # https://open-sdg.readthedocs.io/en/latest/maps/
