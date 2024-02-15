@@ -17,11 +17,11 @@ jobs:
       run: |
         gem install jekyll -v '3.9'
         gem install kramdown-parser-gfm -v '1.1'
+        gem install github-pages
         gem install bundler
         bundle config path vendor/bundle
         bundle install
         bundle add rexml webrick
-        bundle update github-pages
         bundle exec jekyll build
 #    - name: Test the HTML
 #      run: bash scripts/test/html_proofer_staging.sh
