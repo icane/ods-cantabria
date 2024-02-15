@@ -9,12 +9,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up Ruby 2.7
+    - name: Set up Ruby 3.1
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.7'
+        ruby-version: '3.1'
     - name: Build the site
       run: |
+        gem install jekyll -v '3.9'
+        gem install kramdown-parser-gfm -v '1.1'
         gem install bundler
         bundle config path vendor/bundle
         bundle install
