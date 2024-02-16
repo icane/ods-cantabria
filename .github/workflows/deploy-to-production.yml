@@ -1,12 +1,3 @@
-# ****************************************************************************
-# NOTES:
-#
-# This is an example of a production deployment that uses GitHub Pages along
-# with a second "production" GitHub organisation. If you prefer to implement
-# your own workflow, or do not need production deployments, then you should
-# delete this file.
-#
-# In order for this to work, you must replace PRODUCTION_ORGANISATION below
 # with the name of your production GitHub organisation, under REPOSITORY_NAME.
 #
 # For example, if your production organisation is "my-stats-org", then use:
@@ -21,29 +12,31 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   build:
-
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
-      with:
-        ruby-version: 2.6.x
-    - name: Build the site
-      run: |
-        gem install bundler
-        bundle config path vendor/bundle
-        bundle install
-        bundle exec jekyll build --config _config.yml,_config_prod.yml
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.6.2
-      with:
-        REPOSITORY_NAME: ods-cantabria/ods-cantabria
-        ACCESS_TOKEN: ${{ secrets.TOKEN }}
-        BRANCH: master
-        FOLDER: _site
-        CLEAN: true
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: Set up Ruby 2.6
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "2.6"
+      - name: Build the site
+        run: |
+          gem install bundler
+          bundle config path vendor/bundle
+          bundle install
+          JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_prod.yml
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          REPOSITORY_NAME: ods-cantabria/ods-cantabria.github.io
+          ACCESS_TOKEN: ${{ secrets.token }}
+          BRANCH: main
+          FOLDER: _site
+          CLEAN: true
