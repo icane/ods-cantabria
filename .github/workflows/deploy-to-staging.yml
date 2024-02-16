@@ -15,20 +15,20 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Ruby 3.1
+    - uses: actions/checkout@v1
+    - name: Set up Ruby 3.2
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.1'
+        ruby-version: '3.2.2'
     - name: Build the site
       run: |
-        gem install jekyll -v '3.9'
-        gem install kramdown-parser-gfm -v '1.1'
-        gem install github-pages
+#        gem install jekyll -v '3.9'
+#        gem install kramdown-parser-gfm -v '1.1'
+#        gem install github-pages
         gem install bundler
         bundle config path vendor/bundle
         bundle install
-        bundle add rexml webrick
+#        bundle add rexml webrick
         bundle exec jekyll build
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.6.2
