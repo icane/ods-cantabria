@@ -6,4 +6,6 @@ gem "jekyll-remote-theme"
 gem "deep_merge"
 gem "kramdown-parser-gfm", "~> 1.1"
 gem "jekyll-open-sdg-plugins", "1.8.0"
+gem "nokogiri"
+gem "open-uri"
 
