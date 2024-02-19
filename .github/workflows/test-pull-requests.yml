@@ -22,6 +22,6 @@ jobs:
         gem install bundler
         bundle config path vendor/bundle
         bundle install
-        # bundle exec jekyll build --baseurl=/${{ env.GITHUB_REPOSITORY_NAME_PART }}
+        bundle exec jekyll build --baseurl=/${{ env.GITHUB_REPOSITORY_NAME_PART }}
     - name: Test the HTML
       run: bash scripts/test/html_proofer_staging.sh
