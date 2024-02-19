@@ -68,6 +68,14 @@
           "keywords": "",
           "href": "/ods-cantabria/2-4-1",
           "status": "complete"
+        },
+        {
+          "id": "2-c-1",
+          "title": "Indicador de anomalías en los precios de los alimentos",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/2-c-1",
+          "status": "complete"
         }]
     }
   },
@@ -110,6 +118,38 @@
           "status": "complete"
         },
         {
+          "id": "3-3-1",
+          "title": "Número de nuevas infecciones por el VIH por cada 1.000 habitantes no infectados, desglosado por sexo, edad y poblaciones clave",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/3-3-1",
+          "status": "complete"
+        },
+        {
+          "id": "3-3-2",
+          "title": "Incidencia de la tuberculosis por cada 100.000 habitantes",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/3-3-2",
+          "status": "complete"
+        },
+        {
+          "id": "3-3-3",
+          "title": "Incidencia de la malaria por cada 1.000 habitantes",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/3-3-3",
+          "status": "complete"
+        },
+        {
+          "id": "3-3-4",
+          "title": "Incidencia de la hepatitis B por cada 100.000 habitantes",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/3-3-4",
+          "status": "complete"
+        },
+        {
           "id": "3-4-1",
           "title": "Tasa de mortalidad atribuida a las enfermedades cardiovasculares, el cáncer, la diabetes o las enfermedades respiratorias crónicas",
           "description": "",
@@ -131,6 +171,14 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/3-5-1",
+          "status": "complete"
+        },
+        {
+          "id": "3-5-2",
+          "title": "Consumo nocivo de alcohol, definido según el contexto nacional como el consumo de alcohol per cápita (a partir de los 15 años de edad) durante un año civil en litros de alcohol puro",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/3-5-2",
           "status": "complete"
         },
         {
@@ -214,6 +262,22 @@
       "indicators": [
         
         {
+          "id": "4-1-1",
+          "title": "Proporción de niños, niñas y adolescentes que, a) en los cursos segundo y tercero, b) al final de la enseñanza primaria y c) al final de la enseñanza secundaria inferior, han alcanzado al menos un nivel mínimo de competencia en i) lectura y ii) matemáticas, desglosada por sexo",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/4-1-1",
+          "status": "complete"
+        },
+        {
+          "id": "4-1-2",
+          "title": "global_indicators.4-1-2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/4-1-2",
+          "status": "complete"
+        },
+        {
           "id": "4-2-2",
           "title": "Tasa de participación en el aprendizaje organizado (un año antes de la edad oficial de ingreso en la enseñanza primaria), desglosada por sexo",
           "description": "",
@@ -291,6 +355,14 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/5-4-1",
+          "status": "complete"
+        },
+        {
+          "id": "5-5-1",
+          "title": "Proporción de escaños ocupados por mujeres en a) los parlamentos nacionales y b) los gobiernos locales",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/5-5-1",
           "status": "complete"
         },
         {
@@ -438,6 +510,14 @@
           "status": "complete"
         },
         {
+          "id": "8-10-1",
+          "title": "a) Número de sucursales de bancos comerciales por cada 100.000 adultos y b) número de cajeros automáticos por cada 100.000 adultos",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/8-10-1",
+          "status": "complete"
+        },
+        {
           "id": "8-10-2",
           "title": "Proporción de adultos (a partir de 15 años de edad) que tienen una cuenta en un banco u otra institución financiera o un proveedor de servicios de dinero móvil",
           "description": "",
@@ -500,6 +580,22 @@
           "keywords": "",
           "href": "/ods-cantabria/9-5-2",
           "status": "complete"
+        },
+        {
+          "id": "9-b-1",
+          "title": "Proporción del valor añadido por la industria de tecnología mediana",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/9-b-1",
+          "status": "complete"
+        },
+        {
+          "id": "9-c-1",
+          "title": "Proporción de la población con cobertura de red móvil, desglosada por tecnología",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/9-c-1",
+          "status": "complete"
         }]
     }
   },
@@ -558,6 +654,22 @@
           "status": "complete"
         },
         {
+          "id": "11-3-2",
+          "title": "Proporción de ciudades que cuentan con una estructura de participación directa de la sociedad civil en la planificación y la gestión urbanas y funcionan con regularidad y democráticamente",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/11-3-2",
+          "status": "complete"
+        },
+        {
+          "id": "11-4-1",
+          "title": "Total de gastos (públicos y privados) per cápita destinados a la preservación, protección y conservación de todo el patrimonio cultural y natural, desglosado por tipo de patrimonio (cultural, natural, mixto y reconocido por el Centro del Patrimonio Mundial), nivel de gobierno (nacional, regional y local o municipal), tipo de gastos (gastos de funcionamiento o inversiones) y tipo de financiación privada (donaciones en especie, financiación procedente del sector privado sin fines de lucro y patrocinio)",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/11-4-1",
+          "status": "complete"
+        },
+        {
           "id": "11-5-1",
           "title": "Número de personas muertas, desaparecidas y afectadas directamente atribuido a desastres por cada 100.000 personas",
           "description": "",
@@ -572,6 +684,14 @@
           "keywords": "",
           "href": "/ods-cantabria/11-6-1",
           "status": "complete"
+        },
+        {
+          "id": "11-6-2",
+          "title": "Niveles medios anuales de partículas finas en suspensión (por ejemplo, PM2.5 y PM10) en las ciudades (ponderados según la población)",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/11-6-2",
+          "status": "complete"
         }]
     }
   },
@@ -581,6 +701,14 @@
       "title": "Garantizar modalidades de consumo y producción sostenibles",
       "indicators": [
         
+        {
+          "id": "12-1-1",
+          "title": "Número de países que incluyen como prioridad o meta en las políticas nacionales planes de acción nacionales sobre el consumo y la producción sostenibles",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/12-1-1",
+          "status": "complete"
+        },
         {
           "id": "12-5-1",
           "title": "Tasa nacional de reciclado, en toneladas de material reciclado",
@@ -636,6 +764,14 @@
           "keywords": "",
           "href": "/ods-cantabria/15-2-1",
           "status": "complete"
+        },
+        {
+          "id": "15-8-1",
+          "title": "Proporción de países que han aprobado la legislación nacional pertinente y han destinado recursos suficientes para la prevención o el control de las especies exóticas invasoras",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/15-8-1",
+          "status": "complete"
         }]
     }
   },
@@ -654,6 +790,14 @@
           "status": "complete"
         },
         {
+          "id": "16-2-2",
+          "title": "Número de víctimas de la trata de personas por cada 100.000 habitantes, desglosado por sexo, edad y tipo de explotación",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/16-2-2",
+          "status": "complete"
+        },
+        {
           "id": "16-3-2",
           "title": "Proporción de detenidos que no han sido condenados en el conjunto de la población reclusa total",
           "description": "",
@@ -662,11 +806,27 @@
           "status": "complete"
         },
         {
+          "id": "16-6-2",
+          "title": "Proporción de la población que se siente satisfecha con su última experiencia de los servicios públicos",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/16-6-2",
+          "status": "complete"
+        },
+        {
           "id": "16-7-1",
           "title": "Proporciones de plazas (desglosadas por sexo, edad, personas con discapacidad y grupos de población) en las instituciones públicas (asambleas legislativas nacionales y locales, administración pública, poder judicial), en comparación con la distribución nacional",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/16-7-1",
+          "status": "complete"
+        },
+        {
+          "id": "16-9-1",
+          "title": "Proporción de niños menores de 5 años cuyo nacimiento se ha registrado ante una autoridad civil, desglosada por edad",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/16-9-1",
           "status": "complete"
         }]
     }
@@ -710,6 +870,14 @@
           "status": "complete"
         },
         {
+          "id": "17-6-1",
+          "title": "Número de acuerdos y programas de cooperación en materia de ciencia o tecnología suscritos por los países, desglosado por tipo de cooperación",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/17-6-1",
+          "status": "complete"
+        },
+        {
           "id": "17-8-1",
           "title": "Proporción de personas que utilizan Internet",
           "description": "",
@@ -718,11 +886,43 @@
           "status": "complete"
         },
         {
+          "id": "17-13-1",
+          "title": "Tablero macroeconómico",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/17-13-1",
+          "status": "complete"
+        },
+        {
+          "id": "17-18-2",
+          "title": "Número de países cuya legislación nacional sobre estadísticas cumple los Principios Fundamentales de las Estadísticas Oficiales",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/17-18-2",
+          "status": "complete"
+        },
+        {
+          "id": "17-18-3",
+          "title": "Número de países que cuentan con un plan estadístico nacional plenamente financiado y en proceso de aplicación, desglosado por fuente de financiación",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/17-18-3",
+          "status": "complete"
+        },
+        {
           "id": "17-19-2a",
           "title": "Proporción de países que a) han realizado al menos un censo de población y vivienda en los últimos diez años; y b) han registrado el 100% de los nacimientos y el 80% de las defunciones",
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/17-19-2a",
+          "status": "complete"
+        },
+        {
+          "id": "17-19-2b",
+          "title": "global_indicators.17-19-2b-title",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/17-19-2b",
           "status": "complete"
         }]
     }
