@@ -42,10 +42,10 @@ jobs:
         bundle install
         JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_prod.yml
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@3.6.2
       with:
-          REPOSITORY_NAME: ods-cantabria/ods-cantabria
-          ACCESS_TOKEN: ${{ secrets.token }}
-          BRANCH: master
-          FOLDER: _site
-          CLEAN: true
+        REPOSITORY_NAME: ods-cantabria/ods-cantabria
+        ACCESS_TOKEN: ${{ secrets.TOKEN }}
+        BRANCH: master
+        FOLDER: _site
+        CLEAN: true
