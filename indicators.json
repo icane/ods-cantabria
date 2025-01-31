@@ -342,6 +342,14 @@
       "indicators": [
         
         {
+          "id": "5-1-1",
+          "title": "Determinar si existen o no marcos jurídicos para promover, hacer cumplir y supervisar la igualdad y la no discriminación por razón de sexo",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/5-1-1",
+          "status": "complete"
+        },
+        {
           "id": "5-3-1",
           "title": "Proporción de mujeres de entre 20 y 24 años que estaban casadas o mantenían una unión estable antes de cumplir los 15 años y antes de cumplir los 18 años",
           "description": "",
@@ -371,6 +379,14 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/5-5-2",
+          "status": "complete"
+        },
+        {
+          "id": "5-a-2",
+          "title": "Proporción de países cuyo ordenamiento jurídico (incluido el derecho consuetudinario) garantiza la igualdad de derechos de la mujer a la propiedad o el control de las tierras",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/5-a-2",
           "status": "complete"
         },
         {
@@ -628,6 +644,14 @@
           "keywords": "",
           "href": "/ods-cantabria/10-4-1",
           "status": "complete"
+        },
+        {
+          "id": "10-7-4",
+          "title": "global_indicators.10-7-4-title",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/10-7-4",
+          "status": "complete"
         }]
     }
   },
@@ -691,6 +715,14 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/11-6-2",
+          "status": "complete"
+        },
+        {
+          "id": "11-a-1",
+          "title": "Proporción de la población residente en ciudades que aplican planes de desarrollo urbano y regional que tienen en cuenta las previsiones demográficas y las necesidades de recursos, desglosada por tamaño de ciudad",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/11-a-1",
           "status": "complete"
         }]
     }
@@ -803,6 +835,14 @@
           "description": "",
           "keywords": "",
           "href": "/ods-cantabria/16-3-2",
+          "status": "complete"
+        },
+        {
+          "id": "16-6-1",
+          "title": "Gastos primarios del gobierno en proporción al presupuesto aprobado originalmente, desglosados por sector (o por códigos presupuestarios o elementos similares)",
+          "description": "",
+          "keywords": "",
+          "href": "/ods-cantabria/16-6-1",
           "status": "complete"
         },
         {
